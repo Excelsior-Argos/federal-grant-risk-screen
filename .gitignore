@@ -1,7 +1,11 @@
 # Secrets: never commit
 .env
+.streamlit/secrets.toml
 
 # Local Python environment and caches
 .venv/
 __pycache__/
 *.pyc
+
+# Local tooling
+.claude/
