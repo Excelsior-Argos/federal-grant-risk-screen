@@ -2,3 +2,6 @@ requests
 python-dotenv
 psycopg[binary]
 streamlit
+anthropic>=1,<2
+langgraph>=1,<2
+mcp>=2,<3

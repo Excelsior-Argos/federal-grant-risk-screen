@@ -33,13 +33,27 @@
 - Loaded every `local` entity and every year. This was Claude's recommendation and I have
   not confirmed it yet. Narrowing later is a filter, not a rebuild.
 
-**Not done**
-- No GitHub repo, so nothing is pushed.
-- No lookup page yet.
+**Night: I asked Claude to build the rest so I can study it afterwards**
+- This changes how we work. The brief said I would write the rubric, the hand ratings
+  and the miss causes, and explain each step back. I have not done any of that yet.
+- Built and tested: the lookup page (`app.py`), the LangGraph approval workflow
+  (`workflow.py`) and the MCP server with two tools (`mcp_server.py`).
+- Built but never run against the AI: `risk.py` (the Claude call) and `evaluate.py`.
+  There is no Claude API key on this machine.
+- `RUBRIC.md` is Claude's draft, marked as such. `eval/hand_ratings.csv` lists the 30
+  sampled localities with the rating column empty.
 
-**Open decisions (mine)**
+**Not done**
+- No GitHub repo: nothing is pushed and the page is not deployed.
+- No AI run: no agreement rate, no cost per locality, no miss log.
+- No memo. It needs the numbers above.
+
+**Mine to do**
+- Read `RUBRIC.md`, change what I disagree with, remove the draft notice.
+- Hand-rate the 30 localities in `eval/hand_ratings.csv` before looking at any AI output.
+- After the run, fill in the `cause` column of `eval/misses.csv`.
 - Confirm or change "every `local` entity, every year".
 
 **Next session**
-- Build the Streamlit page: pick a locality, see its audits and findings with a link to
-  the source audit. Then deploy it.
+- Get a Claude API key into `.env`, run `evaluate.py run` and `evaluate.py report`,
+  then write the memo. Create the GitHub repo, push, deploy the page.

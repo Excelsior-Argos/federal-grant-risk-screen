@@ -2,43 +2,12 @@
 
 Run:  .venv\\Scripts\\python -m streamlit run app.py
 """
-import os
-
-import psycopg
 import streamlit as st
-from dotenv import load_dotenv
-from psycopg.rows import dict_row
 
-load_dotenv()
-# Locally the connection string comes from .env; on Streamlit Cloud it comes from the app's secrets.
-DATABASE_URL = os.getenv("DATABASE_URL") or st.secrets["DATABASE_URL"]
+import common
 
-SOURCE_URL = "https://app.fac.gov/dissemination/summary/{report_id}"
-
-# Compliance requirement codes from the federal Compliance Supplement (2 CFR 200, Appendix XI).
-REQUIREMENTS = {
-    "A": "Activities allowed or unallowed",
-    "B": "Allowable costs",
-    "C": "Cash management",
-    "D": "Davis-Bacon Act",
-    "E": "Eligibility",
-    "F": "Equipment and real property",
-    "G": "Matching, level of effort, earmarking",
-    "H": "Period of performance",
-    "I": "Procurement, suspension and debarment",
-    "J": "Program income",
-    "K": "Real property acquisition and relocation",
-    "L": "Reporting",
-    "M": "Subrecipient monitoring",
-    "N": "Special tests and provisions",
-    "P": "Other",
-}
-
-
-@st.cache_data(ttl=3600)
-def query(sql, params=None):
-    with psycopg.connect(DATABASE_URL, prepare_threshold=None, row_factory=dict_row) as conn:
-        return conn.execute(sql, params).fetchall()
+# Each visitor's click reruns this file, so remember query results for an hour.
+query = st.cache_data(ttl=3600)(common.query)
 
 
 def opinion(gaap_results):
@@ -116,6 +85,37 @@ col2.metric(f"Federal spending, {latest['audit_year']}", f"${latest['total_amoun
 col3.metric("Findings, all years", len(findings))
 col4.metric("Repeat findings", sum(1 for f in findings if f["is_repeat_finding"]))
 
+# The risk sheet is shown only once a person has approved it. Drafts stay out of sight.
+st.subheader("Risk sheet")
+# Not cached, so an approval shows up straight away.
+approved = common.query("""
+    select * from risk_sheets
+    where auditee_ein = %s and status = 'approved'
+    order by reviewed_at desc limit 1
+""", (chosen["auditee_ein"],)) if common.query("select to_regclass('risk_sheets') is not null as ready")[0]["ready"] else []
+if not approved:
+    st.caption("No approved risk sheet yet. The findings below are the source material a reviewer would use.")
+else:
+    risk_sheet = approved[0]
+    sheet = risk_sheet["sheet"]
+    rating = risk_sheet["final_rating"]
+    colour = {"high": "red", "medium": "orange", "low": "green"}.get(rating, "gray")
+    st.markdown(f"### :{colour}[{rating.replace('_', ' ').capitalize()}]")
+    st.write(sheet["summary"])
+    for reason in sheet["reasons"]:
+        st.markdown(f"**{reason['reason']}**")
+        st.markdown(f"> {reason['quote']}")
+        st.caption(f"Finding {reason['reference_number']}, audit year {reason['audit_year']}")
+    if sheet["next_checks"]:
+        st.markdown("**Check next**")
+        for check in sheet["next_checks"]:
+            st.markdown(f"- {check}")
+    drafted_by = f"Drafted by AI ({risk_sheet['model']})" if risk_sheet["model"] else "Drafted by rule, with no AI call"
+    changed = (f" The reviewer changed the draft rating from {risk_sheet['rating'].replace('_', ' ')}."
+               if risk_sheet["rating"] != rating else "")
+    st.caption(f"{drafted_by}. Approved by {risk_sheet['reviewer']} on {risk_sheet['reviewed_at']:%Y-%m-%d}.{changed}"
+               + (f" Reviewer note: {risk_sheet['reviewer_note']}" if risk_sheet["reviewer_note"] else ""))
+
 st.subheader("Audits")
 st.dataframe(
     [
@@ -128,7 +128,7 @@ st.dataframe(
             "Material noncompliance disclosed": a["is_material_noncompliance_disclosed"],
             "Low-risk auditee": a["is_low_risk_auditee"],
             "Findings": a["finding_count"],
-            "Source audit": SOURCE_URL.format(report_id=a["report_id"]),
+            "Source audit": common.source_url(a["report_id"]),
         }
         for a in audits
     ],
@@ -144,7 +144,7 @@ st.subheader("Findings")
 shown = False
 for audit in audits:
     audit_findings = [f for f in findings if f["report_id"] == audit["report_id"]]
-    link = SOURCE_URL.format(report_id=audit["report_id"])
+    link = common.source_url(audit["report_id"])
 
     if not audit_findings:
         # The findings table only lists findings on federal awards. A weakness in the
@@ -171,7 +171,7 @@ for audit in audits:
                 ":blue-badge[Questioned costs]" if f["is_questioned_costs"] else "",
             ]
             st.markdown(f"**Finding {f['reference_number']}** " + " ".join(b for b in badges if b))
-            requirements = sorted({REQUIREMENTS.get(code, code) for code in f["type_requirement"] or ""})
+            requirements = common.requirement_names(f["type_requirement"])
             details = [f"Federal awards affected: {f['awards']}"]
             if requirements:
                 details.append("Requirement: " + "; ".join(requirements))
