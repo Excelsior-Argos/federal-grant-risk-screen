@@ -23,13 +23,23 @@
 - 148 audits flag a material weakness in `general` but have no rows in `findings`.
 - First commit made. The repo is local only; GitHub is on hold until I can make an account.
 
+**Evening: the database**
+- Created a Neon project (Postgres 18, free tier) and put its connection string in `.env`.
+- Wrote `schema.sql` (three tables) and `load_fac.py` (fetch, clean, load). Loaded 2,669
+  audits, 1,260 finding rows and 598 finding texts.
+- Cleaning the loader does: Yes/No and Y/N become true/false, the `GSA_MIGRATION`
+  placeholder becomes empty, exact duplicate rows are dropped, and the finding ID gets
+  one name (`reference_number`) in both tables.
+- Loaded every `local` entity and every year. This was Claude's recommendation and I have
+  not confirmed it yet. Narrowing later is a filter, not a rebuild.
+
 **Not done**
 - No GitHub repo, so nothing is pushed.
-- No Neon database.
+- No lookup page yet.
 
 **Open decisions (mine)**
-- What counts as a "locality": every `local` entity, or only counties, cities and towns?
-- Which audit years to load.
+- Confirm or change "every `local` entity, every year".
 
 **Next session**
-- Create a Neon account, agree the schema, write the loader.
+- Build the Streamlit page: pick a locality, see its audits and findings with a link to
+  the source audit. Then deploy it.

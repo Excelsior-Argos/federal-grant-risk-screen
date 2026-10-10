@@ -10,7 +10,23 @@ done by reading each audit and filling in a spreadsheet by hand.
 
 ## Status
 
-**Phase 1, the data foundation (no AI): in progress.** Nothing is loaded into a database yet.
+**Phase 1, the data foundation (no AI): in progress.** The data is loaded into Postgres.
+The lookup page is not built yet.
+
+## What is in the database
+
+Loaded from the FAC API on 2026-10-10. The most recent audit in it was accepted by the
+FAC on 2026-10-07.
+
+| Table | Rows | One row is |
+|---|---|---|
+| `audits` | 2,669 | one audit of a Virginia local entity, audit years 2016 to 2025 |
+| `findings` | 1,260 | one finding on one federal award |
+| `finding_texts` | 598 | the auditor's written text for one finding |
+
+The 2,669 audits cover 449 distinct entities, counted by EIN. The loader dropped 9 exact
+duplicate rows from `findings` and 2 from `finding_texts`. Table definitions are in
+[schema.sql](schema.sql).
 
 | Phase | What it delivers | State |
 |---|---|---|
@@ -39,16 +55,16 @@ Counts for the 2,669 Virginia `local` audits (audit years 2016 to 2025):
 | Measure | Count |
 |---|---|
 | Audits with at least one finding | 351 (13%) |
-| Rows in `findings` (one per finding per award) | 1,269 |
 | Distinct findings | 598 |
-| Rows in `findings_text` | 600 |
-| Of those, real auditor text | 440 |
-| Of those, the placeholder `GSA_MIGRATION` | 160 |
+| Of those, with real auditor text | 438 |
+| Of those, with only the placeholder `GSA_MIGRATION` | 160 |
 | Audits flagging a material weakness in `general` with no rows in `findings` | 148 |
 
 - The missing text is almost all in audit years 2016 to 2018 (158 of the 160 placeholders).
   From 2019 on, every finding but two has real text. Median length is about 1,600 characters.
-- Every finding has a matching `findings_text` row. One finding has two.
+- Every finding has a matching `findings_text` row.
+- An entity's name is spelled differently from year to year (833 spellings for 449
+  entities), so the EIN is what ties its audits together.
 - All 148 material-weakness-but-no-findings audits were submitted to the current GSA
   system. None of the 1,751 Census-era audits show that pattern, which I have not explained yet.
 
@@ -62,13 +78,21 @@ py -3.14 -m venv .venv
 copy .env.example .env
 ```
 
-Put a free key from <https://api.data.gov/signup> in `.env`, then:
+In `.env`, set `FAC_API_KEY` to a free key from <https://api.data.gov/signup> and
+`DATABASE_URL` to a Postgres connection string (this project uses Neon's free tier). Then:
 
 ```powershell
 .venv\Scripts\python explore_fac.py
 ```
 
-That prints one real row from each of the three tables. It saves nothing.
+prints one real row from each of the three FAC tables and saves nothing, and
+
+```powershell
+.venv\Scripts\python load_fac.py
+```
+
+rebuilds the three database tables from the FAC. It takes about a minute and is safe to
+run again.
 
 ## Data source
 
