@@ -3,7 +3,10 @@
 Used by evaluate.py (Phase 2) and workflow.py (Phase 3). Nothing here approves anything.
 """
 import json
+import os
 import re
+import subprocess
+import tempfile
 from pathlib import Path
 from typing import Literal
 
@@ -167,8 +170,25 @@ def evidence_as_text(evidence):
     return "\n".join(lines)
 
 
+def _usage(model, input_tokens, output_tokens, via):
+    cost = input_tokens * PRICE_PER_MILLION["input"] / 1_000_000 + output_tokens * PRICE_PER_MILLION["output"] / 1_000_000
+    return {"model": model, "via": via, "input_tokens": input_tokens, "output_tokens": output_tokens,
+            "cost_usd": round(cost, 5)}
+
+
 def ask_model(evidence):
-    """Send the evidence to Claude and get back a drafted risk sheet plus what the call cost."""
+    """Send the evidence to Claude and get back a drafted risk sheet plus what the call used.
+
+    There are two ways in. With ANTHROPIC_API_KEY set, call the Claude API, which is how a
+    deployed version would run. Without one, go through Claude Code on this machine, which
+    uses a Claude subscription and needs `claude auth login` to have been run once.
+    """
+    if os.getenv("ANTHROPIC_API_KEY"):
+        return _ask_api(evidence)
+    return _ask_claude_code(evidence)
+
+
+def _ask_api(evidence):
     client = anthropic.Anthropic()  # reads ANTHROPIC_API_KEY from the environment (.env)
     response = client.beta.messages.parse(
         model=MODEL,
@@ -182,14 +202,31 @@ def ask_model(evidence):
     )
     if response.stop_reason == "refusal" or response.parsed_output is None:
         raise RuntimeError(f"No risk sheet for {evidence['name']}: the model stopped with '{response.stop_reason}'.")
-    usage = {
-        "model": response.model,
-        "input_tokens": response.usage.input_tokens,
-        "output_tokens": response.usage.output_tokens,
-        "cost_usd": round(response.usage.input_tokens * PRICE_PER_MILLION["input"] / 1_000_000
-                          + response.usage.output_tokens * PRICE_PER_MILLION["output"] / 1_000_000, 5),
-    }
-    return response.parsed_output, usage
+    return response.parsed_output, _usage(response.model, response.usage.input_tokens,
+                                          response.usage.output_tokens, "Claude API")
+
+
+def _ask_claude_code(evidence):
+    # Same system prompt, same evidence, same output shape as the API route. Tools, project
+    # settings and MCP servers are switched off so the model sees nothing but the evidence.
+    done = subprocess.run(
+        ["claude", "-p", "--output-format", "json", "--model", MODEL, "--system-prompt", SYSTEM,
+         "--tools", "", "--strict-mcp-config", "--setting-sources", "", "--no-session-persistence",
+         "--json-schema", json.dumps(RiskSheet.model_json_schema())],
+        input=evidence_as_text(evidence), capture_output=True, text=True, encoding="utf-8",
+        cwd=tempfile.gettempdir(), timeout=900)
+    try:
+        reply = json.loads(done.stdout)
+    except json.JSONDecodeError:
+        raise RuntimeError(f"Claude Code did not answer for {evidence['name']}: {done.stderr or done.stdout}") from None
+    if reply.get("is_error") or not reply.get("structured_output"):
+        raise RuntimeError(f"No risk sheet for {evidence['name']}: {reply.get('result')}")
+    tokens = reply["usage"]
+    input_tokens = (tokens["input_tokens"] + tokens.get("cache_creation_input_tokens", 0)
+                    + tokens.get("cache_read_input_tokens", 0))
+    model = next(iter(reply.get("modelUsage") or {}), MODEL)
+    return RiskSheet.model_validate(reply["structured_output"]), _usage(model, input_tokens,
+                                                                        tokens["output_tokens"], "Claude Code")
 
 
 def no_basis_sheet(evidence):
@@ -213,7 +250,7 @@ def no_basis_sheet(evidence):
 def draft_sheet(evidence):
     """Draft one locality's risk sheet. The AI is only called when there is finding text to read."""
     if not any(f["finding_text"] for f in evidence["findings"]):
-        return no_basis_sheet(evidence), {"model": None, "input_tokens": 0, "output_tokens": 0, "cost_usd": 0}
+        return no_basis_sheet(evidence), _usage(None, 0, 0, None)
     return ask_model(evidence)
 
 

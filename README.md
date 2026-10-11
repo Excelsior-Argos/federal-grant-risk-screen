@@ -13,7 +13,7 @@ done by reading each audit and filling in a spreadsheet by hand.
 | Phase | What it delivers | State |
 |---|---|---|
 | 1 | Virginia audits and findings in Postgres, plus a lookup page | Data loaded and page working locally. **Not deployed**: needs a GitHub account. |
-| 2 | AI-drafted risk sheets, measured against 30 hand-rated localities | Code written. **The AI has not been run**: needs a Claude API key. The 30 hand ratings are not filled in. |
+| 2 | AI-drafted risk sheets, measured against 30 hand-rated localities | Code written. **The AI has not been run**: Claude Code on this machine is not signed in, and there is no API key. The 30 hand ratings are not filled in. |
 | 3 | Human-approval workflow, MCP server, memo to a grants manager | Workflow and MCP server working. **Memo not written**: it needs the Phase 2 numbers. |
 
 No accuracy or cost figure exists yet. Nothing in this repo should be read as evidence
@@ -93,6 +93,8 @@ show that pattern, which I have not explained yet.
    rate" and is written by code. The AI is not called, so it cannot invent anything.
 3. **Draft.** Otherwise Claude (`claude-opus-5-5`) gets the rubric and the evidence and
    returns a rating, reasons with the auditor's words quoted, and what to check next.
+   With `ANTHROPIC_API_KEY` set the call goes to the Claude API. Without it, the call
+   goes through Claude Code on this machine, using a Claude subscription.
 4. **Quote check.** Code looks for every quote, word for word, in the finding it cites.
    Anything it cannot find is flagged to the reviewer.
 5. **Human decision.** The draft is stored as a draft. `workflow.py` pauses until a
@@ -114,8 +116,8 @@ copy .env.example .env
 ```
 
 Fill in `.env`: `FAC_API_KEY` (free, <https://api.data.gov/signup>), `DATABASE_URL`
-(a Postgres connection string; this project uses Neon's free tier) and, for the AI
-steps only, `ANTHROPIC_API_KEY`.
+(a Postgres connection string; this project uses Neon's free tier). For the AI steps,
+either set `ANTHROPIC_API_KEY` or sign Claude Code in once with `claude auth login`.
 
 | To do this | Run this |
 |---|---|
@@ -140,8 +142,9 @@ Tested on 2026-10-10:
   no findings, which needs no AI call.
 - Both MCP tools, called through a real MCP client over stdio.
 
-Not tested: the call to Claude in `risk.ask_model`, and so everything in `evaluate.py run`
-and `evaluate.py report`. There was no API key on this machine.
+Not tested: either route to Claude in `risk.ask_model`, and so everything in
+`evaluate.py run` and `evaluate.py report`. There was no API key on this machine and
+Claude Code was signed out.
 
 ## Data source
 

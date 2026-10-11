@@ -179,6 +179,10 @@ def report():
                 f"**${cost / len(calls):.3f} per locality** on average "
                 f"({sum(u['input_tokens'] for u in calls) // len(calls):,} tokens in, "
                 f"{sum(u['output_tokens'] for u in calls) // len(calls):,} out).", ""]
+        if any(u["via"] == "Claude Code" for u in calls):
+            out += ["These calls went through Claude Code on a Claude subscription, so nothing was billed per call. "
+                    "The dollar figure is what the same tokens would cost at Claude API list prices, and the token "
+                    "counts include Claude Code's own overhead, so treat it as an upper estimate.", ""]
 
     (EVAL / "REPORT.md").write_text("\n".join(out), encoding="utf-8")
     with (EVAL / "misses.csv").open("w", newline="", encoding="utf-8") as file:
