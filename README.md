@@ -161,8 +161,10 @@ Tested on 2026-10-10:
 
 - The AI draft through Claude Code, for 30 sampled localities and 10 with no findings.
 
-Not tested: the Claude API route in `risk.ask_model` (no API key on this machine), and
-the approval workflow on a locality that needs an AI draft.
+- The approval workflow on a locality that needs an AI draft (City of Emporia, rejected
+  as a test and removed), on 2026-10-11.
+
+Not tested: the Claude API route in `risk.ask_model` (no API key on this machine).
 
 ## Data source
 
