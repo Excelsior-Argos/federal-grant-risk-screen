@@ -26,21 +26,25 @@ this work, with sources, and which steps the tool does and does not cover.
 |---|---|---|
 | 1 | Virginia audits and findings in Postgres, plus a lookup page | Data loaded and page working locally. **Not deployed**: needs a GitHub account. |
 | 1b | The agency view, added after researching the real process | Working locally: an agency's subrecipients, audit on file and on time, findings on its money, and the audit rows of three real forms. |
-| 2 | AI-drafted risk sheets, measured against 30 hand-rated localities | AI run on 30 localities on 2026-10-10. The tool matches my ratings on 29 of 30. **My check was a review of AI-drafted ratings, not a blind rating.** |
+| 2 | AI-drafted risk sheets, measured against 30 hand-rated localities | AI run on 30 localities, twice. The tool matches my ratings on 29 of 30. **My check was a review of AI-drafted ratings, not a blind rating.** |
 | 3 | Human-approval workflow, MCP server, memo to a grants manager | Workflow and MCP server working. [MEMO.md](MEMO.md) is written. |
 
 ## Results so far
 
-From [eval/REPORT.md](eval/REPORT.md), run on 2026-10-10 with `claude-opus-5-5`:
+From [eval/REPORT.md](eval/REPORT.md), run on 2026-10-11 with `claude-opus-5-5`:
 
 | Check | Result |
 |---|---|
 | AI rating matches the rubric applied by code to the yes/no flags | 28 of 30 (93%) |
-| Quotes found word for word in the finding they cite | 116 of 116 |
+| Quotes found word for word in the finding they cite | 117 of 117 |
 | Localities with no findings left unrated, nothing invented | 10 of 10 |
 | AI rating matches my rating | 29 of 30 (97%) |
 | AI rating matches a second, separate AI pass | 27 of 30 (90%) |
-| Estimated cost per drafted sheet, at API list prices | $0.055 |
+| Same AI rating in the run of 2026-10-10 and the rerun of 2026-10-11 | 30 of 30 |
+| Estimated cost per drafted sheet, at API list prices | $0.074 |
+
+The rerun gave the AI more evidence (each finding's program, pass-through agency and
+corrective action plan), and no rating changed.
 
 These show the AI applies the rubric consistently. The AI is given the same rubric and
 flags as the code it is compared with. For my own ratings in

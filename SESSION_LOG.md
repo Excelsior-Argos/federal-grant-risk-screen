@@ -107,6 +107,10 @@
   a plan is a promise and not proof. Evaluation rerun with this evidence.
 - Kept the severity rubric as the draft of a monitor's "documented concerns". Checked it
   against North Carolina's audit row: same level for 27 of 68 localities.
+- Evaluation rerun finished: every one of the 30 AI ratings is the same as in the first
+  run. 29 of 30 against mine, 117 of 117 quotes found, 10 of 10 no-findings cases left
+  unrated, about $0.07 a sheet.
+- Rewrote the memo around the agency view and cut it back to two pages.
 
 **Not done**
 - No GitHub repo: nothing is pushed and the page is not deployed.
