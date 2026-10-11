@@ -1,11 +1,11 @@
 """Phase 2 proof: compare the AI's ratings with a second set of ratings and with the rubric applied by code.
 
 Run in this order:
-  .venv\Scripts\python evaluate.py sample   pick 30 localities and write eval/second_ratings.csv
+  .venv\\Scripts\\python evaluate.py sample   pick 30 localities and write eval/second_ratings.csv
   (fill in the rating column without looking at any AI output; put yes in checked_by_me
    for every row a person rated or checked)
-  .venv\Scripts\python evaluate.py run      draft the 30 sheets and run the no-findings test
-  .venv\Scripts\python evaluate.py report   write eval/REPORT.md and eval/misses.csv
+  .venv\\Scripts\\python evaluate.py run      draft the 30 sheets and run the no-findings test
+  .venv\\Scripts\\python evaluate.py report   write eval/REPORT.md and eval/misses.csv
 """
 import csv
 import json
