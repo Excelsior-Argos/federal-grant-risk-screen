@@ -146,7 +146,10 @@ def report():
         pairs = [(rated[ein], sheets[ein]["ai_rating"]) for ein in checked]
         matches, table = agreement(pairs)
         out += [f"Agreement: **{matches} of {len(pairs)}** ({matches / len(pairs):.0%}), on the rows marked "
-                "`checked_by_me` in `eval/second_ratings.csv`.", ""] + table + [""]
+                "`checked_by_me` in `eval/second_ratings.csv`.", "",
+                "These ratings were drafted by an AI session and then reviewed by me. I saw a rating before I "
+                "judged it, so this is a review, not a blind rating, and it is likely to overstate agreement.", ""
+                ] + table + [""]
     else:
         out += ["Not available: no row in `eval/second_ratings.csv` is marked `checked_by_me`. "
                 "There is no measured agreement with a human yet.", ""]
@@ -202,12 +205,19 @@ def report():
                     "counts include Claude Code's own overhead, so treat it as an upper estimate.", ""]
 
     (EVAL / "REPORT.md").write_text("\n".join(out), encoding="utf-8")
-    with (EVAL / "misses.csv").open("w", newline="", encoding="utf-8") as file:
+    # Keep any causes already written, so running the report again never erases them.
+    misses_file = EVAL / "misses.csv"
+    causes = {}
+    if misses_file.exists():
+        with misses_file.open(encoding="utf-8-sig", newline="") as file:
+            causes = {(row["ein"], row["compared_with"]): row["cause"] for row in csv.DictReader(file)}
+    with misses_file.open("w", newline="", encoding="utf-8") as file:
         writer = csv.writer(file)
         writer.writerow(["ein", "name", "compared_with", "expected", "ai_rating", "ai_summary", "cause"])
         for ein, compared_with, expected in misses:
             s = sheets[ein]
-            writer.writerow([ein, s["name"], compared_with, expected, s["ai_rating"], s["sheet"]["summary"], ""])
+            writer.writerow([ein, s["name"], compared_with, expected, s["ai_rating"], s["sheet"]["summary"],
+                             causes.get((ein, compared_with), "")])
     print("\n".join(out))
     print(f"{len(misses)} disagreements written to eval/misses.csv. The cause column is for me to fill in.")
 

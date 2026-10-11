@@ -63,16 +63,19 @@
 - The lookup page now shows the "Modified opinion" label, which the rubric uses and the
   page was missing.
 
+- Later I went through all 30 and agreed with each second rating, so every row is
+  marked `checked_by_me`. The tool matches them on 27 of 30. This was a review after
+  seeing the AI's answer, not a blind rating, and the report says so.
+
 **Not done**
 - No GitHub repo: nothing is pushed and the page is not deployed.
-- No recorded human ratings, so no agreement-with-a-human figure. The memo stays a draft.
+- The cause of each of the five disagreements in `eval/misses.csv`. The memo stays a draft.
 
 **Mine to do**
 - Read `RUBRIC.md`, change what I disagree with, remove the draft notice.
-- Rate the 30 localities myself in `eval/second_ratings.csv` and put yes in `checked_by_me`.
 - After the run, fill in the `cause` column of `eval/misses.csv`.
 - Confirm or change "every `local` entity, every year".
 
 **Next session**
-- Mark the rows I rated myself, rerun `evaluate.py report`, fill in the miss causes, finish the memo.
+- Fill in the miss causes, rerun `evaluate.py report`, finish the memo.
   Create the GitHub repo, push, deploy the page.

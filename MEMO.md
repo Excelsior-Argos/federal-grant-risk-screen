@@ -5,10 +5,9 @@
 **Date:** October 10, 2026
 **Subject:** A faster first pass on subrecipient risk, and how far to trust it
 
-> **Draft.** The accuracy section reports checks a computer can make, plus a second AI
-> pass. I have checked about 10 of the 30 test localities by hand and not yet recorded
-> which, so there is no measured figure for agreement with a human reviewer. Do not
-> circulate this memo until that figure is in.
+> **Draft.** My check of the 30 test localities was a review of ratings an AI had
+> drafted, not a blind rating, and I have not yet written up the cause of each
+> disagreement. Do not circulate this memo until that is done.
 
 ## Recommendation
 
@@ -58,22 +57,22 @@ medium and high.
 | AI rating matches the rubric applied mechanically to the audit's yes/no flags | 28 of 30 (93%) |
 | Quotes found word for word in the cited finding | 116 of 116 |
 | Localities with no findings correctly left unrated, with nothing invented | 10 of 10 |
-| AI rating matches a second, separate AI pass using the same rubric | 27 of 30 (90%) |
-| AI rating matches ratings checked by a person | **Not yet measured** |
+| AI rating matches a second set of ratings, drafted by a separate AI pass and reviewed by me | 27 of 30 (90%) |
 
 In both mismatches the AI rated one level higher than the flags alone. Each time it
 said so and quoted the auditor tracing the problem to turnover or vacancies in finance staff. The
-rubric allows that adjustment, so these may be the AI reading something the flags
-cannot show. I have not yet reviewed them myself.
+rubric allows that adjustment, so these look like the AI reading something the flags
+cannot show. My review agreed with the AI on both.
 
-In the three cases where the second AI pass differed, it rated high and the first rated
+In the three cases where the second ratings differed, they say high and the tool said
 medium. Both read the same text and disagreed on whether the problem was systemic.
 That is the judgment the rubric leaves open, and it is where a monitor's review matters.
 
 These figures need care. The AI is given the same rubric and the same flags as the
-mechanical check, and a second AI pass can share the first one's blind spots. Together
-they show the AI applies the rubric consistently. They do not show the rubric is right,
-or that a monitor would agree.
+mechanical check. The second ratings were drafted by another AI pass, and I reviewed
+them after seeing its answer, which is weaker than rating blind and likely overstates
+agreement. Together the checks show the AI applies the rubric consistently. They do not
+show the rubric is right, or that an experienced monitor would agree.
 
 ## Cost
 
@@ -85,8 +84,8 @@ tiers. The real cost is the monitor's review time, which this does not remove.
 
 ## Risks
 
-- **No human benchmark yet.** Until a person's ratings are recorded for the 30, the
-  accuracy claim is limited to the checks above. Two AI passes agreeing is not proof.
+- **The human check was not blind.** I reviewed ratings an AI had drafted. A stronger
+  test is a grants monitor rating the 30 without seeing any AI output.
 - **The rubric is a draft.** It has not been reviewed by a grants professional. A wrong
   rubric applied consistently is still wrong.
 - **The FAC does not hold everything.** Its findings table covers federal awards only.
@@ -103,7 +102,6 @@ tiers. The real cost is the monitor's review time, which this does not remove.
 
 ## Next steps
 
-1. I record which of the 30 localities I rated myself, finish the rest, and report
-   agreement with the cause of each miss.
+1. I write up the cause of each of the five disagreements.
 2. A grants professional reviews the rubric.
 3. Match the entity list to one program's subrecipients and pilot there.

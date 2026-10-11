@@ -13,7 +13,7 @@ done by reading each audit and filling in a spreadsheet by hand.
 | Phase | What it delivers | State |
 |---|---|---|
 | 1 | Virginia audits and findings in Postgres, plus a lookup page | Data loaded and page working locally. **Not deployed**: needs a GitHub account. |
-| 2 | AI-drafted risk sheets, measured against 30 hand-rated localities | AI run on 30 localities on 2026-10-10. **The second set of ratings was made by an AI, not by hand**, so agreement with a human is not measured. |
+| 2 | AI-drafted risk sheets, measured against 30 hand-rated localities | AI run on 30 localities on 2026-10-10. **The second set of ratings was drafted by an AI and then reviewed by me**, so the human check is a review, not a blind rating. |
 | 3 | Human-approval workflow, MCP server, memo to a grants manager | Workflow and MCP server working. [MEMO.md](MEMO.md) is a draft until the hand ratings are in. |
 
 ## Results so far
@@ -25,14 +25,14 @@ From [eval/REPORT.md](eval/REPORT.md), run on 2026-10-10 with `claude-opus-5-5`:
 | AI rating matches the rubric applied by code to the yes/no flags | 28 of 30 (93%) |
 | Quotes found word for word in the finding they cite | 116 of 116 |
 | Localities with no findings left unrated, nothing invented | 10 of 10 |
-| AI rating matches a second, separate AI pass | 27 of 30 (90%) |
-| AI rating matches ratings a person checked | Not measured: no row is marked `checked_by_me` |
+| AI rating matches a second set of ratings, drafted by a separate AI pass and reviewed by me | 27 of 30 (90%) |
 | Estimated cost per drafted sheet, at API list prices | $0.055 |
 
 The 93% and the 90% show the AI applies the rubric consistently. The AI is given the
 same rubric and flags as the code it is compared with, and the second ratings in
-[eval/second_ratings.csv](eval/second_ratings.csv) came from another AI session, so
-neither is evidence that the ratings are right. That needs ratings made by a person. [RUBRIC.md](RUBRIC.md) is also still a draft.
+[eval/second_ratings.csv](eval/second_ratings.csv) were drafted by another AI session and
+reviewed by me after I saw its answer. Neither is strong evidence that the ratings are
+right. That needs a person rating blind. [RUBRIC.md](RUBRIC.md) is also still a draft.
 
 ## How it fits together
 
