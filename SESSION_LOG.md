@@ -67,9 +67,16 @@
   marked `checked_by_me`. The tool matches them on 27 of 30. This was a review after
   seeing the AI's answer, not a blind rating, and the report says so.
 
+- Then I read the five disagreements and wrote my own ruling on each. I rate Floyd,
+  Shenandoah and Wytheville medium (the second AI said high), New River Valley low (the
+  tool said medium) and Middle Peninsula high. My ratings and the second AI's now sit
+  side by side in `eval/ratings.csv`. The tool matches mine on 29 of 30.
+- Every disagreement came from the rubric's "systemic" sentence.
+- The memo is no longer marked draft.
+
 **Not done**
 - No GitHub repo: nothing is pushed and the page is not deployed.
-- The cause of each of the five disagreements in `eval/misses.csv`. The memo stays a draft.
+- `RUBRIC.md` still carries its draft notice.
 
 **Mine to do**
 - Read `RUBRIC.md`, change what I disagree with, remove the draft notice.
@@ -77,5 +84,5 @@
 - Confirm or change "every `local` entity, every year".
 
 **Next session**
-- Fill in the miss causes, rerun `evaluate.py report`, finish the memo.
+- Put my name on the memo. Decide whether to tighten "systemic" in the rubric.
   Create the GitHub repo, push, deploy the page.

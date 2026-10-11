@@ -2,12 +2,8 @@
 
 **To:** State grants manager
 **From:** [my name]
-**Date:** October 10, 2026
+**Date:** October 11, 2026
 **Subject:** A faster first pass on subrecipient risk, and how far to trust it
-
-> **Draft.** My check of the 30 test localities was a review of ratings an AI had
-> drafted, not a blind rating, and I have not yet written up the cause of each
-> disagreement. Do not circulate this memo until that is done.
 
 ## Recommendation
 
@@ -54,25 +50,35 @@ medium and high.
 
 | Check | Result |
 |---|---|
+| AI rating matches my rating | 29 of 30 (97%) |
 | AI rating matches the rubric applied mechanically to the audit's yes/no flags | 28 of 30 (93%) |
+| AI rating matches a second, separate AI pass | 27 of 30 (90%) |
 | Quotes found word for word in the cited finding | 116 of 116 |
 | Localities with no findings correctly left unrated, with nothing invented | 10 of 10 |
-| AI rating matches a second set of ratings, drafted by a separate AI pass and reviewed by me | 27 of 30 (90%) |
 
-In both mismatches the AI rated one level higher than the flags alone. Each time it
-said so and quoted the auditor tracing the problem to turnover or vacancies in finance staff. The
-rubric allows that adjustment, so these look like the AI reading something the flags
-cannot show. My review agreed with the AI on both.
+How I rated: a second AI pass drafted a rating for each locality, I reviewed all 30 and
+I changed four. I saw AI ratings before I judged, so this is a review, not a blind
+rating, and it likely overstates agreement.
 
-In the three cases where the second ratings differed, they say high and the tool said
-medium. Both read the same text and disagreed on whether the problem was systemic.
-That is the judgment the rubric leaves open, and it is where a monitor's review matters.
+Every disagreement, in all three comparisons, came from one sentence in the rubric: the
+text may move a rating up one level when the problem is "systemic".
+
+- **Where I disagree with the tool.** One locality. The tool moved it from low to
+  medium because the auditor tied two late filings to vacancies in the finance office.
+  I rate it low: the filings were late and nothing more.
+- **Where the tool went above the flags and I agree.** One locality, moved from medium
+  to high, with three material weaknesses in its latest audit.
+- **Where the second AI pass went higher than the tool.** Three localities. I sided
+  with the tool each time: the text did not show a systemic problem, and in one case
+  the locality was already fixing it.
+
+So the yes/no flags decide most ratings and the AI follows them. What is unsettled is
+what counts as systemic, and that is a question about the rubric, not about the model.
 
 These figures need care. The AI is given the same rubric and the same flags as the
-mechanical check. The second ratings were drafted by another AI pass, and I reviewed
-them after seeing its answer, which is weaker than rating blind and likely overstates
-agreement. Together the checks show the AI applies the rubric consistently. They do not
-show the rubric is right, or that an experienced monitor would agree.
+mechanical check, and my own check was a review. Together they show the AI applies the
+rubric consistently. They do not show the rubric is right, or that an experienced
+monitor would agree.
 
 ## Cost
 
@@ -102,6 +108,6 @@ tiers. The real cost is the monitor's review time, which this does not remove.
 
 ## Next steps
 
-1. I write up the cause of each of the five disagreements.
-2. A grants professional reviews the rubric.
+1. Tighten the rubric's definition of "systemic", since every disagreement came from it.
+2. Have a grants professional review the rubric and rate the 30 localities blind.
 3. Match the entity list to one program's subrecipients and pilot there.
