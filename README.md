@@ -13,7 +13,7 @@ done by reading each audit and filling in a spreadsheet by hand.
 | Phase | What it delivers | State |
 |---|---|---|
 | 1 | Virginia audits and findings in Postgres, plus a lookup page | Data loaded and page working locally. **Not deployed**: needs a GitHub account. |
-| 2 | AI-drafted risk sheets, measured against 30 hand-rated localities | AI run on 30 localities on 2026-10-10. **The 30 hand ratings are not filled in**, so agreement with a human is not measured. |
+| 2 | AI-drafted risk sheets, measured against 30 hand-rated localities | AI run on 30 localities on 2026-10-10. **The second set of ratings was made by an AI, not by hand**, so agreement with a human is not measured. |
 | 3 | Human-approval workflow, MCP server, memo to a grants manager | Workflow and MCP server working. [MEMO.md](MEMO.md) is a draft until the hand ratings are in. |
 
 ## Results so far
@@ -25,12 +25,14 @@ From [eval/REPORT.md](eval/REPORT.md), run on 2026-10-10 with `claude-opus-5-5`:
 | AI rating matches the rubric applied by code to the yes/no flags | 28 of 30 (93%) |
 | Quotes found word for word in the finding they cite | 116 of 116 |
 | Localities with no findings left unrated, nothing invented | 10 of 10 |
-| AI rating matches my hand rating | Not measured: the ratings are not filled in |
+| AI rating matches a second, separate AI pass | 27 of 30 (90%) |
+| AI rating matches ratings a person checked | Not measured: no row is marked `checked_by_me` |
 | Estimated cost per drafted sheet, at API list prices | $0.055 |
 
-The 93% shows the AI applies the rubric consistently. The AI is given the same rubric
-and flags as the code it is compared with, so it is not evidence that the ratings are
-right. That needs the hand ratings. [RUBRIC.md](RUBRIC.md) is also still a draft.
+The 93% and the 90% show the AI applies the rubric consistently. The AI is given the
+same rubric and flags as the code it is compared with, and the second ratings in
+[eval/second_ratings.csv](eval/second_ratings.csv) came from another AI session, so
+neither is evidence that the ratings are right. That needs ratings made by a person. [RUBRIC.md](RUBRIC.md) is also still a draft.
 
 ## How it fits together
 
@@ -50,7 +52,7 @@ FAC API ──load_fac.py──> Postgres (Neon) ──┬──> app.py        
 | [app.py](app.py) | The lookup page. Shows a risk sheet only after a person has approved it. |
 | [RUBRIC.md](RUBRIC.md) | How a rating is decided. Read by me, by the AI and by `rule_rating`. |
 | [risk.py](risk.py), [schema_risk.sql](schema_risk.sql) | Gathers a locality's evidence, drafts the sheet, checks every quote, stores the draft. |
-| [evaluate.py](evaluate.py), [eval/](eval/) | Picks 30 localities, compares AI ratings with mine, logs each miss. |
+| [evaluate.py](evaluate.py), [eval/](eval/) | Picks 30 localities, compares AI ratings with a second set of ratings, logs each miss. |
 | [workflow.py](workflow.py) | Drafts one sheet, pauses, and records the reviewer's decision. |
 | [mcp_server.py](mcp_server.py) | `get_locality_findings` and `search_findings` for any MCP client. |
 

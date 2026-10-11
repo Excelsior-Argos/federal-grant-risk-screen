@@ -53,16 +53,26 @@
   staffing. Whether that is right is mine to judge in `eval/misses.csv`.
 - `MEMO.md` written as a draft.
 
+## 2026-10-11: Session 2, being honest about the second ratings
+
+- I had an AI fill in all 30 ratings and notes. I checked about 10 myself and agreed
+  with each. I did not record which 10.
+- So the file is now `eval/second_ratings.csv` and the report calls it "a second AI
+  rater". It agrees with the first AI on 27 of 30. It has a `checked_by_me` column for
+  the rows I rate myself.
+- The lookup page now shows the "Modified opinion" label, which the rubric uses and the
+  page was missing.
+
 **Not done**
 - No GitHub repo: nothing is pushed and the page is not deployed.
-- No hand ratings, so no agreement-with-a-human figure. The memo stays a draft until then.
+- No recorded human ratings, so no agreement-with-a-human figure. The memo stays a draft.
 
 **Mine to do**
 - Read `RUBRIC.md`, change what I disagree with, remove the draft notice.
-- Hand-rate the 30 localities in `eval/hand_ratings.csv` before looking at any AI output.
+- Rate the 30 localities myself in `eval/second_ratings.csv` and put yes in `checked_by_me`.
 - After the run, fill in the `cause` column of `eval/misses.csv`.
 - Confirm or change "every `local` entity, every year".
 
 **Next session**
-- Hand-rate the 30, rerun `evaluate.py report`, fill in the miss causes, finish the memo.
+- Mark the rows I rated myself, rerun `evaluate.py report`, fill in the miss causes, finish the memo.
   Create the GitHub repo, push, deploy the page.
