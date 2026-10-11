@@ -65,6 +65,7 @@ findings = query("""
            string_agg(distinct f.type_requirement, '') as type_requirement,
            bool_or(f.is_material_weakness) as is_material_weakness,
            bool_or(f.is_significant_deficiency) as is_significant_deficiency,
+           bool_or(f.is_modified_opinion) as is_modified_opinion,
            bool_or(f.is_repeat_finding) as is_repeat_finding,
            bool_or(f.is_questioned_costs) as is_questioned_costs,
            max(f.prior_finding_ref_numbers) as prior_finding_ref_numbers,
@@ -166,6 +167,7 @@ for audit in audits:
         with st.container(border=True):
             badges = [
                 ":red-badge[Material weakness]" if f["is_material_weakness"] else "",
+                ":red-badge[Modified opinion]" if f["is_modified_opinion"] else "",
                 ":orange-badge[Significant deficiency]" if f["is_significant_deficiency"] else "",
                 ":violet-badge[Repeat finding]" if f["is_repeat_finding"] else "",
                 ":blue-badge[Questioned costs]" if f["is_questioned_costs"] else "",
