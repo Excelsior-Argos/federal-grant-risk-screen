@@ -1,0 +1,1562 @@
+{
+  "sheets": {
+    "236005459": {
+      "name": "Caln Township",
+      "rule_rating": "medium",
+      "ai_rating": "medium",
+      "sheet": {
+        "rating": "medium",
+        "summary": "Caln Township's only audit in the 2023 to 2025 window is 2023, and it has one serious finding: a required federal report was not accurate or filed on time. The finding is not a repeat and has no questioned costs, so the rating is medium. No 2024 or 2025 audit is on file, so this picture may be out of date.",
+        "reasons": [
+          {
+            "reason": "The auditor marked this reporting failure as a material weakness (the most serious kind of control problem) and gave a modified opinion on compliance for the federal program, which makes it a serious finding in the latest audit on file.",
+            "quote": "The Township did not properly complete and file the report on an accurate, timely basis.",
+            "audit_year": 2023,
+            "reference_number": "2023-002"
+          }
+        ],
+        "next_checks": [
+          "Confirm whether Caln Township was required to file single audits for 2024 and 2025, and if so why none is on file.",
+          "Ask the Township which report and federal program finding 2023-002 covers, and whether the report has since been corrected and filed.",
+          "The 2023 audit flags a material weakness and material noncompliance at the audit level; read the full 2023 audit report to see whether these go beyond finding 2023-002."
+        ]
+      },
+      "quote_problems": [],
+      "usage": {
+        "model": "claude-opus-5-5",
+        "via": "Claude Code",
+        "input_tokens": 3187,
+        "output_tokens": 680,
+        "cost_usd": 0.02635
+      }
+    },
+    "546001228": {
+      "name": "CITY OF COLONIAL HEIGHTS",
+      "rule_rating": "high",
+      "ai_rating": "high",
+      "sheet": {
+        "rating": "high",
+        "summary": "Rated high. The latest audit on file (2024) found that a federally funded school construction contract again left out required wage-rate terms, which led the auditor to give a modified (not clean) opinion on compliance for the school relief programs, and the same problem was reported in 2023. The City also filed its audit form late in both years, and no 2025 audit is on file.",
+        "reasons": [
+          {
+            "reason": "The auditor treated the missing wage-rate terms as material noncompliance and gave a modified opinion on compliance for the school relief programs, which makes this a serious finding in the latest audit.",
+            "quote": "the contract did not include the required Wage Rate (Davis Bacon Act) and DOL regulations.",
+            "audit_year": 2024,
+            "reference_number": "2024-003"
+          },
+          {
+            "reason": "The serious finding is a repeat of the prior year's finding, which meets the rubric's test for high.",
+            "quote": "Similar condition present in the prior year.",
+            "audit_year": 2024,
+            "reference_number": "2024-003"
+          },
+          {
+            "reason": "The earlier audit in the window also had a serious finding on the same issue, which is a second, separate ground for high.",
+            "quote": "did not include the Wage Rate (Davis Bacon Act) and DOL regulations.",
+            "audit_year": 2023,
+            "reference_number": "2023-003"
+          },
+          {
+            "reason": "The auditor traced the 2024 problem to missing controls as well as oversight, so there is no case for lowering the rating as an isolated slip.",
+            "quote": "due to oversight and a lack of controls in place",
+            "audit_year": 2024,
+            "reference_number": "2024-003"
+          },
+          {
+            "reason": "The City filed its required audit form late for the second year running, a repeat finding that touches five federal awards.",
+            "quote": "The City did not submit the data collection form for the year ended June 30, 2024 timely.",
+            "audit_year": 2024,
+            "reference_number": "2024-004"
+          }
+        ],
+        "next_checks": [
+          "Ask for evidence that the wage-rate (Davis-Bacon) terms are now in federally funded construction contracts. The 2024 response says procedures were put in place, but the audit data does not confirm it.",
+          "Check whether the 2025 audit has been issued and filed with the Federal Audit Clearinghouse, and whether it was on time. None is on file in the review window, and the form was late in both 2023 and 2024.",
+          "Get the financial-statement findings from the 2023 and 2024 audit reports. Both audits disclosed a financial-statement material weakness and material noncompliance, but the data here has no finding text explaining them."
+        ]
+      },
+      "quote_problems": [],
+      "usage": {
+        "model": "claude-opus-5-5",
+        "via": "Claude Code",
+        "input_tokens": 5859,
+        "output_tokens": 1756,
+        "cost_usd": 0.05856
+      }
+    },
+    "546001262": {
+      "name": "CITY OF EMPORIA",
+      "rule_rating": "high",
+      "ai_rating": "high",
+      "sheet": {
+        "rating": "high",
+        "summary": "The City of Emporia rates high. Its latest audit (2024) has five findings, all marked as material weaknesses (the most serious kind of control failure), and one of them, late audit filing, repeats from the prior year. No text adjustment was made: the problems are not isolated or shown as corrected, and the rating is already at the top level.",
+        "reasons": [
+          {
+            "reason": "The late audit filing is marked as a material weakness and is a repeat from the prior year, which is what makes the rating high under step 2.",
+            "quote": "This was a prior year finding. See Item 2023-001.",
+            "audit_year": 2024,
+            "reference_number": "2024-010"
+          },
+          {
+            "reason": "The City is behind on its required audit filings, which the auditor says could put future federal funding at risk.",
+            "quote": "The City has not met its single audit submission requirements.",
+            "audit_year": 2024,
+            "reference_number": "2024-010"
+          },
+          {
+            "reason": "The City has no written purchasing rules beyond small purchases, a material weakness in how federal money is spent.",
+            "quote": "The City does not maintain a procurement policy.",
+            "audit_year": 2024,
+            "reference_number": "2024-011"
+          },
+          {
+            "reason": "Payments went out without City approval, and every payroll timesheet the auditor tested lacked it, a material weakness.",
+            "quote": "We detected this through sampling in one out of seven disbursements tested and in six out of six payroll timesheets tested.",
+            "audit_year": 2024,
+            "reference_number": "2024-012"
+          },
+          {
+            "reason": "A required federal recovery-fund report was filed late, a material weakness that the auditor links to staff changes.",
+            "quote": "The delay in filing the report was due to transition of duties among the current staff.",
+            "audit_year": 2024,
+            "reference_number": "2024-013"
+          },
+          {
+            "reason": "The City's list of federal spending was not checked before the audit and had to be changed, a material weakness.",
+            "quote": "A review of the federal expenditures reported on the SEFA was not performed.",
+            "audit_year": 2024,
+            "reference_number": "2024-014"
+          }
+        ],
+        "next_checks": [
+          "The 2024 audit cites a prior-year finding 2023-001, but the data supplied here has no 2023 findings. Pull the 2023 audit and confirm what it reported.",
+          "No 2025 audit is on file in the review window. Confirm whether it has been submitted or when it is due, given the repeat late-filing finding.",
+          "Each finding points to a Corrective Action Plan that is not in this data. Obtain it and confirm whether the City has adopted a written procurement policy and now approves vendor payments and timesheets before paying."
+        ]
+      },
+      "quote_problems": [],
+      "usage": {
+        "model": "claude-opus-5-5",
+        "via": "Claude Code",
+        "input_tokens": 5119,
+        "output_tokens": 1465,
+        "cost_usd": 0.04978
+      }
+    },
+    "546001415": {
+      "name": "CITY OF MARTINSVILLE",
+      "rule_rating": "medium",
+      "ai_rating": "medium",
+      "sheet": {
+        "rating": "medium",
+        "summary": "The 2025 audit found one serious problem: the City missed or was late with required federal spending reports for its Coronavirus State and Local Fiscal Recovery Funds. It is not a repeat finding, has no questioned costs, and the 2023 and 2024 audits had no findings, so the rating is medium. Management blames staff turnover, but the auditor ties the cause to this one program's reporting, so the rating was not moved up.",
+        "reasons": [
+          {
+            "reason": "The latest audit has a finding the auditor marked as a material weakness (a serious control failure), which makes the rating medium under the rubric.",
+            "quote": "During the fiscal year, the City had Project & Expenditure Reports which were either not submitted or were submitted more than 30 days after the end of the fiscal quarter.",
+            "audit_year": 2025,
+            "reference_number": "2025-002"
+          },
+          {
+            "reason": "The auditor's stated cause is limited to reporting controls for this one program, so the text does not support moving the rating up as a systemic problem.",
+            "quote": "The City did not have adequate controls in place to ensure that Project & Expenditure Reports were being filed in a timely manner.",
+            "audit_year": 2025,
+            "reference_number": "2025-002"
+          },
+          {
+            "reason": "One quarterly report was never filed and another was over two months late, and nothing in the text shows this was fixed before the audit was issued, so the rating is not moved down.",
+            "quote": "The Project & Expenditure Report for the first quarter of the fiscal year was required to be submitted by October 31, 2024, however no report was submitted.",
+            "audit_year": 2025,
+            "reference_number": "2025-002"
+          }
+        ],
+        "next_checks": [
+          "Confirm whether the missing first-quarter Project & Expenditure Report has since been filed and whether later quarterly reports were on time.",
+          "Management's response says heavy staff turnover drained institutional knowledge and that a CPA firm was engaged to help with internal controls. Ask the City whether that work was completed and what changed. If turnover is affecting other programs, consider whether a high rating is warranted.",
+          "The City was a low-risk auditee in 2023 and 2024 but not in 2025. Check whether reports on our own pass-through awards to the City have been late or missing."
+        ]
+      },
+      "quote_problems": [],
+      "usage": {
+        "model": "claude-opus-5-5",
+        "via": "Claude Code",
+        "input_tokens": 3969,
+        "output_tokens": 1383,
+        "cost_usd": 0.04354
+      }
+    },
+    "546001569": {
+      "name": "CITY OF ROANOKE",
+      "rule_rating": "high",
+      "ai_rating": "high",
+      "sheet": {
+        "rating": "high",
+        "summary": "Draft rating: high. The 2025 audit has seven federal award findings, all tied to a modified opinion (the auditor could not give a clean compliance opinion for the program), and two of the most serious ones repeat from 2024. The auditor traces most of them to staff turnover and a missing grant accountant; the WIOA monitoring problem has now been reported three years running.",
+        "reasons": [
+          {
+            "reason": "The 2025 failure to monitor WIOA subrecipients was marked a material weakness (the most serious kind of control failure) and material noncompliance, which makes it a serious finding under the rubric.",
+            "quote": "Subrecipient Monitoring \u2013 Material Noncompliance (Material Weakness)",
+            "audit_year": 2025,
+            "reference_number": "2025-003"
+          },
+          {
+            "reason": "That same serious finding is a repeat of the prior year's finding, and a serious finding that repeats in the latest audit means a high rating.",
+            "quote": "Repeat Finding 2024-002",
+            "audit_year": 2025,
+            "reference_number": "2025-003"
+          },
+          {
+            "reason": "The same WIOA monitoring gap was reported in 2024, and that finding in turn was flagged as a repeat of 2023, so the problem has lasted the whole review window.",
+            "quote": "There was a lack of evidence of testing and suggestions to the subrecipient during the fiscal year 2024.",
+            "audit_year": 2024,
+            "reference_number": "2024-002"
+          },
+          {
+            "reason": "A second serious finding, on unreviewed Lead Hazard Control reports, also repeats from the prior year, which independently supports a high rating.",
+            "quote": "Repeat Finding 2024-003",
+            "audit_year": 2025,
+            "reference_number": "2025-004"
+          },
+          {
+            "reason": "The auditor gives the same staffing cause for the new serious findings on the COVID recovery funds, showing the problem is not limited to one program (context only; the rating is already at the top level, so no adjustment is made).",
+            "quote": "Staff turnover, including the lack of a grant accountant.",
+            "audit_year": 2025,
+            "reference_number": "2025-006"
+          },
+          {
+            "reason": "Reported spending on COVID recovery funds could not be matched to the City's own records, which weakens confidence in its federal financial reports.",
+            "quote": "cumulative totals of expenditures did not agree to the total amounts reported on the",
+            "audit_year": 2025,
+            "reference_number": "2025-007"
+          },
+          {
+            "reason": "Required federal financial reports for the Lead Hazard Control grant were not filed at all, a new material noncompliance in 2025.",
+            "quote": "quarterly reports were not submitted.",
+            "audit_year": 2025,
+            "reference_number": "2025-005"
+          }
+        ],
+        "next_checks": [
+          "Ask the City whether a grant accountant has been hired, and request the monitoring schedule, checklist and completed desk reviews it says are now in place for WIOA and COVID recovery fund subrecipients.",
+          "Confirm the missing Lead Hazard Control SF-425 reports and the late CDBG PR29 report have been filed, and request evidence that a second person now reviews reports before submission.",
+          "Request the COVID recovery fund reconciliation the City says it completed; the response in finding 2025-007 dates it to the quarter ending June 30, 2026, which may be a typo for 2025. Also note the 2025 audit disclosed a material weakness and material noncompliance at the financial-statement level, and the City lost its low-risk auditee status that year."
+        ]
+      },
+      "quote_problems": [],
+      "usage": {
+        "model": "claude-opus-5-5",
+        "via": "Claude Code",
+        "input_tokens": 11523,
+        "output_tokens": 2093,
+        "cost_usd": 0.08795
+      }
+    },
+    "546001631": {
+      "name": "CITY OF STAUNTON, VIRGINIA",
+      "rule_rating": "medium",
+      "ai_rating": "medium",
+      "sheet": {
+        "rating": "medium",
+        "summary": "Draft rating: medium. The 2025 audit has three findings on federal awards, which meets the rubric's \"three or more findings\" test. None is serious (no material weakness or modified opinion), none is a repeat, none has questioned costs, and I made no adjustment from the text.",
+        "reasons": [
+          {
+            "reason": "This is one of three findings in the latest audit (2025), and three or more findings in the latest audit makes the rating medium.",
+            "quote": "There was no evidence of review of two of the five reports tested.",
+            "audit_year": 2025,
+            "reference_number": "2025-004"
+          },
+          {
+            "reason": "This is the second of the three 2025 findings: a supervisor's sign-off on an eligibility file was missing, though in one file only.",
+            "quote": "In one instance, there was no evidence of supervisory approval on any forms.",
+            "audit_year": 2025,
+            "reference_number": "2025-002"
+          },
+          {
+            "reason": "This is the third 2025 finding: the city did not give an organisation it passed federal money to all the required award details.",
+            "quote": "All necessary information was not communicated to the subrecipient.",
+            "audit_year": 2025,
+            "reference_number": "2025-003"
+          },
+          {
+            "reason": "The earlier audit (2024) also had a review-related finding, which does not change the rating but shows the same kind of gap the year before.",
+            "quote": "The City\u2019s review of the revenue loss calculation did not detect this error.",
+            "audit_year": 2024,
+            "reference_number": "2024-001"
+          }
+        ],
+        "next_checks": [
+          "Decide whether the review and documentation gaps across three programs in 2025 (Adoption Assistance, Coronavirus Recovery Funds, CDBG) plus the 2024 review finding amount to a systemic problem. I did not move the rating up because the auditor does not link them or trace them to the finance function as a whole.",
+          "Confirm the promised fixes are in place: documented review of CDBG reports from the quarter ended 9/30/2025, and preparer and supervisor sign-off on eligibility forms from fiscal year 2026.",
+          "Ask to see current subaward documents for the Coronavirus Recovery Funds to confirm they now carry the federal award number, program listing number and awarding agency name."
+        ]
+      },
+      "quote_problems": [],
+      "usage": {
+        "model": "claude-opus-5-5",
+        "via": "Claude Code",
+        "input_tokens": 5130,
+        "output_tokens": 1506,
+        "cost_usd": 0.05064
+      }
+    },
+    "546001141": {
+      "name": "COUNTY OF BEDFORD, VIRGINIA",
+      "rule_rating": "low",
+      "ai_rating": "low",
+      "sheet": {
+        "rating": "low",
+        "summary": "Bedford County's latest audit (2025) and its 2024 audit have no findings on federal awards. The only finding in the window is from 2023: the County filed its 2022 audit report form late with the federal clearinghouse, and the auditor marked this as a repeat finding. No audit in the window disclosed a financial-statement material weakness, material noncompliance or a going-concern doubt.",
+        "reasons": [
+          {
+            "reason": "The only finding in the review window is in an earlier audit (2023), not the latest one, and it is not a serious finding and has no questioned costs, which fits the rubric's low rating.",
+            "quote": "The County did not file the data collection form for the year ended June 30, 2022 timely.",
+            "audit_year": 2023,
+            "reference_number": "2023-001"
+          },
+          {
+            "reason": "I considered moving the rating up one level because the finding covers 13 awards and mentions staff turnover, but did not, because the turnover is cited in management's response rather than by the auditor and the finding is about one late filing, not weak controls over the programs.",
+            "quote": "was due to the 2022 audit being completed late because of significant staff turnover.",
+            "audit_year": 2023,
+            "reference_number": "2023-001"
+          },
+          {
+            "reason": "Management's response says it acted on the staffing cause, and the 2024 and 2025 audits have no findings, which supports leaving the rating at low.",
+            "quote": "has since filled vacant positions, added one position, and restructured the department to help with",
+            "audit_year": 2023,
+            "reference_number": "2023-001"
+          }
+        ],
+        "next_checks": [
+          "Confirm the 2024 and 2025 audit report forms were filed with the Federal Audit Clearinghouse on time; the absence of findings in those years suggests so, but the data does not give filing dates.",
+          "The 2023 finding was marked as a repeat, so check the 2022 audit (outside this window) to see how long the late filing had been going on.",
+          "Ask the County whether the finance positions it says it filled after the 2022 turnover are still filled."
+        ]
+      },
+      "quote_problems": [],
+      "usage": {
+        "model": "claude-opus-5-5",
+        "via": "Claude Code",
+        "input_tokens": 4051,
+        "output_tokens": 1363,
+        "cost_usd": 0.04346
+      }
+    },
+    "546001188": {
+      "name": "COUNTY OF CAROLINE, VIRGINIA",
+      "rule_rating": "medium",
+      "ai_rating": "medium",
+      "sheet": {
+        "rating": "medium",
+        "summary": "Medium risk. The latest audit on file (2024) has one finding, and it repeats the 2023 finding: the County has no written purchasing rules of its own that meet federal grant standards. The auditor did not mark it as a material weakness (the most serious kind of control problem) and questioned no costs, and there is no 2025 audit on file.",
+        "reasons": [
+          {
+            "reason": "The latest audit's only finding is marked as a repeat finding, which makes the rating medium under the rubric.",
+            "quote": "The County does not have its own written procurement policies that conform to applicable Federal laws and regulations and standards.",
+            "audit_year": 2024,
+            "reference_number": "2024-003"
+          },
+          {
+            "reason": "The same gap was first reported the year before, so it has now gone uncorrected through two audits.",
+            "quote": "the County does not have complete, written procurement",
+            "audit_year": 2023,
+            "reference_number": "2023-002"
+          },
+          {
+            "reason": "The fix was still under way when the 2024 audit was issued, so the text does not support moving the rating down, and nothing in it shows a wider finance-function problem that would move it up.",
+            "quote": "Management concurs and has begun updating existing written procurement procedures",
+            "audit_year": 2024,
+            "reference_number": "2024-003"
+          }
+        ],
+        "next_checks": [
+          "Ask the County for its updated written procurement policy and confirm it has been adopted and covers the federal standards in 2 CFR 200.317 to 200.326.",
+          "Confirm which two federal awards the 2024 finding affects; the data flags two, but the finding text names only the Coronavirus State and Local Fiscal Recovery Funds (AL# 21.027).",
+          "Check whether a 2025 audit has been filed and, if so, whether this finding appears a third time."
+        ]
+      },
+      "quote_problems": [],
+      "usage": {
+        "model": "claude-opus-5-5",
+        "via": "Claude Code",
+        "input_tokens": 4356,
+        "output_tokens": 1409,
+        "cost_usd": 0.0456
+      }
+    },
+    "546001279": {
+      "name": "COUNTY OF FLOYD",
+      "rule_rating": "medium",
+      "ai_rating": "medium",
+      "sheet": {
+        "rating": "medium",
+        "summary": "The 2025 audit has three findings on federal awards, two of them serious, all touching the Coronavirus State and Local Fiscal Recovery Fund. None is a repeat or is flagged with questioned costs, and 2023 and 2024 have no federal award findings on file, so the rubric gives medium, not high. All three audits also disclosed a material weakness in the financial statements, with no finding text to explain it.",
+        "reasons": [
+          {
+            "reason": "The auditor marked this 2025 finding as a material weakness, which makes it a serious finding in the latest audit: the county's schedule of federal spending left out grant spending.",
+            "quote": "The SEFA was understated by $175,000 for the E&T LE Grant.",
+            "audit_year": 2025,
+            "reference_number": "2025-018"
+          },
+          {
+            "reason": "This 2025 finding led to a modified opinion on compliance for the program, so it is a second serious finding in the latest audit.",
+            "quote": "No supporting documentation for key line items on P&E expenditure report.",
+            "audit_year": 2025,
+            "reference_number": "2025-017"
+          },
+          {
+            "reason": "This is the third finding in the latest audit, which on its own meets the medium test of three or more findings; it covers both the recovery fund and the child nutrition programs.",
+            "quote": "The County does not have a Uniform Guidance Procurement Manual.",
+            "audit_year": 2025,
+            "reference_number": "2025-016"
+          },
+          {
+            "reason": "The data flag says this finding has no questioned costs, so the rating stays medium, but the finding text gives an amount under a questioned-cost heading; if the flag is wrong, the rubric would give high.",
+            "quote": "P&E report was understated by $186,000.",
+            "audit_year": 2025,
+            "reference_number": "2025-017"
+          }
+        ],
+        "next_checks": [
+          "Check finding 2025-017 in the source audit: the text shows a \"Questioned Cost Amount\" of $186,000 but the questioned-costs flag is No. If questioned costs do apply, the rating becomes high.",
+          "Decide whether to move the rating up one level for a systemic problem. I did not, but finding 2025-016 (no procurement manual) spans two programs, and the 2023, 2024 and 2025 audits each disclosed a financial-statement material weakness with no finding text in this data.",
+          "Confirm the county has done what it promised: a procurement manual for all departments, a verified recovery-fund spending spreadsheet, and a schedule of federal spending checked against a full list of expenditures."
+        ]
+      },
+      "quote_problems": [],
+      "usage": {
+        "model": "claude-opus-5-5",
+        "via": "Claude Code",
+        "input_tokens": 4552,
+        "output_tokens": 2048,
+        "cost_usd": 0.05917
+      }
+    },
+    "546001508": {
+      "name": "County of Pittsylvania, Virginia",
+      "rule_rating": "low",
+      "ai_rating": "low",
+      "sheet": {
+        "rating": "low",
+        "summary": "Draft rating: low. The latest audit (2025) has one finding, late Medicaid eligibility reviews, and the auditor did not flag it as serious, repeated or carrying questioned costs. The 2025 audit is also marked as disclosing material noncompliance (a significant rule breach), which the finding text does not explain, so a reviewer should look at this before approving.",
+        "reasons": [
+          {
+            "reason": "The latest audit has only this one finding, and it is not flagged as serious, repeated or carrying questioned costs, which fits a low rating under the rubric.",
+            "quote": "In 4 of the 25 cases tested, eligibility redetermination had not been completed",
+            "audit_year": 2025,
+            "reference_number": "2025-001"
+          },
+          {
+            "reason": "The auditor's text does not show the problem was already corrected before the audit was issued, so the rating is not moved down, and it describes one program only, so it is not moved up.",
+            "quote": "The agency will implement procedures to improve timeliness.",
+            "audit_year": 2025,
+            "reference_number": "2025-001"
+          },
+          {
+            "reason": "This earlier finding was serious because it led to a modified opinion on compliance for a federal program, but it does not raise the rating because the latest audit has no serious finding.",
+            "quote": "The Workforce Development Board has not had a current audit in accordance with Uniform Guidance.",
+            "audit_year": 2023,
+            "reference_number": "2023-001"
+          }
+        ],
+        "next_checks": [
+          "The 2025 audit is marked as disclosing material noncompliance, but finding 2025-001 is not marked as a material weakness or a modified opinion. Check the 2025 audit report to see what the flag refers to and whether the finding should count as serious, which would change the rating.",
+          "Confirm the West Piedmont Workforce Development Board has since obtained its required audit. The 2024 and 2025 data show no repeat of finding 2023-001 but do not say it was resolved.",
+          "Ask the local social services agency for the current number of overdue Medicaid eligibility redeterminations and the procedures it put in place to improve timeliness."
+        ]
+      },
+      "quote_problems": [],
+      "usage": {
+        "model": "claude-opus-5-5",
+        "via": "Claude Code",
+        "input_tokens": 4379,
+        "output_tokens": 1584,
+        "cost_usd": 0.0492
+      }
+    },
+    "546002979": {
+      "name": "County of Pulaski, VA",
+      "rule_rating": "low",
+      "ai_rating": "low",
+      "sheet": {
+        "rating": "low",
+        "summary": "Low, because the only federal award finding in the window is from 2023, and the 2024 and 2025 audits have none. That 2023 finding was a repeat finding about a required report, but it was not a material weakness and had no questioned costs. Separately, all three audits disclosed a material weakness (a serious gap in financial controls) in the county's financial statements, and the data has no text explaining it.",
+        "reasons": [
+          {
+            "reason": "The only federal award finding in the window is this 2023 reporting finding, and with none in the latest audit (2025) the rubric gives a low rating.",
+            "quote": "a Project and Expenditure Report (P&E) was due by April 30, 2023 and annually thereafter.",
+            "audit_year": 2023,
+            "reference_number": "2023-004"
+          }
+        ],
+        "next_checks": [
+          "Read the 2023, 2024 and 2025 audit reports to find out what the financial-statement material weakness is each year; the data flags it but gives no text.",
+          "Read the full text of finding 2023-004 to see what went wrong with the Project and Expenditure Report; the text here states only the due date, and the finding is marked as a repeat.",
+          "Confirm in the 2024 and 2025 reports that finding 2023-004 was resolved and that there are no federal award findings in those years."
+        ]
+      },
+      "quote_problems": [],
+      "usage": {
+        "model": "claude-opus-5-5",
+        "via": "Claude Code",
+        "input_tokens": 3381,
+        "output_tokens": 948,
+        "cost_usd": 0.03248
+      }
+    },
+    "546001597": {
+      "name": "County of Scott, Virginia",
+      "rule_rating": "low",
+      "ai_rating": "low",
+      "sheet": {
+        "rating": "low",
+        "summary": "The latest audit (2025) has no findings on federal awards, and the only finding in the window is a 2024 school meals over-claim, so the rubric gives a low rating. That low rating is not a clean bill of health. The 2025 and 2024 audits both disclosed a material weakness (a serious gap in financial controls) and material noncompliance at the financial-statement level, with no finding text in the data to explain them.",
+        "reasons": [
+          {
+            "reason": "The only federal award finding in the window is from 2024, an earlier audit, and it carries questioned costs, which would count toward a higher rating only if it were in the latest audit.",
+            "quote": "There are likely questioned costs of $124,430 (consisting of $24,886 in known questioned costs) related to over claiming school nutrition reimbursements.",
+            "audit_year": 2024,
+            "reference_number": "2024-005"
+          },
+          {
+            "reason": "The auditor traces the problem to data entry mistakes in one program, not to a breakdown across the finance function, so the text does not support moving the rating up.",
+            "quote": "Reimbursements require manual data entry and amounts were requested in error.",
+            "audit_year": 2024,
+            "reference_number": "2024-005"
+          },
+          {
+            "reason": "The fix was a promise at the time of the audit, not something already done, so the text does not support moving the rating down either.",
+            "quote": "The School Board will implement a review process to ensure the manually entered meal counts agree to the supporting documentation.",
+            "audit_year": 2024,
+            "reference_number": "2024-005"
+          }
+        ],
+        "next_checks": [
+          "Get the 2025 audit report and read what lies behind the material weakness and material noncompliance it disclosed. The data has no finding text for them, and the county was not a low-risk auditee in 2025.",
+          "Confirm the School Board put the meal count review in place, and that the 2025 audit did not repeat finding 2024-005.",
+          "Ask whether the Virginia Department of Education has resolved the questioned costs ($24,886 known, $124,430 likely) and whether any money was repaid."
+        ]
+      },
+      "quote_problems": [],
+      "usage": {
+        "model": "claude-opus-5-5",
+        "via": "Claude Code",
+        "input_tokens": 3869,
+        "output_tokens": 1269,
+        "cost_usd": 0.04086
+      }
+    },
+    "546001622": {
+      "name": "County of Spotsylvania",
+      "rule_rating": "low",
+      "ai_rating": "low",
+      "sheet": {
+        "rating": "low",
+        "summary": "Low risk under the rubric. The latest audit (2025) has one finding: the school system could not show that someone other than the preparer reviewed three monthly reimbursement requests. It was not a serious finding, not a repeat, and had no questioned costs; the only other finding in the window (2023) was a similar-sized records gap at the schools.",
+        "reasons": [
+          {
+            "reason": "The latest audit has a single finding, about missing proof of independent review on three of the reimbursement requests tested, which the auditor classed as a significant deficiency (a lesser control weakness, not a material weakness).",
+            "quote": "For three of the monthly reimbursement requests selected for testing",
+            "audit_year": 2025,
+            "reference_number": "2025-001"
+          },
+          {
+            "reason": "The auditor questioned no costs on the 2025 finding, so it does not trigger a medium rating.",
+            "quote": "There are no questioned costs related to this finding",
+            "audit_year": 2025,
+            "reference_number": "2025-001"
+          },
+          {
+            "reason": "The auditor marked the 2025 finding as not a repeat, so it does not trigger a medium rating.",
+            "quote": "Repeat Finding: No",
+            "audit_year": 2025,
+            "reference_number": "2025-001"
+          },
+          {
+            "reason": "The only earlier finding in the window was also a lesser weakness with no questioned costs, about one missing vendor check, so there is no history of serious findings.",
+            "quote": "The suspension and debarment status for one out of two vendors was not retained",
+            "audit_year": 2023,
+            "reference_number": "2023-001"
+          },
+          {
+            "reason": "No adjustment was made: the auditor ties the 2025 cause to record-keeping for reimbursement reports at the school system, not to the wider finance function, and the text does not say it was fixed before the audit was issued.",
+            "quote": "evidence of review and approval of the reimbursement reports.",
+            "audit_year": 2025,
+            "reference_number": "2025-001"
+          }
+        ],
+        "next_checks": [
+          "Ask the school system for evidence that monthly reimbursement requests are now reviewed and signed off by someone other than the preparer; the 2025 finding does not say this has been fixed.",
+          "Identify which three federal awards finding 2025-001 affects, since the finding text does not name them, and confirm whether any are passed through by this office.",
+          "The 2023 audit and finding 2023-001 each appear twice in the data with identical content; confirm this is a duplicate record and not a second finding."
+        ]
+      },
+      "quote_problems": [],
+      "usage": {
+        "model": "claude-opus-5-5",
+        "via": "Claude Code",
+        "input_tokens": 6117,
+        "output_tokens": 1616,
+        "cost_usd": 0.05679
+      }
+    },
+    "546001649": {
+      "name": "County of Tazewell, VA",
+      "rule_rating": "low",
+      "ai_rating": "low",
+      "sheet": {
+        "rating": "low",
+        "summary": "Draft rating: low, because the only federal award finding in the window is from 2023 and the latest audit (2025) has none. That 2023 finding was serious, though: a material weakness (the worst grade of control failure), a repeat, with questioned costs and a modified opinion on compliance. All three audits, including 2025, also disclosed a material weakness in the financial statements, which comes with no finding text here.",
+        "reasons": [
+          {
+            "reason": "This is the only federal award finding in the window and it sits in an earlier audit (2023), not the latest one (2025), which the rubric rates as low.",
+            "quote": "Program Titles: Education Stabilization Fund",
+            "audit_year": 2023,
+            "reference_number": "2023-003"
+          }
+        ],
+        "next_checks": [
+          "Read the full text of finding 2023-003 in the 2023 audit report. The data here gives only the program title, so there was no text to judge whether the rating should move up or down a level.",
+          "Confirm that the 2024 and 2025 audits really had no federal award findings, and that the 2023 questioned costs on the Education Stabilization Fund were resolved. 2023-003 was flagged as a repeat finding and as affecting 4 federal awards.",
+          "Look up the financial-statement material weakness disclosed in each of 2023, 2024 and 2025. It does not count toward the rubric rating, but it recurs every year and may point to a wider finance problem."
+        ]
+      },
+      "quote_problems": [],
+      "usage": {
+        "model": "claude-opus-5-5",
+        "via": "Claude Code",
+        "input_tokens": 3361,
+        "output_tokens": 1063,
+        "cost_usd": 0.0347
+      }
+    },
+    "451598772": {
+      "name": "GREATER ROANOKE TRANSIT COMPANY",
+      "rule_rating": "high",
+      "ai_rating": "high",
+      "sheet": {
+        "rating": "high",
+        "summary": "High risk. The latest audit (2024) found that the transit company again paid contractors and vendors late on its federal transit grants. The auditor marked this as a material weakness (the most serious kind of control failure) and as a repeat of the 2023 finding. No 2025 audit is on file, and no questioned costs or going-concern doubt were reported.",
+        "reasons": [
+          {
+            "reason": "The latest audit has a serious finding (a material weakness that also led to a modified compliance opinion) which the auditor flagged as a repeat, and the rubric rates that high.",
+            "quote": "We noted 14 instances where contractors and vendors were not paid for over 30 days. We also noted four vendors were not paid for over 90 days.",
+            "audit_year": 2024,
+            "reference_number": "2024-005"
+          },
+          {
+            "reason": "The earlier audit in the window also had a serious finding on the same late-payment problem, which is a second, separate ground for a high rating.",
+            "quote": "Lack of proactive cash flow and grant management occurred when invoices were received.",
+            "audit_year": 2023,
+            "reference_number": "2023-007"
+          },
+          {
+            "reason": "The latest audit also found expired grants left open with money still on them, and the auditor gave the same cause as for the late payments, so the problem is not isolated.",
+            "quote": "All 6 were still marked as active in the grant award management system as of June 30, 2024, with total remaining funds on these awards totaling $673,179.",
+            "audit_year": 2024,
+            "reference_number": "2024-006"
+          },
+          {
+            "reason": "A third finding in the latest audit, on missing required federal contract clauses, adds to the count but is minor and does not change the rating.",
+            "quote": "did not contain these clauses in one contract tested",
+            "audit_year": 2024,
+            "reference_number": "2024-007"
+          }
+        ],
+        "next_checks": [
+          "Confirm whether a 2025 audit has been filed. None is in the data, so this rating rests on the 2024 audit.",
+          "Ask for evidence that vendors are now paid on time and grant draws are made promptly, including the Monthly Close Checklist and grant tracking spreadsheets that management said it was developing.",
+          "Check the closeout status of the six expired federal grants and what happened to the $673,179 left on them."
+        ]
+      },
+      "quote_problems": [],
+      "usage": {
+        "model": "claude-opus-5-5",
+        "via": "Claude Code",
+        "input_tokens": 5719,
+        "output_tokens": 1487,
+        "cost_usd": 0.05262
+      }
+    },
+    "546001387": {
+      "name": "LEE COUNTY VA",
+      "rule_rating": "low",
+      "ai_rating": "low",
+      "sheet": {
+        "rating": "low",
+        "summary": "Lee County's latest audit (2025) has no findings on federal awards, and the only finding in the window is from 2023, so the rubric gives a low rating. That 2023 finding was serious: a repeat problem with questioned costs, where the County did not check a subrecipient's requests for Department of Labor money. Low is not a clean bill of health: all three audits, including 2025, disclosed a material weakness and material noncompliance in the financial statements, with no finding text on file to explain them.",
+        "reasons": [
+          {
+            "reason": "The only finding in the window is from 2023, an earlier audit, so under the rubric it supports a low rating even though it was a serious repeat finding with questioned costs.",
+            "quote": "Funds are requested for drawdown by the subrecipient without the County reviewing",
+            "audit_year": 2023,
+            "reference_number": "2023-007"
+          },
+          {
+            "reason": "The auditor put the problem down to a misunderstanding of one requirement, not to missing staff or absent controls across the finance function, so the text does not justify moving the rating up.",
+            "quote": "The County misunderstood the compliance requirements for subrecipient monitoring.",
+            "audit_year": 2023,
+            "reference_number": "2023-007"
+          },
+          {
+            "reason": "The County only promised a future fix, so the text does not show the problem was corrected before the audit was issued and gives no ground to change the rating.",
+            "quote": "The County will work with the subrecipient to implement necessary controls to be in compliance.",
+            "audit_year": 2023,
+            "reference_number": "2023-007"
+          }
+        ],
+        "next_checks": [
+          "Get the 2024 and 2025 audit reports and read what the disclosed material weakness and material noncompliance were; the data here flags them but has no finding text.",
+          "Confirm that the 2024 and 2025 audits really have no federal award findings, and that finding 2023-007 (already a repeat in 2023) was closed and not just left out of the data.",
+          "Find the dollar amount of the questioned costs in finding 2023-007 and whether they were resolved; the finding text gives no amount."
+        ]
+      },
+      "quote_problems": [],
+      "usage": {
+        "model": "claude-opus-5-5",
+        "via": "Claude Code",
+        "input_tokens": 3772,
+        "output_tokens": 1427,
+        "cost_usd": 0.04363
+      }
+    },
+    "540937411": {
+      "name": "Middle Peninsula Planning District Commission",
+      "rule_rating": "medium",
+      "ai_rating": "high",
+      "sheet": {
+        "rating": "high",
+        "summary": "Draft rating: high. The 2024 audit, the only one on file for 2023 to 2025, has three findings that the auditor marked as material weaknesses (the most serious kind of control failure), which gives medium under the rubric. I moved it up one level because the auditor traces all three to finance staff turnover and missing controls across the accounting function.",
+        "reasons": [
+          {
+            "reason": "The latest audit has a finding marked as a material weakness, which is a serious finding and sets the starting rating at medium.",
+            "quote": "The Commission is not timely reconciling the bank accounts.",
+            "audit_year": 2024,
+            "reference_number": "2024-001"
+          },
+          {
+            "reason": "A second material weakness shows the Commission could not reliably report how much federal money it spent on each award.",
+            "quote": "The Commission did not have sufficient controls to ensure the SEFA accurately reflected each award\u2019s federal expenditures.",
+            "audit_year": 2024,
+            "reference_number": "2024-002"
+          },
+          {
+            "reason": "A third material weakness shows the audit itself was filed late, and brings the latest audit to three findings.",
+            "quote": "The Commission did not submit the single audit reporting package to the Federal Audit Clearinghouse within nine months after the end of the audit period as required.",
+            "audit_year": 2024,
+            "reference_number": "2024-003"
+          },
+          {
+            "reason": "Adjustment up one level, from medium to high: the auditor traces the problem to missing staff and absent controls across the finance function, which the rubric treats as systemic.",
+            "quote": "The Commission had staff turnover in the finance position and did not have sufficient controls and redundancies to allow all accounting functions to be performed on a timely basis.",
+            "audit_year": 2024,
+            "reference_number": "2024-001"
+          },
+          {
+            "reason": "Supports the upward adjustment: the missing bank reconciliations led to many errors in the books that the auditor had to correct.",
+            "quote": "resulted in numerous audit adjustments to correct posting errors",
+            "audit_year": 2024,
+            "reference_number": "2024-001"
+          }
+        ],
+        "next_checks": [
+          "Confirm whether the promised fixes are in place: the written policies on monthly bank reconciliations, revenue recording and the audit timeline, the cross-training of staff, and whether the finance position is now filled.",
+          "Find out why no 2023 or 2025 audit is on file in the review window, and whether the 2025 audit is late.",
+          "The 2024 audit record is flagged for a financial-statement material weakness and material noncompliance, and the Commission is not a low-risk auditee. Read the full audit report to see what the material noncompliance refers to, because the finding text does not say."
+        ]
+      },
+      "quote_problems": [],
+      "usage": {
+        "model": "claude-opus-5-5",
+        "via": "Claude Code",
+        "input_tokens": 4400,
+        "output_tokens": 1692,
+        "cost_usd": 0.05144
+      }
+    },
+    "540903278": {
+      "name": "NEW RIVER VALLEY COMMUNITY SERVICES",
+      "rule_rating": "low",
+      "ai_rating": "medium",
+      "sheet": {
+        "rating": "medium",
+        "summary": "The 2024 audit (the latest on file) has two findings, both for late filing and neither marked serious, which is a low rating on the flags alone. I moved it up one level to medium because the auditor traces both to vacant finance department posts, including the Senior Finance Director, and the lateness touches more than one federal program. Separately, the 2024 audit disclosed a material weakness (a serious control gap) in the financial statements, with no finding text in the data to explain it.",
+        "reasons": [
+          {
+            "reason": "The year-end performance report to the state for the Mental Health Block Grant was filed about six weeks after the extended deadline; this is one of only two findings, neither serious, repeated nor with questioned costs, so the flags alone give low.",
+            "quote": "The Agency filed its end of year performance contract report with the DBHDS on October 30, 2024.",
+            "audit_year": 2024,
+            "reference_number": "2024-002"
+          },
+          {
+            "reason": "The audit itself was not finished by the federal filing deadline, the second late-filing finding in the latest audit.",
+            "quote": "The Agency\u2019s audit was not yet completed at March 31, 2025.",
+            "audit_year": 2024,
+            "reference_number": "2024-003"
+          },
+          {
+            "reason": "Adjustment up one level, from low to medium: the auditor traces the late filings to missing finance staff, which the rubric treats as a sign of a systemic problem.",
+            "quote": "The Agency had two vacant positions in the Finance Department",
+            "audit_year": 2024,
+            "reference_number": "2024-003"
+          },
+          {
+            "reason": "Supporting the same upward adjustment: the late audit filing affects more than one federal program, not a single grant.",
+            "quote": "Coronavirus State and Local Fiscal Recovery Funds ALN 21.027 and Mental Health Block Grant",
+            "audit_year": 2024,
+            "reference_number": "2024-003"
+          }
+        ],
+        "next_checks": [
+          "Get the 2024 audit report and read what the financial-statement material weakness was; the data flags it but gives no text.",
+          "Ask whether the two finance vacancies, including the Senior Finance Director, are now filled and whether the data problems with the new software system are resolved.",
+          "No 2025 audit is on file in the review window; check whether it is due or overdue and whether the performance contract report was filed on time this year."
+        ]
+      },
+      "quote_problems": [],
+      "usage": {
+        "model": "claude-opus-5-5",
+        "via": "Claude Code",
+        "input_tokens": 4286,
+        "output_tokens": 1592,
+        "cost_usd": 0.04898
+      }
+    },
+    "546001452": {
+      "name": "Newport News Redevelopment and Housing Authority",
+      "rule_rating": "high",
+      "ai_rating": "high",
+      "sheet": {
+        "rating": "high",
+        "summary": "The 2025 audit found two major, repeated compliance failures in the housing voucher program, one of them with costs the auditor questioned. The 2024 audit found major failures in the same areas. No text-based adjustment was made: the problems are not isolated or corrected, and high is already the top rating.",
+        "reasons": [
+          {
+            "reason": "The latest audit has a serious finding (a material weakness with a modified opinion on compliance) on rent checks that the auditor marks as a repeat of 2024-005, which meets the high test.",
+            "quote": "24 out of 120 files tested did not have a rent reasonableness determination form completed before the rent effective date.",
+            "audit_year": 2025,
+            "reference_number": "2025-001"
+          },
+          {
+            "reason": "A second serious finding in the latest audit, on housing inspections, is also a repeat and shows a large share of the 65 units tested were not inspected on time.",
+            "quote": "27 units did not have inspections performed on a biennial basis",
+            "audit_year": 2025,
+            "reference_number": "2025-002"
+          },
+          {
+            "reason": "That same serious finding carries questioned costs (money the auditor says may have been paid out wrongly), which meets the high test on its own.",
+            "quote": "1 unit where it failed inspection and HAP was not properly abated",
+            "audit_year": 2025,
+            "reference_number": "2025-002"
+          },
+          {
+            "reason": "The earlier audit in the window also had serious findings on the same inspection problem, so the latest serious findings follow an earlier serious one.",
+            "quote": "36 of 60 units tested did not have inspections performed on a biennial basis.",
+            "audit_year": 2024,
+            "reference_number": "2024-004"
+          },
+          {
+            "reason": "The latest audit also has a third, lesser finding with $8,343 in questioned costs in a different program (public housing), which adds to the picture but does not change the rating.",
+            "quote": "2 out of 40 files could not be located for testing.",
+            "audit_year": 2025,
+            "reference_number": "2025-003"
+          }
+        ],
+        "next_checks": [
+          "Ask for the Authority's corrective action plan on voucher inspections and rent checks, and for evidence it is working: late rent checks fell from 53 of 120 files in 2024 to 24 of 120 in 2025, but inspections remain a serious repeat finding.",
+          "Obtain the 2023 audit. It is not in the evidence provided, yet the 2024 findings cite 2023-003, 2023-004 and 2023-005 as earlier versions of the same problems.",
+          "Confirm with the Authority or auditor the stated cause of finding 2025-003. The text blames staff who perform inspections, but the finding is about tenant eligibility files, so the cause may have been copied from another finding."
+        ]
+      },
+      "quote_problems": [],
+      "usage": {
+        "model": "claude-opus-5-5",
+        "via": "Claude Code",
+        "input_tokens": 12145,
+        "output_tokens": 1725,
+        "cost_usd": 0.08308
+      }
+    },
+    "591296315": {
+      "name": "Palm Beach County Housing Authority",
+      "rule_rating": "high",
+      "ai_rating": "high",
+      "sheet": {
+        "rating": "high",
+        "summary": "Draft rating: high. The 2024 audit, the only one supplied for the 2023 to 2025 window, has a material weakness (the most severe class of control failure) on tenant eligibility in the housing voucher program, which is a repeat finding with questioned costs. Six of the seven findings are repeats, and the audit disclosed no going-concern doubt and no financial-statement material weakness.",
+        "reasons": [
+          {
+            "reason": "The auditor classed this finding as a material weakness and gave a modified (not clean) opinion on compliance, which makes it a serious finding under the rubric.",
+            "quote": "Material Weakness in Internal Control Over Compliance, Material Noncompliance (Modified Opinion)",
+            "audit_year": 2024,
+            "reference_number": "2024-001"
+          },
+          {
+            "reason": "The serious finding is a repeat finding, which meets the rubric's test for high on its own.",
+            "quote": "This is a repeat finding from previous years. The finding numbers are 2017-001, 2018-001, 2019-001, 2020-001, 2021-001, 2022-001, and 2023-001.",
+            "audit_year": 2024,
+            "reference_number": "2024-001"
+          },
+          {
+            "reason": "The serious finding also carries questioned costs, which separately meets the rubric's test for high.",
+            "quote": "Questioned Costs: $12,428",
+            "audit_year": 2024,
+            "reference_number": "2024-001"
+          },
+          {
+            "reason": "More than half of the voucher tenant files tested had errors, which shows the scale of the eligibility problem.",
+            "quote": "Out of 60 housing voucher cluster tenant files tested, 32 tenant files contained errors as noted",
+            "audit_year": 2024,
+            "reference_number": "2024-001"
+          },
+          {
+            "reason": "The auditor traces the problem to weak oversight, and gives a similar cause for the public housing and HOPWA findings; this is noted for context only, as the rating is already at the top level and no adjustment is made.",
+            "quote": "The Authority failed to provide adequate monitoring and oversight to ensure compliance with HUD rules and regulations, as well as its administrative plan.",
+            "audit_year": 2024,
+            "reference_number": "2024-001"
+          },
+          {
+            "reason": "A second program, public housing, also has a repeat eligibility finding with questioned costs.",
+            "quote": "Questioned Costs: $12,630",
+            "audit_year": 2024,
+            "reference_number": "2024-006"
+          }
+        ],
+        "next_checks": [
+          "Find out whether 2023 and 2025 audits exist. Only 2024 was supplied, although the 2024 findings cite 2023 finding numbers as prior-year repeats.",
+          "Ask the Authority for its corrective action plan on finding 2024-001 and for the status of the questioned costs ($12,428 in vouchers, $12,630 in public housing).",
+          "Clarify the sample size in finding 2024-006: the text says both \"Of the 60 tenant files provided\" and \"Out of 10 public housing tenant files tested\"."
+        ]
+      },
+      "quote_problems": [],
+      "usage": {
+        "model": "claude-opus-5-5",
+        "via": "Claude Code",
+        "input_tokens": 10431,
+        "output_tokens": 1760,
+        "cost_usd": 0.07692
+      }
+    },
+    "541689909": {
+      "name": "SCHOOL BOARD CITY OF RICHMOND",
+      "rule_rating": "medium",
+      "ai_rating": "medium",
+      "sheet": {
+        "rating": "medium",
+        "summary": "Medium risk. The latest audit (2025) has one finding, and the auditor marked it as a repeat: the School Board could not show paperwork for a student removed from its graduation-rate count, the same problem found in 2023. It was not marked as a material weakness (the most severe kind of control failure), there were no questioned costs and no going-concern doubt, so it does not reach high.",
+        "reasons": [
+          {
+            "reason": "The latest audit has a finding the auditor flagged as a repeat, which makes the rating medium under step 3 of the rubric.",
+            "quote": "management was unable to provide timely supporting documentation for one student demonstrating that the student had transferred to another qualifying school or educational program",
+            "audit_year": 2025,
+            "reference_number": "2025-003"
+          },
+          {
+            "reason": "The same documentation gap appeared in the 2023 audit, which is consistent with the repeat flag on the 2025 finding.",
+            "quote": "grant management could not provide timely documentation for one (1) sample supporting the removal of a student from the regulatory adjusted cohort",
+            "audit_year": 2023,
+            "reference_number": "2023-002"
+          },
+          {
+            "reason": "No move up: the auditor ties the cause to record-keeping for this one requirement in one program, not to missing controls across the finance function.",
+            "quote": "Management and supervisory personnel did not maintain required supporting documentation in a timely and consistent manner.",
+            "audit_year": 2025,
+            "reference_number": "2025-003"
+          },
+          {
+            "reason": "No move down: the fix is described as a future plan, not something already corrected before the audit was issued.",
+            "quote": "Management stated that it will implement enhanced procedures and supervisory review processes to ensure required documentation is obtained and retained timely for all applicable students going forward.",
+            "audit_year": 2025,
+            "reference_number": "2025-003"
+          }
+        ],
+        "next_checks": [
+          "Confirm the fix for 2025-003 is in place: ask for the written procedure and the supervisor sign-off on documents for students removed from the graduation cohort. The 2023 corrective action for the same issue (2023-002) did not prevent it recurring.",
+          "The 2024 audit disclosed a financial-statement material weakness, but the data has no finding text for it. Pull the 2024 audit report to see what it was and whether it was resolved by 2025.",
+          "Finding 2023-003 is titled 'Compliance Qualification' but its modified-opinion flag is False. Check the 2023 report to see whether the auditor actually modified the compliance opinion; this does not change the rating, which rests on the 2025 audit. Also check how the disputed reporting finding (2023-003, repeated as 2024-003) and the equipment inventory promised by October 31, 2026 (2024-004) were closed out."
+        ]
+      },
+      "quote_problems": [],
+      "usage": {
+        "model": "claude-opus-5-5",
+        "via": "Claude Code",
+        "input_tokens": 9156,
+        "output_tokens": 1839,
+        "cost_usd": 0.0734
+      }
+    },
+    "514056061": {
+      "name": "Scott County Redevelopment and Housing Authority",
+      "rule_rating": "high",
+      "ai_rating": "high",
+      "sheet": {
+        "rating": "high",
+        "summary": "The 2025 audit found that the Authority is still using money from one HUD program to cover another, which HUD does not allow. The auditor marked this as a material weakness (the most serious kind of control problem), it has been reported three years running, and the amount in question grew from over $42,000 to $117,869. The rating is high on the rubric's flags alone; no adjustment from the text was applied.",
+        "reasons": [
+          {
+            "reason": "The latest audit's finding is a material weakness that repeats the prior year's finding, which meets the rubric's test for high.",
+            "quote": "Finding 2024-1 is listed above as 2025-001.",
+            "audit_year": 2025,
+            "reference_number": "2025-001"
+          },
+          {
+            "reason": "The same material weakness also carries questioned costs ($117,869 in the 2025 audit), which is a second, separate test for high.",
+            "quote": "The Authority has inter-program payable and receivable in excess of $100,000 at year end between the two affected activities",
+            "audit_year": 2025,
+            "reference_number": "2025-001"
+          },
+          {
+            "reason": "The 2024 audit also had a material weakness on the same issue, so a serious finding appears in both the latest and an earlier audit, a third test for high.",
+            "quote": "Internal control to detect the non-compliance issue has not been.",
+            "audit_year": 2024,
+            "reference_number": "2024-001"
+          },
+          {
+            "reason": "The problem is getting bigger, not smaller: the balance owed between the two programs rose again in 2025.",
+            "quote": "Amounts in the current year are more than those at the prior year end.",
+            "audit_year": 2025,
+            "reference_number": "2025-001"
+          },
+          {
+            "reason": "The issue started in 2023 at a smaller amount, showing it has run through the whole three-year review window.",
+            "quote": "The Authority has inter-program payable and receivable in excess of $42,000 at year end between the two affected activities",
+            "audit_year": 2023,
+            "reference_number": "2023-001"
+          },
+          {
+            "reason": "No downward adjustment applies because the fix was still in progress, not completed, when the 2025 audit was issued.",
+            "quote": "is working with HUD to secure reimbursements for under funded HAP remittances",
+            "audit_year": 2025,
+            "reference_number": "2025-001"
+          }
+        ],
+        "next_checks": [
+          "Ask the Authority for the current balance owed between the public housing and voucher programs, and for proof of any repayment since the 2025 year end.",
+          "Ask for HUD's written response on the under-funded housing assistance payments and on the request to use reserve funds, since the same corrective action plan was given in both 2024 and 2025.",
+          "Look at the 2023 audit report to see what the financial-statement material weakness disclosed that year was; the audit data flags it but gives no text for it."
+        ]
+      },
+      "quote_problems": [],
+      "usage": {
+        "model": "claude-opus-5-5",
+        "via": "Claude Code",
+        "input_tokens": 4954,
+        "output_tokens": 1811,
+        "cost_usd": 0.05604
+      }
+    },
+    "541008875": {
+      "name": "SHENANDOAH AREA AGENCY ON AGING, INC",
+      "rule_rating": "medium",
+      "ai_rating": "medium",
+      "sheet": {
+        "rating": "medium",
+        "summary": "Draft rating: medium. The latest audit (2024) has one finding, and it is a repeat: the year-end report to the state aging agency did not match the accounting records, the same problem as in 2023. It is not a serious finding and has no questioned costs, but the 2024 audit also disclosed a financial-statement material weakness that has no finding text here, and no 2025 audit is on file.",
+        "reasons": [
+          {
+            "reason": "The latest audit has a finding the auditor marked as a repeat, which makes the rating medium under the rubric.",
+            "quote": "The 13th Aging Monthly Report required by the pass-through agency, Virginia Department of Aging and Rehabilitative Services (VDARS) contained inaccurate revenue and expenditure data which did not agree to the general ledger.",
+            "audit_year": 2024,
+            "reference_number": "2024-002"
+          },
+          {
+            "reason": "The 2023 audit gave the same cause, so the missing check of the report against the books went unfixed for a year.",
+            "quote": "The 13th Aging Monthly Report was not reconciled to underlying financial records",
+            "audit_year": 2023,
+            "reference_number": "2023-001"
+          },
+          {
+            "reason": "No move down to low: the fix was still only a plan when the audit was issued, so the problem was not already corrected.",
+            "quote": "Management plans to implement a process to ensure that the AMR report will be submitted accurately.",
+            "audit_year": 2024,
+            "reference_number": "2024-002"
+          },
+          {
+            "reason": "No move up to high: the finding concerns one report to one state agency, and the auditor says the errors did not affect whether grant requirements were met.",
+            "quote": "Inaccurate reporting of such revenues and expenditures did not impact the outcome of requirements of the Agency to meet level of effort metrics as required under the grant awards.",
+            "audit_year": 2024,
+            "reference_number": "2024-002"
+          }
+        ],
+        "next_checks": [
+          "Pull the 2024 audit report and read the financial-statement material weakness it disclosed. No text for it is in this data (likely finding 2024-001), and the agency also lost its low-risk auditee status that year. If it shows wider gaps in the finance function, consider moving the rating up to high.",
+          "Check whether the 2025 audit has been filed. None is on file in the review window, so this rating rests on 2024.",
+          "Ask the agency for evidence that the year-end Aging Monthly Report is now checked against the general ledger and reviewed before it is sent to VDARS."
+        ]
+      },
+      "quote_problems": [],
+      "usage": {
+        "model": "claude-opus-5-5",
+        "via": "Claude Code",
+        "input_tokens": 4687,
+        "output_tokens": 1985,
+        "cost_usd": 0.05845
+      }
+    },
+    "540922236": {
+      "name": "THE WISE COUNTY HOUSING CORPORATION",
+      "rule_rating": "low",
+      "ai_rating": "low",
+      "sheet": {
+        "rating": "low",
+        "summary": "The latest audit (2025) has no findings on federal awards, so under the rubric the rating is low. The 2023 and 2024 audits did have serious findings, including a cash drawdown problem that repeated in 2024. I considered moving the rating up because the auditor linked that problem to leadership turnover, but did not, because nothing recurred in 2025.",
+        "reasons": [
+          {
+            "reason": "The cash drawdown problem was a serious finding (a material weakness, meaning a major gap in controls) and a repeat in 2024, but it sits in an earlier audit, not the latest one, so it does not raise the rating above low.",
+            "quote": "payment occurred more than three days after deposit",
+            "audit_year": 2024,
+            "reference_number": "2024-001"
+          },
+          {
+            "reason": "The auditor reported that two of the three 2023 findings were fixed by the 2024 audit, which fits a picture of problems being closed out rather than growing.",
+            "quote": "Findings 2023-1 and 2023-3 have been resolved.",
+            "audit_year": 2024,
+            "reference_number": "2024-001"
+          },
+          {
+            "reason": "This points to a possible finance-function weakness and I weighed moving the rating up one level, but left it at low because the 2025 audit has no findings; the reviewer may judge differently.",
+            "quote": "The Authority recently experienced turnover in both the executive director and finance director positions.",
+            "audit_year": 2024,
+            "reference_number": "2024-001"
+          },
+          {
+            "reason": "A second serious finding in 2023 shows the earlier problems went beyond cash drawdowns, though it is in an earlier audit and was later reported as resolved.",
+            "quote": "The Housing Authority could not provide adequate support for payroll expense allocation.",
+            "audit_year": 2023,
+            "reference_number": "2023-003"
+          }
+        ],
+        "next_checks": [
+          "Open the 2025 audit report and confirm it has no federal award findings and that its prior-year schedule shows finding 2024-001 (cash drawdowns) as resolved. The data here has no 2025 finding text, so it does not say this directly.",
+          "Ask whether the executive director and finance director posts are now filled and stable, and whether drawdown requests are being reconciled to vendor invoices as management promised in 2024.",
+          "Decide whether the turnover wording in finding 2024-001 justifies moving the rating up one level to medium. Note the 2025 audit still does not class the locality as a low-risk auditee."
+        ]
+      },
+      "quote_problems": [],
+      "usage": {
+        "model": "claude-opus-5-5",
+        "via": "Claude Code",
+        "input_tokens": 4722,
+        "output_tokens": 1834,
+        "cost_usd": 0.05557
+      }
+    },
+    "546001257": {
+      "name": "Town of Edinburg",
+      "rule_rating": "high",
+      "ai_rating": "high",
+      "sheet": {
+        "rating": "high",
+        "summary": "Draft rating: high. The latest audit on file (2024) has a material weakness, meaning the auditor's most severe class of control problem, and it repeats from 2023: the Town has no written procurement policies that meet federal rules. The Town says it adopted a policy in October 2024, but nothing in the audit data confirms this, and no 2025 audit is on file.",
+        "reasons": [
+          {
+            "reason": "The latest audit's one finding is marked as a material weakness and as a repeat finding, which is a high rating under step 2 of the rubric.",
+            "quote": "There are no written procurement policies specific to federal awards cost principle requirements under Uniform Guidance.",
+            "audit_year": 2024,
+            "reference_number": "2024-003"
+          },
+          {
+            "reason": "The 2023 audit reported the same problem in nearly the same words, which shows it went unfixed for at least a year.",
+            "quote": "There are no written procurement policies specific to the federal awards cost principle requirements",
+            "audit_year": 2023,
+            "reference_number": "2023-003"
+          },
+          {
+            "reason": "I did not lower the rating: this is the Town's own statement of a fix, not the auditor's, and a problem that repeats across two audits is not isolated.",
+            "quote": "As of October 2024, the Town has adopted a Federal Procurement Policy.",
+            "audit_year": 2024,
+            "reference_number": "2024-003"
+          }
+        ],
+        "next_checks": [
+          "Ask the Town for the Federal Procurement Policy it says it adopted in October 2024, with proof of Council approval, and check it against the 2 CFR 200 procurement and cost rules.",
+          "Find out why no 2025 audit is on file, and when it is filed, see whether this finding was closed.",
+          "Both audits disclosed a financial-statement material weakness with no finding text in this data; get the full audit reports to see what it was. Also note that the 2024 finding is filed under \"Reporting\" although its text is about procurement."
+        ]
+      },
+      "quote_problems": [],
+      "usage": {
+        "model": "claude-opus-5-5",
+        "via": "Claude Code",
+        "input_tokens": 3960,
+        "output_tokens": 1383,
+        "cost_usd": 0.0435
+      }
+    },
+    "546001261": {
+      "name": "TOWN OF ELKTON, VIRGINIA",
+      "rule_rating": "medium",
+      "ai_rating": "medium",
+      "sheet": {
+        "rating": "medium",
+        "summary": "Medium. The latest audit (2025) has one finding on federal awards, and it is a repeat: the Town's federal procurement policy still does not meet federal rules, a problem raised in all three years. No finding was marked as a material weakness (the most severe kind of control problem), none had questioned costs, and there is no going-concern doubt. Separately, each audit from 2023 to 2025 disclosed a material weakness in the financial statements, which comes with no finding text here, so I did not move the rating on it.",
+        "reasons": [
+          {
+            "reason": "The only finding in the latest audit is flagged as a repeat finding, which makes the rating medium under step 3 of the rubric.",
+            "quote": "Certain required policies under 2 CFR 200, Subparts D and E are not present.",
+            "audit_year": 2025,
+            "reference_number": "2025-004"
+          },
+          {
+            "reason": "The same procurement policy gap was already reported in 2023, so it has gone unfixed across the whole review window.",
+            "quote": "There are no written procurement policies specific to the federal awards cost principle requirements",
+            "audit_year": 2023,
+            "reference_number": "2023-010"
+          },
+          {
+            "reason": "An earlier audit found federal reports were sent without review or reconciliation, but this was one program and did not recur in 2025, so I did not raise the rating to high.",
+            "quote": "Lack of review and reconciliation to the general ledger prior to submission.",
+            "audit_year": 2024,
+            "reference_number": "2024-005"
+          },
+          {
+            "reason": "The late-filing finding from earlier years had shrunk to a one-day delay by 2024 and does not appear in 2025, so it does not add to the rating.",
+            "quote": "The Town filed the data collection form one day late due to issues with the Federal Audit Clearinghouse website.",
+            "audit_year": 2024,
+            "reference_number": "2024-004"
+          }
+        ],
+        "next_checks": [
+          "Read the financial-statement findings in the 2023, 2024 and 2025 audit reports. Each year disclosed a material weakness with no text in this data; if it shows missing controls across the finance function, consider raising the rating to high.",
+          "Ask the Town whether Town Council has approved a revised federal procurement policy, and get a copy to check against 2 CFR 200.",
+          "Confirm the Town's Recovery Funds (ALN 21.027) reports to Treasury now reconcile to its accounting records and are reviewed by a second person before submission."
+        ]
+      },
+      "quote_problems": [],
+      "usage": {
+        "model": "claude-opus-5-5",
+        "via": "Claude Code",
+        "input_tokens": 5868,
+        "output_tokens": 1800,
+        "cost_usd": 0.05947
+      }
+    },
+    "546001538": {
+      "name": "Town of Pulaski",
+      "rule_rating": "low",
+      "ai_rating": "low",
+      "sheet": {
+        "rating": "low",
+        "summary": "Draft rating is low because the only federal award finding in the window is from 2024, and the latest audit (2025) has none. Treat this low with caution: the 2025 audit disclosed material noncompliance with no finding text, the 2024 audit disclosed a material weakness and material noncompliance, and the 2023 audit disclosed a material weakness and a going-concern doubt. The one finding's text is only two words, so there is no basis in the text to move the rating up or down.",
+        "reasons": [
+          {
+            "reason": "The only finding in the window is a 2024 reporting finding that the auditor did not flag as a material weakness, a modified opinion, a repeat or as having questioned costs, and the latest audit (2025) has no findings, which the rubric rates low.",
+            "quote": "Material Noncompliance",
+            "audit_year": 2024,
+            "reference_number": "2024-003"
+          }
+        ],
+        "next_checks": [
+          "Get the 2025 audit report and find out what the disclosed material noncompliance was, since the data has no finding text for it.",
+          "Read finding 2024-003 in the full 2024 report: its text says \"Material Noncompliance\" but it is not flagged as a modified opinion or material weakness, so confirm whether it should count as a serious finding and whether it was fixed.",
+          "Check what the 2023 going-concern doubt and the 2023 and 2024 material weaknesses were about, and whether they were resolved."
+        ]
+      },
+      "quote_problems": [],
+      "usage": {
+        "model": "claude-opus-5-5",
+        "via": "Claude Code",
+        "input_tokens": 3341,
+        "output_tokens": 1003,
+        "cost_usd": 0.03342
+      }
+    },
+    "540921892": {
+      "name": "Virginia Housing Development Authority",
+      "rule_rating": "high",
+      "ai_rating": "high",
+      "sheet": {
+        "rating": "high",
+        "summary": "High risk. The 2025 audit has five findings on the housing voucher program; three are serious (the auditor called them material weaknesses and gave a modified opinion on compliance), all three are repeats, and two carry questioned costs ($3,839 and $15,129). The 2023 audit also had serious findings on the same program, and no 2024 audit is in the data.",
+        "reasons": [
+          {
+            "reason": "The latest audit has a serious finding on tenant eligibility that is a repeat, which alone makes the rating high.",
+            "quote": "This finding is a repeat finding in the immediate prior year over eligibility requirements. Prior year finding numbers were 2024-001 and 2023-001.",
+            "audit_year": 2025,
+            "reference_number": "2025-001"
+          },
+          {
+            "reason": "The serious, repeat finding on housing inspections also has questioned costs of $15,129, because payments continued on units that failed inspection twice.",
+            "quote": "8 of 60 files tested where the Authority failed to process abatement of units after the second failed inspection.",
+            "audit_year": 2025,
+            "reference_number": "2025-003"
+          },
+          {
+            "reason": "A third serious finding in the latest audit, on the waiting list, is also a repeat.",
+            "quote": "This finding is a repeat finding in the immediate prior year. Prior year finding number was 2024-005.",
+            "audit_year": 2025,
+            "reference_number": "2025-004"
+          },
+          {
+            "reason": "An earlier audit in the window also had a serious finding with the same inspection follow-up problem, so the latest serious findings are not a one-off.",
+            "quote": "6 out of 25 files tested where the Authority failed to process abatements for units that failed on the second inspection.",
+            "audit_year": 2023,
+            "reference_number": "2023-004"
+          },
+          {
+            "reason": "This is context, not a rating adjustment: the auditor's stated cause points to weak central control over the local agencies, so the problem is not isolated and there is no case for moving the rating down.",
+            "quote": "Certain documentation and calculation controls were not sufficiently standardized or centrally validated prior to final processing.",
+            "audit_year": 2025,
+            "reference_number": "2025-001"
+          }
+        ],
+        "next_checks": [
+          "Get the 2024 audit. It is not in the data provided, but the 2025 findings cite 2024 finding numbers (2024-001, 2024-003, 2024-005, 2024-006).",
+          "Ask for evidence that the statewide inspection model launched on April 1, 2025 and the enhanced quality control reviews are working, such as current figures on overdue inspections, late reinspections and payments stopped on failed units.",
+          "Confirm how the 2025 questioned costs ($3,839 on eligibility and $15,129 on inspections) are being resolved, and whether uniform documentation standards are now in place across the local housing agencies."
+        ]
+      },
+      "quote_problems": [],
+      "usage": {
+        "model": "claude-opus-5-5",
+        "via": "Claude Code",
+        "input_tokens": 15175,
+        "output_tokens": 1767,
+        "cost_usd": 0.09604
+      }
+    },
+    "520847040": {
+      "name": "Washington Metropolitan Area Transit Authority",
+      "rule_rating": "high",
+      "ai_rating": "high",
+      "sheet": {
+        "rating": "high",
+        "summary": "Draft rating: high. The 2025 audit has a material weakness (the most serious type of control problem) that the auditor marked as a repeat, and the 2024 audit had a material weakness on the same issue: about $2.4 million of Transit Security Grant spending was reported in the wrong year. No costs were questioned, the findings touch one program only, and the fixes are still planned rather than done, so the text does not support moving the rating down.",
+        "reasons": [
+          {
+            "reason": "The latest audit has a serious finding: the auditor classed the federal spending schedule error as a material weakness.",
+            "quote": "Material weakness/other matter noncompliance",
+            "audit_year": 2025,
+            "reference_number": "2025-003"
+          },
+          {
+            "reason": "The auditor marked that same serious finding as a repeat, and a serious repeat finding in the latest audit means a high rating under the rubric.",
+            "quote": "Repeat Finding: Yes. This repeat finding designation results from the identification of the",
+            "audit_year": 2025,
+            "reference_number": "2025-003"
+          },
+          {
+            "reason": "The earlier 2024 audit also had a serious finding on the same schedule, which is a second, separate route to a high rating.",
+            "quote": "calculated and resulted in a missed major program.",
+            "audit_year": 2024,
+            "reference_number": "2024-001"
+          },
+          {
+            "reason": "The latest audit has a second repeat finding: agreements made outside the procurement office had no documented check that the other party was not barred from federal funds.",
+            "quote": "Of the three items tested, two lacked documented procedures, and sufficient oversight",
+            "audit_year": 2025,
+            "reference_number": "2025-002"
+          },
+          {
+            "reason": "No downward adjustment is made because the fixes were not in place when the audit was issued; management says they start later.",
+            "quote": "corrective actions based on recommendations prospectively to prevent future occurrences starting from",
+            "audit_year": 2024,
+            "reference_number": "2024-002"
+          }
+        ],
+        "next_checks": [
+          "Decide how much weight the repeat flags deserve: the auditor says the 2024 and 2025 findings were identified at the same time and communicated to management in 2026, so the Authority had no chance to fix them between audits.",
+          "Ask the Authority for evidence that the planned fixes are in place: the reclassification checklist and cutoff date, and the revised Policy Instruction 9.6 requiring SAM.gov checks on special agreements.",
+          "The 2025 audit record shows a material weakness disclosed on the financial statements, but no finding text for it is in the data; obtain the 2025 audit report to see what it was. Also confirm which of the two 2024 audit records on file is the restated one."
+        ]
+      },
+      "quote_problems": [],
+      "usage": {
+        "model": "claude-opus-5-5",
+        "via": "Claude Code",
+        "input_tokens": 8874,
+        "output_tokens": 2330,
+        "cost_usd": 0.0821
+      }
+    },
+    "540895697": {
+      "name": "WYTHEVILLE REDEVELOPMENT & HOUSING AUTHORITY",
+      "rule_rating": "medium",
+      "ai_rating": "medium",
+      "sheet": {
+        "rating": "medium",
+        "summary": "Medium risk. The 2025 audit has one finding, which the auditor marked as a material weakness (the most serious grade of control problem): about 44% of tested housing voucher files lacked required signatures. It is not a repeat, has no questioned costs, and the 2023 and 2024 audits had no findings. I did not raise the rating to high, but the reviewer should confirm that call, because the finding covers two voucher programs and is traced to staff turnover.",
+        "reasons": [
+          {
+            "reason": "The auditor marked this 2025 finding as a material weakness, which makes it a serious finding in the latest audit and sets the rating at medium under step 3.",
+            "quote": "The Authority lacked proper controls to ensure that the necessary signatures were being obtained",
+            "audit_year": 2025,
+            "reference_number": "2025-001"
+          },
+          {
+            "reason": "The problem affected a large share of the files tested, so it is not a one-off slip and no downward adjustment is justified.",
+            "quote": "Approximately 44% of files selected for testing lacked the proper signatures for the time period covered by the audit.",
+            "audit_year": 2025,
+            "reference_number": "2025-001"
+          },
+          {
+            "reason": "The fix was still a plan when the audit was written, not a completed correction, so the rating is not moved down.",
+            "quote": "Management will review the admissions, recertification, and documentation procedures",
+            "audit_year": 2025,
+            "reference_number": "2025-001"
+          },
+          {
+            "reason": "I considered moving the rating up to high for a systemic problem but did not, because the cause is turnover and training in two related voucher programs, not absent controls across the finance function; the reviewer may judge this differently.",
+            "quote": "The Authority has experienced turnover at the executive and program levels.",
+            "audit_year": 2025,
+            "reference_number": "2025-001"
+          }
+        ],
+        "next_checks": [
+          "Decide whether the finding is systemic enough to raise the rating to high: it covers two voucher programs (ALN 14.871 and ALN 14.879) and the auditor ties it to turnover at executive and program levels.",
+          "Ask the Authority for evidence that the corrective action is done: updated admissions and recertification procedures, staff retraining records, and whether the files with missing signatures have been fixed.",
+          "Check whether the state passes any money to this Authority under the affected voucher programs, or whether the same staff and file procedures handle state pass-through awards."
+        ]
+      },
+      "quote_problems": [],
+      "usage": {
+        "model": "claude-opus-5-5",
+        "via": "Claude Code",
+        "input_tokens": 3887,
+        "output_tokens": 1952,
+        "cost_usd": 0.05459
+      }
+    }
+  },
+  "probe": {
+    "541380213": {
+      "name": "Dickenson County Behavioral Health Services",
+      "flagged": true,
+      "ai_rating": "no_basis",
+      "reasons": 0,
+      "summary": "No rating can be given: there are no findings on federal awards on file for audit years 2023 to 2025. This is not a clean bill of health. The 2023 and 2024 audits each disclosed a material weakness (a serious gap in financial controls) in the financial statements; the 2025 audit did not, and no audit in the window disclosed material noncompliance or a going-concern doubt.",
+      "usage": {
+        "model": "claude-opus-5-5",
+        "via": "Claude Code",
+        "input_tokens": 3277,
+        "output_tokens": 390,
+        "cost_usd": 0.02091
+      }
+    },
+    "546001365": {
+      "name": "JAMES CITY COUNTY",
+      "flagged": true,
+      "ai_rating": "no_basis",
+      "reasons": 0,
+      "summary": "James City County has no findings on federal awards in its 2023 to 2025 audits, so there is no basis to rate it. This is not a clean bill of health. The 2023 audit disclosed a material weakness (a serious gap in controls) in the county's financial statements, with no finding text on file; no audit in the window disclosed material noncompliance or a going-concern doubt.",
+      "usage": {
+        "model": "claude-opus-5-5",
+        "via": "Claude Code",
+        "input_tokens": 3267,
+        "output_tokens": 358,
+        "cost_usd": 0.02023
+      }
+    },
+    "546002871": {
+      "name": "County of Wythe, Virginia",
+      "flagged": true,
+      "ai_rating": "no_basis",
+      "reasons": 0,
+      "summary": "Wythe County has no findings on federal awards on file for audit years 2023 to 2025, so there is no basis to rate it. This is not a clean bill of health. The 2024 and 2025 audits each disclosed a material weakness (a serious gap in financial controls) in the financial statements, and the county lost its low-risk auditee status in 2025; no audit in the window disclosed material noncompliance or a going-concern doubt.",
+      "usage": {
+        "model": "claude-opus-5-5",
+        "via": "Claude Code",
+        "input_tokens": 3355,
+        "output_tokens": 450,
+        "cost_usd": 0.02242
+      }
+    },
+    "546003750": {
+      "name": "County of Craig, Virginia",
+      "flagged": true,
+      "ai_rating": "no_basis",
+      "reasons": 0,
+      "summary": "No rating can be given: there are no findings on federal awards on file for Craig County in audit years 2023 to 2025. This is not a clean bill of health. All three audits disclosed a material weakness (a serious gap in financial controls) in the county's financial statements, and the county was not a low-risk auditee in any year; no material noncompliance or going-concern doubt was disclosed.",
+      "usage": {
+        "model": "claude-opus-5-5",
+        "via": "Claude Code",
+        "input_tokens": 3270,
+        "output_tokens": 370,
+        "cost_usd": 0.02048
+      }
+    },
+    "541215131": {
+      "name": "Scott County Public Service Authority",
+      "flagged": true,
+      "ai_rating": "no_basis",
+      "reasons": 0,
+      "summary": "There is no basis to rate this locality: no findings on federal awards are on file for audit years 2023 to 2025. This is not a clean bill of health. The 2025 audit disclosed a material weakness (a serious gap in financial controls) in the financial statements, with no material noncompliance and no going-concern doubt; no audit data is on file for 2023 or 2024.",
+      "usage": {
+        "model": "claude-opus-5-5",
+        "via": "Claude Code",
+        "input_tokens": 3095,
+        "output_tokens": 361,
+        "cost_usd": 0.0196
+      }
+    },
+    "626002128": {
+      "name": "Lafollette Housing Authority",
+      "flagged": false,
+      "ai_rating": "no_basis",
+      "reasons": 0,
+      "summary": "There is no basis to rate Lafollette Housing Authority. No findings on federal awards are on file for audit years 2023 to 2025, and only the 2023 audit is on file. This is not a clean bill of health; the 2023 audit disclosed no financial-statement material weakness, no material noncompliance and no going-concern doubt.",
+      "usage": {
+        "model": "claude-opus-5-5",
+        "via": "Claude Code",
+        "input_tokens": 3093,
+        "output_tokens": 379,
+        "cost_usd": 0.01995
+      }
+    },
+    "540964627": {
+      "name": "GREATER LYNCHBURG TRANSIT COMPANY",
+      "flagged": false,
+      "ai_rating": "no_basis",
+      "reasons": 0,
+      "summary": "No rating can be given. The audits on file for 2023 and 2024 report no findings on federal awards, and neither disclosed a financial-statement material weakness, material noncompliance or a going-concern doubt. This is not a clean bill of health, and no 2025 audit is on file.",
+      "usage": {
+        "model": "claude-opus-5-5",
+        "via": "Claude Code",
+        "input_tokens": 3194,
+        "output_tokens": 346,
+        "cost_usd": 0.0197
+      }
+    },
+    "872155971": {
+      "name": "Mountain State Learning Solutions",
+      "flagged": false,
+      "ai_rating": "no_basis",
+      "reasons": 0,
+      "summary": "No rating can be given. There are no findings on federal awards on file for audit years 2023 to 2025, so there is nothing to rate; this is not a clean bill of health. The one audit on file (2025) did not disclose a financial-statement material weakness (a serious gap in financial controls), material noncompliance or a going-concern doubt.",
+      "usage": {
+        "model": "claude-opus-5-5",
+        "via": "Claude Code",
+        "input_tokens": 3097,
+        "output_tokens": 366,
+        "cost_usd": 0.01971
+      }
+    },
+    "546001351": {
+      "name": "County of Highland, Virginia",
+      "flagged": false,
+      "ai_rating": "no_basis",
+      "reasons": 0,
+      "summary": "Highland County has no findings on its federal awards in the 2023 to 2025 audits, so there is nothing to rate. This is not a clean bill of health. None of the three audits disclosed a financial-statement material weakness (a serious gap in financial controls), material noncompliance or a going-concern doubt.",
+      "usage": {
+        "model": "claude-opus-5-5",
+        "via": "Claude Code",
+        "input_tokens": 3268,
+        "output_tokens": 366,
+        "cost_usd": 0.02039
+      }
+    },
+    "546001384": {
+      "name": "Town of Lawrenceville, VA",
+      "flagged": false,
+      "ai_rating": "no_basis",
+      "reasons": 0,
+      "summary": "There is no basis to rate the Town of Lawrenceville. No findings on federal awards are on file for audit years 2023 to 2025, and only the 2023 audit is on file. This is not a clean bill of health; the 2023 audit disclosed no financial-statement material weakness, no material noncompliance and no going-concern doubt.",
+      "usage": {
+        "model": "claude-opus-5-5",
+        "via": "Claude Code",
+        "input_tokens": 3096,
+        "output_tokens": 364,
+        "cost_usd": 0.01966
+      }
+    }
+  }
+}

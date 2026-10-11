@@ -13,11 +13,24 @@ done by reading each audit and filling in a spreadsheet by hand.
 | Phase | What it delivers | State |
 |---|---|---|
 | 1 | Virginia audits and findings in Postgres, plus a lookup page | Data loaded and page working locally. **Not deployed**: needs a GitHub account. |
-| 2 | AI-drafted risk sheets, measured against 30 hand-rated localities | Code written. **The AI has not been run**: Claude Code on this machine is not signed in, and there is no API key. The 30 hand ratings are not filled in. |
-| 3 | Human-approval workflow, MCP server, memo to a grants manager | Workflow and MCP server working. **Memo not written**: it needs the Phase 2 numbers. |
+| 2 | AI-drafted risk sheets, measured against 30 hand-rated localities | AI run on 30 localities on 2026-10-10. **The 30 hand ratings are not filled in**, so agreement with a human is not measured. |
+| 3 | Human-approval workflow, MCP server, memo to a grants manager | Workflow and MCP server working. [MEMO.md](MEMO.md) is a draft until the hand ratings are in. |
 
-No accuracy or cost figure exists yet. Nothing in this repo should be read as evidence
-that the AI ratings are right.
+## Results so far
+
+From [eval/REPORT.md](eval/REPORT.md), run on 2026-10-10 with `claude-opus-5-5`:
+
+| Check | Result |
+|---|---|
+| AI rating matches the rubric applied by code to the yes/no flags | 28 of 30 (93%) |
+| Quotes found word for word in the finding they cite | 116 of 116 |
+| Localities with no findings left unrated, nothing invented | 10 of 10 |
+| AI rating matches my hand rating | Not measured: the ratings are not filled in |
+| Estimated cost per drafted sheet, at API list prices | $0.055 |
+
+The 93% shows the AI applies the rubric consistently. The AI is given the same rubric
+and flags as the code it is compared with, so it is not evidence that the ratings are
+right. That needs the hand ratings. [RUBRIC.md](RUBRIC.md) is also still a draft.
 
 ## How it fits together
 
@@ -142,9 +155,10 @@ Tested on 2026-10-10:
   no findings, which needs no AI call.
 - Both MCP tools, called through a real MCP client over stdio.
 
-Not tested: either route to Claude in `risk.ask_model`, and so everything in
-`evaluate.py run` and `evaluate.py report`. There was no API key on this machine and
-Claude Code was signed out.
+- The AI draft through Claude Code, for 30 sampled localities and 10 with no findings.
+
+Not tested: the Claude API route in `risk.ask_model` (no API key on this machine), and
+the approval workflow on a locality that needs an AI draft.
 
 ## Data source
 

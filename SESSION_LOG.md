@@ -43,10 +43,19 @@
 - `RUBRIC.md` is Claude's draft, marked as such. `eval/hand_ratings.csv` lists the 30
   sampled localities with the rating column empty.
 
+**Late night: the AI run**
+- No API credits, so the drafts go through Claude Code on my Claude subscription. I
+  signed the command-line tool in with `claude auth login`.
+- Ran `evaluate.py run` and `report`. AI matched the rule-based reference on 28 of 30,
+  all 116 quotes were found word for word, and all 10 no-findings localities came back
+  unrated. Estimated $0.055 per sheet at API list prices.
+- The two mismatches are both the AI rating one level higher and citing finance
+  staffing. Whether that is right is mine to judge in `eval/misses.csv`.
+- `MEMO.md` written as a draft.
+
 **Not done**
 - No GitHub repo: nothing is pushed and the page is not deployed.
-- No AI run: no agreement rate, no cost per locality, no miss log.
-- No memo. It needs the numbers above.
+- No hand ratings, so no agreement-with-a-human figure. The memo stays a draft until then.
 
 **Mine to do**
 - Read `RUBRIC.md`, change what I disagree with, remove the draft notice.
@@ -55,5 +64,5 @@
 - Confirm or change "every `local` entity, every year".
 
 **Next session**
-- Get a Claude API key into `.env`, run `evaluate.py run` and `evaluate.py report`,
-  then write the memo. Create the GitHub repo, push, deploy the page.
+- Hand-rate the 30, rerun `evaluate.py report`, fill in the miss causes, finish the memo.
+  Create the GitHub repo, push, deploy the page.

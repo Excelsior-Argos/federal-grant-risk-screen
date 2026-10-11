@@ -18,7 +18,10 @@ from common import query, requirement_names, source_url
 MODEL = "claude-opus-5-5"
 PRICE_PER_MILLION = {"input": 4.00, "output": 20.00}  # US dollars, Claude Opus 5.5 list price
 WINDOW_YEARS = 3
-RUBRIC = Path(__file__).with_name("RUBRIC.md").read_text(encoding="utf-8")
+# The rubric file opens with a note to me about its review status ("> ..." lines). That note
+# is not part of the rubric, so the model does not get it.
+RUBRIC = "\n".join(line for line in Path(__file__).with_name("RUBRIC.md").read_text(encoding="utf-8").splitlines()
+                   if not line.startswith(">"))
 
 
 # ---------- 1. Evidence: everything the rating is allowed to rest on ----------
