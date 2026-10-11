@@ -91,10 +91,28 @@
   instead. So the tool's rating does not match the form a monitor actually fills in.
   Not fixed yet.
 
+- Then researched the whole real process and wrote it up in `PROCESS.md`, with sources:
+  the federal rules, the auditors' test plan, and what nine Virginia agencies publish.
+- The biggest thing I had wrong: I rated a locality as a whole, by how severe its
+  findings were. A real monitor works for one agency and asks whether the audit is on
+  file, on time, and whether the findings are on that agency's money. Virginia's VDEM
+  form gives 35 points, its high-risk line, for one finding on a VDEM grant, and 5 for
+  a finding on someone else's.
+- So the tool changed. The loader now also pulls each audit's federal programs, who
+  passed the money down, and the corrective action plans (six tables). The page has an
+  agency view: pick an agency, see its subrecipients, late and overdue audits, findings
+  on its money, the management decision due date, and the audit rows of three real
+  forms (VDEM, DCJS, North Carolina), all worked out by code.
+- The AI now gets each finding's program, agency and corrective action plan, and is told
+  a plan is a promise and not proof. Evaluation rerun with this evidence.
+- Kept the severity rubric as the draft of a monitor's "documented concerns". Checked it
+  against North Carolina's audit row: same level for 27 of 68 localities.
+
 **Not done**
 - No GitHub repo: nothing is pushed and the page is not deployed.
 - `RUBRIC.md` still carries its draft notice.
-- The tool does not produce the audit rows of a real agency form.
+- I have not read the sources in `PROCESS.md` myself. An AI assistant did the research.
+- No agency has checked my reading of their forms.
 
 **Mine to do**
 - Read `RUBRIC.md`, change what I disagree with, remove the draft notice.

@@ -1,13 +1,18 @@
-"""The lookup page: pick a Virginia locality, see what its auditors found.
+"""The lookup page: pick a state agency and a Virginia locality, see what its auditors found.
 
-Run:  .venv\\Scripts\\python -m streamlit run app.py
+Run:  .venv/Scripts/python -m streamlit run app.py
 """
+from datetime import date
+
 import streamlit as st
 
 import common
+import risk
 
-# Each visitor's click reruns this file, so remember query results for an hour.
+# Each visitor's click reruns this file, so remember results for an hour.
 query = st.cache_data(ttl=3600)(common.query)
+gather_evidence = st.cache_data(ttl=3600)(risk.gather_evidence)
+agency_worklist = st.cache_data(ttl=3600)(risk.agency_worklist)
 
 
 def opinion(gaap_results):
@@ -15,6 +20,10 @@ def opinion(gaap_results):
     if not gaap_results:
         return ""
     return ", ".join(part.replace("_opinion", "").replace("_", " ").capitalize() for part in gaap_results.split(","))
+
+
+def yes_no(value):
+    return "Yes" if value else "No"
 
 
 st.set_page_config(page_title="Subrecipient Risk Screen", layout="wide")
@@ -28,11 +37,21 @@ totals = query("""
            (select max(audit_year) from audits) as last_year,
            (select max(loaded_at)::date from audits) as loaded_on
 """)[0]
+window = f"{totals['last_year'] - risk.WINDOW_YEARS + 1} to {totals['last_year']}"
 st.caption(
     f"Single-audit results for Virginia local governments, from the Federal Audit Clearinghouse. "
     f"{totals['audits']:,} audits of {totals['localities']} entities, audit years {totals['first_year']} to "
     f"{totals['last_year']}, {totals['findings']} findings. Data loaded {totals['loaded_on']}."
 )
+
+# ---------- Step 1: whose subrecipients? ----------
+# A monitor works for one state agency and is answerable for the money that agency passed down.
+agencies = [row["agency"] for row in query("""
+    select p.agency from passthroughs p join audits a using (report_id)
+    where p.agency is not null and a.audit_year >= %s
+    group by 1 order by count(distinct a.auditee_ein) desc
+""", (totals["last_year"] - risk.WINDOW_YEARS + 1,))]
+agency = st.selectbox("View as a state agency", agencies, index=None, placeholder="All agencies")
 
 # An entity's name changes spelling from year to year, so we identify it by EIN and show its latest name.
 localities = query("""
@@ -40,6 +59,51 @@ localities = query("""
     from audits
     order by auditee_ein, audit_year desc, fac_accepted_date desc
 """)
+
+if agency:
+    worklist = agency_worklist(agency)
+    st.subheader(f"{agency}: subrecipients, audit years {window}")
+    col1, col2, col3, col4 = st.columns(4)
+    col1.metric("Subrecipients", len(worklist))
+    col2.metric("Latest audit filed late", sum(1 for w in worklist if w["late"]))
+    col3.metric("Next audit overdue", sum(1 for w in worklist if w["next_audit_overdue"]))
+    col4.metric("Findings on this agency's money", sum(1 for w in worklist if w["own_findings"]))
+    st.dataframe(
+        [
+            {
+                "Locality": w["name"],
+                "Latest audit year": w["audit_year"],
+                "Months to file": w["months_after_year_end"],
+                "Filed late": w["late"],
+                "Agency's money in that audit": w["own_spending"],
+                "Findings on agency's money, 2 years": w["own_findings"],
+                "Management decision due": w["decision_due"],
+                "VDEM form: audit points": w["vdem_points"],
+                "DCJS form: audit points": w["dcjs_points"],
+                "NC matrix: audit row": w["nc_level"],
+            }
+            for w in sorted(worklist, key=lambda w: (-w["vdem_points"], -w["own_findings"], -w["dcjs_points"],
+                                                     -w["months_after_year_end"]))
+        ],
+        column_config={
+            "Latest audit year": st.column_config.NumberColumn(format="%d"),
+            "Agency's money in that audit": st.column_config.NumberColumn(format="dollar"),
+        },
+        hide_index=True,
+    )
+    st.caption(
+        "A subrecipient here is a local entity whose audit lists money passed down by this agency. An audit is due "
+        "nine months after the fiscal year ends (2 CFR 200.512). The agency owes a written management decision on "
+        "each finding on its own money within six months of the clearinghouse accepting the audit (2 CFR 200.521); "
+        "the FAC cannot say whether one was issued. The last three columns apply the audit rows of three "
+        "real risk forms: Virginia VDEM's financial risk assessment (which gives 35 points, its high-risk line, "
+        "for a finding on the agency's own grant), Virginia DCJS's Grant Monitoring Risk Assessment and North "
+        "Carolina DHHS's county subrecipient matrix. They are the audit part only; a full assessment has other rows."
+    )
+    subrecipients = {w["ein"] for w in worklist}
+    localities = [row for row in localities if row["auditee_ein"] in subrecipients]
+
+# ---------- Step 2: one locality ----------
 localities.sort(key=lambda row: row["auditee_name"].lower())
 chosen = st.selectbox(
     "Locality",
@@ -61,7 +125,7 @@ audits = query("""
 # One row per finding. A finding can touch several awards, so a flag is on if it is on for any of them.
 findings = query("""
     select f.report_id, f.reference_number,
-           count(*) as awards,
+           count(distinct f.award_reference) as awards,
            string_agg(distinct f.type_requirement, '') as type_requirement,
            bool_or(f.is_material_weakness) as is_material_weakness,
            bool_or(f.is_significant_deficiency) as is_significant_deficiency,
@@ -69,12 +133,17 @@ findings = query("""
            bool_or(f.is_repeat_finding) as is_repeat_finding,
            bool_or(f.is_questioned_costs) as is_questioned_costs,
            max(f.prior_finding_ref_numbers) as prior_finding_ref_numbers,
-           t.finding_text
+           string_agg(distinct w.aln || ' ' || w.federal_program_name, '; ') as programs,
+           array_remove(array_agg(distinct p.agency), null) as agencies,
+           t.finding_text, c.planned_action
     from findings f
     join audits a using (report_id)
+    left join awards w using (report_id, award_reference)
+    left join passthroughs p using (report_id, award_reference)
     left join finding_texts t using (report_id, reference_number)
+    left join corrective_actions c using (report_id, reference_number)
     where a.auditee_ein = %s
-    group by f.report_id, f.reference_number, t.finding_text
+    group by f.report_id, f.reference_number, t.finding_text, c.planned_action
     order by f.report_id, f.reference_number
 """, (chosen["auditee_ein"],))
 
@@ -117,12 +186,76 @@ else:
     st.caption(f"{drafted_by}. Approved by {risk_sheet['reviewer']} on {risk_sheet['reviewed_at']:%Y-%m-%d}.{changed}"
                + (f" Reviewer note: {risk_sheet['reviewer_note']}" if risk_sheet["reviewer_note"] else ""))
 
+# ---------- The audit review: what a real agency risk form asks about the audit ----------
+st.subheader("Audit review" + (f" for the {agency}" if agency else ""))
+review = risk.audit_review(gather_evidence(chosen["auditee_ein"]), agency)
+if not review["audit_on_file"]:
+    st.error(f"No single audit is on file for audit years {window}. Find out whether one was required.")
+else:
+    whose = "this agency's" if agency else "any"
+    left, right = st.columns(2)
+    with left:
+        st.markdown("**Is the audit on file and on time?**")
+        timing = (f"Fiscal year ended {review['fiscal_year_end']}. Accepted by the clearinghouse on "
+                  f"{review['accepted_by_fac']}, {review['months_after_year_end']} months later. ")
+        if review["late"]:
+            st.warning(timing + "That is late: an audit is due within nine months.")
+        else:
+            st.success(timing + "That is on time.")
+        if review["next_audit_overdue"]:
+            st.warning(f"The newest audit on file is for {review['audit_year']}. The audit for the year after it "
+                       "is overdue: it was due nine months after that year ended.")
+        if agency and review["decision_due"]:
+            verb = "was" if review["decision_due"] < date.today() else "is"
+            st.info(f"The {review['audit_year']} audit has findings on this agency's money. A written management "
+                    f"decision on each {verb} due by {review['decision_due']} (2 CFR 200.521).")
+        st.markdown("**What did the auditor conclude?**")
+        st.markdown(
+            f"- Opinion on the financial statements: {review['opinion_financial_statements'] or 'not recorded'}\n"
+            f"- Opinion on major federal programs: {review['opinion_major_programs'] or 'no major program'}\n"
+            f"- Low-risk auditee: {yes_no(review['low_risk_auditee'])}\n"
+            f"- Material weakness in financial reporting: {yes_no(review['statement_material_weakness'])}\n"
+            f"- Going-concern doubt: {yes_no(review['going_concern'])}\n"
+            f"- Findings in the last two audit years: {review['findings_two_years']}, of which "
+            f"{len(review['own_findings'])} on {whose} money"
+        )
+    with right:
+        st.markdown("**How this fills in three real risk forms**")
+        st.dataframe(
+            [{"Form": "Virginia VDEM financial risk assessment", "Row": row, "Answer": answer, "Points": points}
+             for row, answer, points in risk.vdem_form_rows(review)]
+            + [{"Form": "Virginia DCJS risk assessment", "Row": row, "Answer": answer, "Points": points}
+               for row, answer, points in risk.dcjs_form_rows(review)]
+            + [{"Form": "North Carolina DHHS county matrix", "Row": "Single Audit",
+                "Answer": f"{risk.nc_matrix_row(review)[0]} risk: {risk.nc_matrix_row(review)[1]}",
+                "Points": risk.nc_matrix_row(review)[2]}],
+            hide_index=True,
+        )
+        st.caption(
+            "Worked out by code from the audit data, with no AI. These are the audit rows only. The other rows "
+            "of each form, such as late reports, site visits and staff turnover, need the agency's own records. "
+            + ("" if agency else "Pick a state agency above to answer for that agency's programs."))
+    if agency:
+        st.markdown(f"**Programs in the {review['audit_year']} audit funded through this agency**")
+        if review["own_programs"]:
+            st.dataframe(
+                [{"Program number": w["aln"], "Program": w["federal_program_name"], "Spent": w["amount_expended"],
+                  "Audited as a major program": w["is_major"],
+                  "Opinion": {"U": "Unmodified", "Q": "Qualified", "A": "Adverse", "D": "Disclaimer"}.get(w["audit_report_type"], "")}
+                 for w in review["own_programs"]],
+                column_config={"Spent": st.column_config.NumberColumn(format="dollar")},
+                hide_index=True,
+            )
+        else:
+            st.caption("None. This agency's money appears in an earlier audit in the window, not the latest one.")
+
 st.subheader("Audits")
 st.dataframe(
     [
         {
             "Audit year": a["audit_year"],
             "Fiscal year end": a["fy_end_date"],
+            "Accepted by clearinghouse": a["fac_accepted_date"],
             "Federal spending": a["total_amount_expended"],
             "Opinion on financial statements": opinion(a["gaap_results"]),
             "Material weakness disclosed": a["is_internal_control_material_weakness_disclosed"],
@@ -166,6 +299,7 @@ for audit in audits:
     for f in audit_findings:
         with st.container(border=True):
             badges = [
+                ":green-badge[On this agency's money]" if agency and agency in f["agencies"] else "",
                 ":red-badge[Material weakness]" if f["is_material_weakness"] else "",
                 ":red-badge[Modified opinion]" if f["is_modified_opinion"] else "",
                 ":orange-badge[Significant deficiency]" if f["is_significant_deficiency"] else "",
@@ -180,10 +314,16 @@ for audit in audits:
             if f["prior_finding_ref_numbers"]:
                 details.append(f"Prior-year finding: {f['prior_finding_ref_numbers']}")
             st.caption(" | ".join(details))
+            if f["programs"]:
+                st.caption(f"Programs: {f['programs']}. Passed through: "
+                           f"{'; '.join(f['agencies']) or 'no Virginia state agency recognised'}.")
             if f["finding_text"]:
                 st.text(f["finding_text"])
             else:
                 st.info("The FAC holds no finding text for this audit. Read the audit report at the link above.")
+            if f["planned_action"]:
+                with st.expander("The locality's corrective action plan (its own words, not the auditor's)"):
+                    st.text(f["planned_action"])
 
 if not shown:
     st.success("No findings on file for this entity in any year loaded.")

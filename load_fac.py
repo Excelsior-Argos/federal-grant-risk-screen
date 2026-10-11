@@ -1,8 +1,8 @@
-"""Load Virginia local-government audits and findings from the FAC into Postgres.
+"""Load Virginia local-government audits, programs and findings from the FAC into Postgres.
 
-Run:  .venv\\Scripts\\python load_fac.py
+Run:  .venv/Scripts/python load_fac.py
 
-Every run rebuilds the three tables from scratch, so it is safe to run again.
+Every run rebuilds the six data tables from scratch, so it is safe to run again.
 """
 import os
 import sys
@@ -11,6 +11,8 @@ from pathlib import Path
 import psycopg
 import requests
 from dotenv import load_dotenv
+
+from common import agency_of
 
 API = "https://api.fac.gov"
 PAGE = 5000  # rows per request
@@ -114,35 +116,78 @@ def finding_text_row(r):
     }
 
 
+def award_row(r):
+    return {
+        "report_id": r["report_id"],
+        "award_reference": r["award_reference"],
+        "aln": f"{r['federal_agency_prefix']}.{r['federal_award_extension']}",
+        "federal_program_name": clean(" ".join(r["federal_program_name"].split())),
+        "amount_expended": r["amount_expended"],
+        "is_major": yes_no(r["is_major"]),
+        "is_direct": yes_no(r["is_direct"]),
+        "audit_report_type": clean(r["audit_report_type"]),
+        "findings_count": r["findings_count"],
+    }
+
+
+def passthrough_row(r):
+    name = " ".join(r["passthrough_name"].split())
+    return {
+        "report_id": r["report_id"],
+        "award_reference": r["award_reference"],
+        "passthrough_name": name,
+        "agency": agency_of(name),  # which Virginia state agency this is, if we can tell
+    }
+
+
+def corrective_action_row(r):
+    return {
+        "report_id": r["report_id"],
+        "reference_number": r["finding_ref_number"],  # renamed to match the findings table
+        "planned_action": clean(r["planned_action"].strip()),
+    }
+
+
 # ---------- 3. Load: write the rows into Postgres ----------
 
 def insert(cursor, table, rows):
+    """Write rows with COPY, Postgres's bulk loader. It is far faster than one insert per row."""
     columns = list(rows[0])
-    placeholders = ", ".join(f"%({c})s" for c in columns)
-    cursor.executemany(f"insert into {table} ({', '.join(columns)}) values ({placeholders})", rows)
+    with cursor.copy(f"copy {table} ({', '.join(columns)}) from stdin") as copy:
+        for row in rows:
+            copy.write_row([row[c] for c in columns])
 
 
 print("Fetching Virginia local audits from the FAC ...")
 raw_audits = get_all("general", auditee_state="eq.VA", entity_type="eq.local", order="report_id")
 report_ids = [r["report_id"] for r in raw_audits]
-print(f"  {len(raw_audits)} audits. Fetching their findings ...")
+print(f"  {len(raw_audits)} audits. Fetching their programs, findings and corrective actions ...")
+raw_awards = get_for_audits("federal_awards", report_ids, order="report_id,award_reference")
+raw_passthroughs = get_for_audits("passthrough", report_ids, order="report_id,award_reference,passthrough_name")
 raw_findings = get_for_audits("findings", report_ids, order="report_id,award_reference,reference_number")
 raw_texts = get_for_audits("findings_text", report_ids, order="report_id,finding_ref_number")
+raw_actions = get_for_audits("corrective_action_plans", report_ids, order="report_id,finding_ref_number")
 
-audits = unique([audit_row(r) for r in raw_audits])
-findings = unique([finding_row(r) for r in raw_findings])
-texts = unique([finding_text_row(r) for r in raw_texts])
+tables = [  # (table, rows as fetched, rows cleaned), in the order they must be loaded
+    ("audits", raw_audits, unique([audit_row(r) for r in raw_audits])),
+    ("awards", raw_awards, unique([award_row(r) for r in raw_awards])),
+    ("passthroughs", raw_passthroughs, unique([passthrough_row(r) for r in raw_passthroughs if r["passthrough_name"].strip()])),
+    ("findings", raw_findings, unique([finding_row(r) for r in raw_findings])),
+    ("finding_texts", raw_texts, unique([finding_text_row(r) for r in raw_texts])),
+    ("corrective_actions", raw_actions, unique([corrective_action_row(r) for r in raw_actions])),
+]
 
 # One transaction: the tables are replaced all at once or not at all.
 with psycopg.connect(DATABASE_URL, prepare_threshold=None) as conn, conn.cursor() as cur:
     cur.execute(Path(__file__).with_name("schema.sql").read_text())
-    insert(cur, "audits", audits)
-    insert(cur, "findings", findings)
-    insert(cur, "finding_texts", texts)
+    for table, raw, rows in tables:
+        insert(cur, table, rows)
 
     print("\nLoaded into Postgres:")
-    for table, raw, rows in [("audits", raw_audits, audits), ("findings", raw_findings, findings), ("finding_texts", raw_texts, texts)]:
+    for table, raw, rows in tables:
         in_db = cur.execute(f"select count(*) from {table}").fetchone()[0]
-        print(f"  {table:<14} {in_db:>6} rows   ({len(raw)} fetched, {len(raw) - len(rows)} exact duplicates dropped)")
+        print(f"  {table:<19} {in_db:>6} rows   ({len(raw)} fetched, {len(raw) - len(rows)} blank or duplicate rows dropped)")
+    recognised = cur.execute("select count(agency), count(*) from passthroughs").fetchone()
+    print(f"  pass-through names matched to a Virginia state agency: {recognised[0]} of {recognised[1]}")
     years = cur.execute("select min(audit_year), max(audit_year), max(fac_accepted_date) from audits").fetchone()
     print(f"  audit years {years[0]} to {years[1]}; most recent audit accepted by the FAC on {years[2]}")

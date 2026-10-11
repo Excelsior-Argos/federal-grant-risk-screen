@@ -1,9 +1,12 @@
--- Three tables, rebuilt from scratch on every load.
+-- Six tables, rebuilt from scratch on every load.
 -- Column names follow the FAC API, except that the finding ID is called
--- reference_number everywhere (the API calls it finding_ref_number in findings_text).
+-- reference_number everywhere (the API calls it finding_ref_number in two tables).
 
+drop table if exists corrective_actions;
 drop table if exists finding_texts;
 drop table if exists findings;
+drop table if exists passthroughs;
+drop table if exists awards;
 drop table if exists audits;
 
 -- One row per audit. Source: FAC `general`.
@@ -29,6 +32,30 @@ create table audits (
     loaded_at                                        timestamptz not null default now()
 );
 
+-- One row per federal program in an audit. Source: FAC `federal_awards`.
+create table awards (
+    report_id             text not null references audits,
+    award_reference       text not null,
+    aln                   text,     -- the federal program number, e.g. 93.558
+    federal_program_name  text,
+    amount_expended       bigint,
+    is_major              boolean,  -- the auditor tested this program in depth
+    is_direct             boolean,  -- true: money came straight from a federal agency, not through the state
+    audit_report_type     text,     -- the opinion on a major program: U unmodified, Q qualified, A adverse, D disclaimer
+    findings_count        integer,
+    primary key (report_id, award_reference)
+);
+
+-- Who passed the money down. One row per award per pass-through entity. Source: FAC `passthrough`.
+create table passthroughs (
+    report_id         text not null references audits,
+    award_reference   text not null,
+    passthrough_name  text not null,  -- as the locality's auditor typed it; spelling varies widely
+    agency            text            -- the Virginia state agency we recognised in that name, if any
+);
+create index passthroughs_report on passthroughs (report_id, award_reference);
+create index passthroughs_agency on passthroughs (agency);
+
 -- One row per finding per federal award. Source: FAC `findings`.
 create table findings (
     report_id                  text not null references audits,
@@ -52,5 +79,13 @@ create table finding_texts (
     reference_number         text not null,
     finding_text             text,     -- empty for 2016 to 2018, when the text was not collected
     contains_chart_or_table  boolean,
+    primary key (report_id, reference_number)
+);
+
+-- One row per finding: what the locality says it will do about it. Source: FAC `corrective_action_plans`.
+create table corrective_actions (
+    report_id         text not null references audits,
+    reference_number  text not null,
+    planned_action    text,
     primary key (report_id, reference_number)
 );

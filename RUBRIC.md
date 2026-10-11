@@ -8,6 +8,17 @@ This rubric turns a locality's single-audit findings into one rating. It is used
 ways: by me when I hand-rate, by the AI when it drafts a risk sheet, and by a few lines
 of code (`rule_rating` in `risk.py`) that apply steps 1 to 4 mechanically as a reference.
 
+## Where this sits in a real risk assessment
+
+A real agency risk form scores several things about a subrecipient's audit, and this
+rating is only one of them. Code works out the others in the audit review
+(`audit_review` in `risk.py`): whether an audit is on file, whether it was filed on
+time, the auditor's opinions, and which findings are on the agency's own money. A late
+audit or a qualified opinion does not change this rating. It is reported beside it.
+
+This rating and its quoted reasons are what a monitor would write in the "documented
+concerns" box of such a form. See `PROCESS.md` for the forms and the rules behind them.
+
 ## What is looked at
 
 The **review window** is the three most recent audit years in the database. Within it,
@@ -25,7 +36,9 @@ Apply the first step that fits.
    window, or no audit on file in the window at all. Do not rate. This is not a clean
    bill of health: say so, and say whether any audit in the window disclosed a
    financial-statement material weakness, material noncompliance or a going-concern
-   doubt, because those appear in the FAC without any finding text.
+   doubt, because those appear in the FAC without any finding text. Real risk forms
+   score an audit that is on file with no findings as the lowest audit risk, and a
+   missing audit as the highest; the audit review reports which applies.
 
 2. **High.** The latest audit has any of:
    - a serious finding that is also a repeat finding;
@@ -52,8 +65,9 @@ high, medium or low rating **one level**, in either direction. This never applie
 - **Up one level** when the text shows the problem is systemic: it spans several
   programs, or the auditor traces it to missing staff, missing reconciliations or absent
   controls across the finance function.
-- **Down one level** when the text shows the problem was isolated and already corrected
-  before the audit was issued.
+- **Down one level** when the auditor's text shows the problem was isolated and already
+  corrected before the audit was issued. The locality's own corrective action plan is a
+  promise, not proof, and does not count.
 
 Any adjustment must be stated as its own reason, with the words that justify it quoted.
 

@@ -27,6 +27,8 @@ def _finding(row):
         "repeat_finding": row["is_repeat_finding"],
         "questioned_costs": row["is_questioned_costs"],
         "requirements": requirement_names(row["type_requirement"]),
+        "programs": row["programs"],
+        "passed_through_state_agencies": row["agencies"],
         "source_audit": source_url(row["report_id"]),
     }
 
@@ -39,9 +41,13 @@ FINDINGS = """
            bool_or(f.is_significant_deficiency) as is_significant_deficiency,
            bool_or(f.is_repeat_finding) as is_repeat_finding,
            bool_or(f.is_questioned_costs) as is_questioned_costs,
+           string_agg(distinct w.aln || ' ' || w.federal_program_name, '; ') as programs,
+           array_remove(array_agg(distinct p.agency), null) as agencies,
            t.finding_text
     from findings f
     join audits a using (report_id)
+    left join awards w using (report_id, award_reference)
+    left join passthroughs p using (report_id, award_reference)
     left join finding_texts t using (report_id, reference_number)
 """
 
