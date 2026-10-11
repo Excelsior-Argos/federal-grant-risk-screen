@@ -74,6 +74,14 @@
 - Every disagreement came from the rubric's "systemic" sentence.
 - The memo is no longer marked draft.
 
+- Checked the problem statement against sources. Corrected two things: the federal rule
+  does not say "every year" (agencies set the schedule), and "a monitor fills in a
+  spreadsheet by hand" was an assumption. Replaced it with evidence from Virginia's own
+  single audit: Social Services missed 15 of 316 locality risk assessments in fiscal
+  year 2025 (finding 2025-017), read from the FAC.
+- The 369 figure is my own count of local entities with an audit for 2023 to 2025. It
+  is not a count of any agency's subrecipients.
+
 **Not done**
 - No GitHub repo: nothing is pushed and the page is not deployed.
 - `RUBRIC.md` still carries its draft notice.

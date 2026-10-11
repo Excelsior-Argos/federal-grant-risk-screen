@@ -4,9 +4,19 @@ A tool for a state grants monitor. It pulls Virginia local governments' single-a
 results from the Federal Audit Clearinghouse (FAC), shows what the auditors found, and
 drafts a risk sheet per locality that a human must approve.
 
-Federal rule 2 CFR 200.332 requires a state that passes federal money down to
-subrecipients to assess each one's risk and follow up on audit findings. Today that is
-done by reading each audit and filling in a spreadsheet by hand.
+Federal rule 2 CFR 200.332(c) requires an agency that passes federal money down to
+subrecipients to evaluate each one's risk of noncompliance, and names the results of
+previous audits as one of four things to consider. The rule sets no schedule; agencies
+set their own.
+
+This is a real gap in Virginia. The Commonwealth's fiscal year 2025 single audit
+(finding 2025-017, in the FAC as report `2025-06-GSAFAC-0000388108`) found that the
+Department of Social Services had not completed 15 of 316 locality risk assessments,
+after 50 of 324 the year before. The finding has repeated every year since fiscal year
+2021, and the corrective action plan describes tracking the work in spreadsheets.
+
+This tool covers the audit-results factor only. It feeds a risk assessment; it does
+not replace one.
 
 ## Status
 

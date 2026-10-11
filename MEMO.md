@@ -13,14 +13,21 @@ paperwork; the risk judgment stays with your staff.
 
 ## The problem
 
-Under 2 CFR 200.332 we must assess every subrecipient's risk each year and follow up on
-audit findings. The evidence is public: each locality's single audit is in the Federal
-Audit Clearinghouse (FAC). Today a monitor opens each audit, reads the findings and
-fills in a spreadsheet by hand.
+Under 2 CFR 200.332(c), an agency that passes federal money to subrecipients must
+evaluate each one's risk of noncompliance. The results of previous audits are one of
+four things the rule says to consider. The rule sets no schedule. Agencies set their
+own, and the Department of Criminal Justice Services, for one, publishes a policy of
+assessing before each award period or annually.
 
-For Virginia that is 369 local entities with an audit in the last three audit years
-(2023 to 2025). Only 68 of them have any finding on a federal award. A monitor spends
-most of the time confirming there is nothing to read, and the rest reading closely.
+Keeping up is hard. The Commonwealth's fiscal year 2025 single audit found that the
+Department of Social Services had not completed 15 of 316 locality risk assessments,
+after 50 of 324 the year before (finding 2025-017, repeated every year since fiscal
+year 2021). Its corrective action plan describes tracking the work in spreadsheets.
+
+The audit evidence itself is public: each locality's single audit is in the Federal
+Audit Clearinghouse (FAC). In that data, 369 Virginia local entities have an audit for
+2023 to 2025 and only 68 have any finding on a federal award. One agency's
+subrecipients are a subset of these.
 
 ## What I built
 
@@ -92,6 +99,9 @@ tiers. The real cost is the monitor's review time, which this does not remove.
 
 - **The human check was not blind.** I reviewed ratings an AI had drafted. A stronger
   test is a grants monitor rating the 30 without seeing any AI output.
+- **It covers one risk factor of four.** The rule also names prior experience with
+  similar awards, new staff or systems, and federal monitoring results. The tool reads
+  audit results only, so it feeds a risk assessment and does not replace one.
 - **The rubric is a draft.** It has not been reviewed by a grants professional. A wrong
   rubric applied consistently is still wrong.
 - **The FAC does not hold everything.** Its findings table covers federal awards only.
