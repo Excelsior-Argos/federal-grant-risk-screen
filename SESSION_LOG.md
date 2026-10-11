@@ -82,9 +82,19 @@
 - The 369 figure is my own count of local entities with an audit for 2023 to 2025. It
   is not a count of any agency's subrecipients.
 
+- Looked for the real process to test against. Found two real instruments:
+  the DCJS Grant Monitoring Risk Assessment spreadsheet (8 factors, points, low 1 to 6,
+  medium 7 to 13, high 14 or more) and North Carolina's county subrecipient risk matrix.
+  Found no completed assessments; those are internal agency records.
+- What this showed: the real form scores the audit by whether one exists and by the
+  auditor's opinion, with a free-text box for concerns. My rubric scores finding flags
+  instead. So the tool's rating does not match the form a monitor actually fills in.
+  Not fixed yet.
+
 **Not done**
 - No GitHub repo: nothing is pushed and the page is not deployed.
 - `RUBRIC.md` still carries its draft notice.
+- The tool does not produce the audit rows of a real agency form.
 
 **Mine to do**
 - Read `RUBRIC.md`, change what I disagree with, remove the draft notice.
