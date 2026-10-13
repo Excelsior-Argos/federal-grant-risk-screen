@@ -68,6 +68,40 @@ if agency:
     col2.metric("Latest audit filed late", sum(1 for w in worklist if w["late"]))
     col3.metric("Next audit overdue", sum(1 for w in worklist if w["next_audit_overdue"]))
     col4.metric("Findings on this agency's money", sum(1 for w in worklist if w["own_findings"]))
+
+    # The short list a monitor acts on first: who has findings on this agency's money, and what kind.
+    flagged = sorted((w for w in worklist if w["own_findings"]), key=lambda w: (-w["vdem_points"], -w["own_findings"]))
+    st.markdown(f"**The {len(flagged)} subrecipients with findings on this agency's money in their last two audits.** "
+                "Tick a row to open that locality below.")
+    picked = st.dataframe(
+        [
+            {
+                "Locality": w["name"],
+                "Findings": w["own_findings"],
+                "Finding numbers": ", ".join(sorted(f["reference_number"] for f in w["findings"])),
+                "Material weakness or modified opinion": sum(1 for f in w["findings"]
+                                                             if f["is_material_weakness"] or f["is_modified_opinion"]),
+                "Repeat": sum(1 for f in w["findings"] if f["is_repeat_finding"]),
+                "Questioned costs": sum(1 for f in w["findings"] if f["is_questioned_costs"]),
+                "Programs": "; ".join(sorted({p.title() for f in w["findings"] for p in (f["programs"] or "").split("; ") if p})),
+                "Latest audit filed late": w["late"],
+                "Management decision due": w["decision_due"],
+            }
+            for w in flagged
+        ],
+        hide_index=True,
+        on_select="rerun",
+        selection_mode="single-row",
+        key=f"flagged-{agency}",
+    )
+    picked_ein = flagged[picked.selection.rows[0]]["ein"] if picked.selection.rows else None
+    st.caption(
+        "A finding is listed here when the auditor attached it to a grant line that names this agency as the "
+        "source. A locality can get the same program from more than one source, and the auditor then attaches "
+        "the finding to every line of that program. So read each finding to confirm it concerns this agency's part."
+    )
+
+    st.markdown(f"**All {len(worklist)} subrecipients**")
     st.dataframe(
         [
             {
@@ -82,7 +116,7 @@ if agency:
                 "DCJS form: audit points": w["dcjs_points"],
                 "NC matrix: audit row": w["nc_level"],
             }
-            for w in sorted(worklist, key=lambda w: (-w["vdem_points"], -w["own_findings"], -w["dcjs_points"],
+            for w in sorted(worklist, key=lambda w: (-w["own_findings"], -w["vdem_points"], -w["dcjs_points"],
                                                      -w["months_after_year_end"]))
         ],
         column_config={
@@ -102,15 +136,20 @@ if agency:
     )
     subrecipients = {w["ein"] for w in worklist}
     localities = [row for row in localities if row["auditee_ein"] in subrecipients]
+else:
+    picked_ein = None
 
 # ---------- Step 2: one locality ----------
 localities.sort(key=lambda row: row["auditee_name"].lower())
+# A row ticked in the short list above opens that locality here.
+picked_index = next((i for i, row in enumerate(localities) if row["auditee_ein"] == picked_ein), None)
 chosen = st.selectbox(
     "Locality",
     localities,
-    index=None,
+    index=picked_index,
     placeholder="Type a name, for example Fairfax",
     format_func=lambda row: f"{row['auditee_name']} ({(row['auditee_city'] or '').title()})",
+    key=f"locality-{agency}-{picked_ein}",
 )
 if not chosen:
     st.stop()

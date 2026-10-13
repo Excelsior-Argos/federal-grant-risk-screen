@@ -68,7 +68,7 @@ action from significant or unresolved ones.
 | Verify the audit is on file | Shown for each locality, with the date the FAC accepted it. | Whether an audit was required when none is on file. |
 | Check it was on time | Months from fiscal year end to acceptance, late if over nine. | The 30-day rule, which needs the auditor's report date. |
 | Read the findings | Finding text, flags and the locality's corrective action plan. | Findings on the financial statements only, which the FAC flags without text. |
-| Separate findings on the agency's money | Each finding is tagged with its program and the agency that passed the money down. | |
+| Separate findings on the agency's money | Each finding is tagged with its program and the agency that passed the money down, and the agency view lists the subrecipients that have any. | When a locality gets one program from several sources, the auditor attaches the finding to every line of it. The monitor still has to read the finding to see which part it concerns. |
 | Fill in the audit rows of the risk form | Worked out by code for three real forms: VDEM, DCJS and North Carolina's. | Every other row: late reports, site visits, staff turnover, award size. |
 | Write up documented concerns | The AI drafts them with the auditor's words quoted, and a person approves. | |
 | Issue a management decision | The six-month due date is shown. | The decision itself, and whether one was issued. |

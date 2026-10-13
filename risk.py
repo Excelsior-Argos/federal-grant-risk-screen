@@ -303,10 +303,12 @@ def agency_worklist(agency):
         ), per_finding as (  -- findings on this agency's money in the last two audit years
             select l.auditee_ein, a.audit_year, f.reference_number, bool_or(f.report_id = l.report_id) as in_latest,
                    bool_or(f.is_material_weakness) as mw, bool_or(f.is_modified_opinion) as mo,
-                   bool_or(f.is_repeat_finding) as rep, bool_or(f.is_questioned_costs) as qc
+                   bool_or(f.is_repeat_finding) as rep, bool_or(f.is_questioned_costs) as qc,
+                   string_agg(distinct w.federal_program_name, '; ') as programs
             from latest l
             join audits a on a.auditee_ein = l.auditee_ein and a.audit_year >= l.audit_year - 1
             join findings f on f.report_id = a.report_id
+            left join awards w on w.report_id = f.report_id and w.award_reference = f.award_reference
             where exists (select 1 from passthroughs p where p.report_id = f.report_id
                           and p.award_reference = f.award_reference and p.agency = %(agency)s)
             group by 1, 2, 3
@@ -314,7 +316,7 @@ def agency_worklist(agency):
             select auditee_ein, json_agg(json_build_object(
                        'audit_year', audit_year, 'reference_number', reference_number, 'in_latest', in_latest,
                        'is_material_weakness', mw, 'is_modified_opinion', mo,
-                       'is_repeat_finding', rep, 'is_questioned_costs', qc)) as own_findings
+                       'is_repeat_finding', rep, 'is_questioned_costs', qc, 'programs', programs)) as own_findings
             from per_finding group by 1
         )
         select l.auditee_ein, l.auditee_name, l.audit_year, l.report_id, l.fy_end_date, l.fac_accepted_date,
@@ -348,6 +350,7 @@ def agency_worklist(agency):
             "report_id": row["report_id"], "next_audit_overdue": review["next_audit_overdue"],
             "months_after_year_end": months, "late": months > AUDIT_DUE_MONTHS,
             "own_spending": row["own_spending"], "own_findings": len(row["own_findings"]),
+            "findings": row["own_findings"],
             "decision_due": (months_after(row["fac_accepted_date"], DECISION_DUE_MONTHS)
                              if any(f["in_latest"] for f in row["own_findings"]) else None),
             "vdem_points": sum(points for _, _, points in vdem_form_rows(review)),
