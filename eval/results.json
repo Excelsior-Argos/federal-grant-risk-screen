@@ -6,28 +6,28 @@
       "ai_rating": "medium",
       "sheet": {
         "rating": "medium",
-        "summary": "Caln Township's 2023 audit, the only one on file in the 2023 to 2025 window, has one serious finding: a federal COVID recovery funds report was not filed accurately or on time. It is not a repeat and has no questioned costs, so the rating is medium. The finding is not on money passed down by a recognised Virginia state agency, and the audit was filed late (10 months after year end).",
+        "summary": "The auditor found that Caln Township did not file a required report for its Coronavirus State and Local Fiscal Recovery Funds accurately or on time. The auditor rated this a material weakness (a serious gap in internal controls) and it led to a qualified opinion on that program's compliance. This 2023 audit is the most recent on file. No 2024 or 2025 audit is on file, and the 2023 audit was filed late.",
         "reasons": [
           {
-            "reason": "The auditor marked this reporting failure as a material weakness (the most serious kind of control problem) and modified the compliance opinion for the Coronavirus State and Local Fiscal Recovery Funds program; no Virginia state agency was recognised as passing this money down.",
+            "reason": "The auditor rated this reporting failure a material weakness, and it led to a qualified opinion on compliance for the federal recovery funds program. The finding does not name a Virginia state agency as the source of the money, so the agency it concerns is not identified.",
             "quote": "The Township did not properly complete and file the report on an accurate, timely basis.",
             "audit_year": 2023,
             "reference_number": "2023-002"
           }
         ],
         "next_checks": [
-          "Confirm whether audits for 2024 and 2025 exist. None are in the evidence, so 2023 was treated as the latest audit.",
-          "Ask for proof that the recovery funds report was corrected and that later reports were filed on time. The Township's plan for the Finance Director to track due dates is a promise, not proof.",
-          "Ask why the 2023 audit was accepted 10 months after year end (the limit is nine), and what lies behind the financial-statement material weakness and material noncompliance the audit disclosed, since the evidence has no finding text for them."
+          "Ask whether the township has 2024 and 2025 single audits. None is on file, and the 2024 audit would have been due by September 30, 2025. Also note that the 2023 audit reached the Clearinghouse about 10 months after year end, past the 9-month deadline.",
+          "Check whether the township now files the recovery funds reports correctly and on time. The township's plan says the Finance Director will track due dates, but that is a promise, not proof the problem is fixed.",
+          "Confirm which agency passed these funds to the township. The finding does not name a Virginia state agency, so it may not involve the monitor's own agency's money."
         ]
       },
       "quote_problems": [],
       "usage": {
         "model": "claude-opus-5-5",
         "via": "Claude Code",
-        "input_tokens": 3823,
-        "output_tokens": 1007,
-        "cost_usd": 0.03543
+        "input_tokens": 4060,
+        "output_tokens": 930,
+        "cost_usd": 0.03484
       }
     },
     "546001228": {
@@ -36,52 +36,52 @@
       "ai_rating": "high",
       "sheet": {
         "rating": "high",
-        "summary": "High risk. The latest audit on file (2024) again found that a school construction contract paid with federal COVID relief money (ESSER) left out the required Davis-Bacon wage clause; the auditor called it material noncompliance and it repeats from 2023. Both audits reached the Clearinghouse very late (23 and 32 months after year end), both disclosed a financial-statement material weakness, and no 2025 audit is in the evidence.",
+        "summary": "For the second year in a row, the auditor found that a school construction contract paid for with federal COVID-19 school relief money (ESSER, passed through the Department of Education) left out required federal wage-rate terms. The auditor found this serious enough to say the city did not comply with federal rules for those programs. The city also filed both audits very late: 23 and 32 months after year-end, against a nine-month deadline. Both audits also report serious control weaknesses in the city's financial statements.",
         "reasons": [
           {
-            "reason": "Department of Education money: the latest audit has a serious finding (the auditor modified the compliance opinion on the ESSER school relief program) because a construction contract lacked the required wage clause.",
+            "reason": "In the latest audit, the auditor found that an ESSER construction contract (Department of Education money) left out required federal wage-rate (Davis-Bacon) terms. The finding was serious enough that the auditor said the city did not comply with federal rules for these programs.",
             "quote": "the contract did not include the required Wage Rate (Davis Bacon Act) and DOL regulations.",
             "audit_year": 2024,
             "reference_number": "2024-003"
           },
           {
-            "reason": "Department of Education money: the auditor says this serious finding is a repeat of last year's, and a serious repeat finding in the latest audit is rated high under the rubric.",
+            "reason": "The auditor says the same wage-rate problem was found the year before, so it had not been fixed by the 2024 audit.",
             "quote": "Similar condition present in the prior year.",
             "audit_year": 2024,
             "reference_number": "2024-003"
           },
           {
-            "reason": "Department of Education money: the auditor traces the problem to missing controls, not just a one-time slip, so there is no basis to lower the rating.",
-            "quote": "The omission of this clause was due to oversight and a lack of controls in place",
-            "audit_year": 2024,
-            "reference_number": "2024-003"
-          },
-          {
-            "reason": "Department of Education money: the earlier audit in the window had the same serious finding on the same program, which is a second route to a high rating.",
-            "quote": "did not include the Wage Rate (Davis Bacon Act) and DOL regulations.",
+            "reason": "The 2023 audit also found that the city did not comply with federal rules on the same ESSER programs (Department of Education). That makes two years in a row with a serious finding.",
+            "quote": "The written contract was not in compliance with required disclosures related to the Davis Bacon Act.",
             "audit_year": 2023,
             "reference_number": "2023-003"
           },
           {
-            "reason": "Department of Education and Department of Criminal Justice Services money: the audit package was filed late for the second year running, a repeat finding that touches highway, fiscal recovery and school relief programs.",
+            "reason": "In 2024 the auditor blamed missing controls, not only a one-time slip. The auditor reviewed only one contract, so the problem looks limited to how ESSER contracts are checked, not the whole finance office.",
+            "quote": "due to oversight and a lack of controls in place",
+            "audit_year": 2024,
+            "reference_number": "2024-003"
+          },
+          {
+            "reason": "For the second year, the city filed its required federal audit report late. This finding covers Department of Education and Department of Criminal Justice Services money in 2024, and Department of Transportation money in 2023.",
             "quote": "The City did not submit the data collection form for the year ended June 30, 2024 timely.",
             "audit_year": 2024,
             "reference_number": "2024-004"
           }
         ],
         "next_checks": [
-          "Ask the School Board for its current contract template and any federally funded construction contracts signed since June 2024, and confirm the Davis-Bacon wage clause is in them. The locality says procedures are in place; that is a promise, not proof.",
-          "Ask the City when the fiscal year 2025 audit will be issued. None is in the evidence, the 2024 audit was accepted 23 months after year end and the 2023 audit 32 months after.",
-          "Both audits disclosed a financial-statement material weakness and material noncompliance. Get the 2024 audit report and check whether the 2023 software-conversion problems (wrong fund balances, large audit adjustments) are still open, and confirm which agency passed down the highway and fiscal recovery money, since the pass-through agencies listed for the late-filing finding differ between 2023 and 2024."
+          "Department of Education: get copies of ESSER-funded construction contracts signed after June 30, 2024 and check that they include the Davis-Bacon wage-rate and Department of Labor (DOL) terms. The school board's statement that 'procedures were put in place' is the locality's own claim, not something the auditor confirmed.",
+          "Ask whether the city has filed its audit for the year ended June 30, 2025. None is on file, and the nine-month deadline passed on March 31, 2026. Both audits on file were accepted 23 and 32 months after year-end.",
+          "Both audits report material weaknesses in the financial statements, meaning serious gaps in controls over the books, with no finding text in this data. Ask for the full audit reports to see whether those problems were fixed. Also check why the 2024 late-filing finding lists the Department of Criminal Justice Services as the pass-through agency for the highway program."
         ]
       },
       "quote_problems": [],
       "usage": {
         "model": "claude-opus-5-5",
         "via": "Claude Code",
-        "input_tokens": 12293,
-        "output_tokens": 1913,
-        "cost_usd": 0.08743
+        "input_tokens": 12537,
+        "output_tokens": 2348,
+        "cost_usd": 0.09711
       }
     },
     "546001262": {
@@ -90,58 +90,52 @@
       "ai_rating": "high",
       "sheet": {
         "rating": "high",
-        "summary": "Emporia's latest audit (fiscal year 2024) has five findings, all marked as material weaknesses (the most serious kind of control failure), and one repeats from the prior year, which makes the rating high under the rubric. All five are on Coronavirus State and Local Fiscal Recovery Funds (21.027) passed through the Department of Criminal Justice Services, and none carries questioned costs. The 2024 audit was accepted 27 months after year end and the 2023 audit 20 months after, and no 2025 audit is on file.",
+        "summary": "Emporia's audits are badly behind. The 2024 audit reached the Federal Audit Clearinghouse 27 months after the year ended, and the auditor says the same problem was found the year before. The 2024 audit also found five material weaknesses (serious gaps in the City's controls), all on Coronavirus State and Local Fiscal Recovery Funds passed through the Department of Criminal Justice Services. They include no written procurement policy, payments and timesheets paid without City approval, a late federal report, and a federal spending schedule that nobody checked.",
         "reasons": [
           {
-            "reason": "Department of Criminal Justice Services money: the auditor marked the late audit filing as a material weakness and as a repeat of a prior-year finding, which is what sets the rating at high.",
+            "reason": "The late-audit problem was also found in the prior year, so it has not been fixed. The 2024 audit was accepted 27 months after year end and the 2023 audit 20 months after, against a nine-month deadline.",
             "quote": "This was a prior year finding. See Item 2023-001.",
             "audit_year": 2024,
             "reference_number": "2024-010"
           },
           {
-            "reason": "Department of Criminal Justice Services money: the auditor says the City is behind on its required audit filings, so the state is getting audit results long after the money was spent.",
-            "quote": "The City has not met its single audit submission requirements.",
-            "audit_year": 2024,
-            "reference_number": "2024-010"
-          },
-          {
-            "reason": "Department of Criminal Justice Services money: every payroll timesheet the auditor tested was paid without City approval, a material weakness over what costs are charged to the grant.",
+            "reason": "The City paid Recovery Fund money (Department of Criminal Justice Services) without checking it first. Every payroll timesheet the auditor tested lacked City approval, so the City may have paid costs that are not allowed under the grant.",
             "quote": "We detected this through sampling in one out of seven disbursements tested and in six out of six payroll timesheets tested.",
             "audit_year": 2024,
             "reference_number": "2024-012"
           },
           {
-            "reason": "Department of Criminal Justice Services money: the City has no written purchasing policy beyond small purchases, which federal rules require, and the auditor marked this as a material weakness.",
+            "reason": "The City has no written procurement policy for its Recovery Fund purchases (Department of Criminal Justice Services), even though federal rules require one.",
             "quote": "The City does not maintain a procurement policy.",
             "audit_year": 2024,
             "reference_number": "2024-011"
           },
           {
-            "reason": "Department of Criminal Justice Services money: a required federal spending report was filed late, and the auditor marked this as a material weakness.",
-            "quote": "ARPA Project and Expenditure Report was not filed prior to the deadline date of 4/30/24.",
-            "audit_year": 2024,
-            "reference_number": "2024-013"
-          },
-          {
-            "reason": "Department of Criminal Justice Services money: the City's list of federal spending was not checked before the audit and had to be changed, a material weakness in tracking grant money.",
+            "reason": "The problems go beyond one program. Nobody checked the City's schedule of federal spending before it went to the auditor, and the auditor had to have it changed, so the City's federal spending totals cannot be relied on without checking.",
             "quote": "A review of the federal expenditures reported on the SEFA was not performed.",
             "audit_year": 2024,
             "reference_number": "2024-014"
+          },
+          {
+            "reason": "The City filed a required Recovery Fund report late (Department of Criminal Justice Services). The auditor traces this to staff duties changing hands, which suggests thin staffing in the finance office.",
+            "quote": "The delay in filing the report was due to transition of duties among the current staff.",
+            "audit_year": 2024,
+            "reference_number": "2024-013"
           }
         ],
         "next_checks": [
-          "Late filing: the 2024 audit was accepted 27 months after year end and the 2023 audit 20 months after (the limit is nine), and no 2025 audit is on file. Ask the City for the status and expected date of the fiscal year 2025 audit.",
-          "Verify the City's promised fixes rather than relying on its plan: ask for the adopted written procurement policy (the plan promises it by December 31, 2026), examples of City-approved vendor invoices and timesheets charged to the grant, and the federal reporting schedule.",
-          "The 2024 audit cites prior-year finding 2023-001, but no 2023 finding text is in the data provided. Pull the 2023 audit to confirm what it found, and read the 2024 report for the financial-statement material weakness it disclosed."
+          "The audit data has no 2025 audit for Emporia, and its nine-month deadline passed in March 2026. Confirm whether the 2025 audit has been started or filed. Get the text of the prior-year finding 2023-001, which the 2023 audit data does not include.",
+          "Ask the Department of Criminal Justice Services whether it has reviewed the City's Recovery Fund payments for 2024, especially the payroll paid on unapproved timesheets. Each 2024 finding is recorded as affecting 4 federal awards, but only the Recovery Fund is named. Find out which other awards are involved.",
+          "The City says it has already started approving vendor payments and timesheets and reconciling its federal spending schedule. It also says a procurement policy will be adopted by December 31, 2026. These are the City's own promises, so get evidence for each: signed approvals, a completed reconciliation, and the adopted policy."
         ]
       },
       "quote_problems": [],
       "usage": {
         "model": "claude-opus-5-5",
         "via": "Claude Code",
-        "input_tokens": 6979,
-        "output_tokens": 1864,
-        "cost_usd": 0.0652
+        "input_tokens": 7217,
+        "output_tokens": 1860,
+        "cost_usd": 0.06607
       }
     },
     "546001415": {
@@ -150,40 +144,40 @@
       "ai_rating": "medium",
       "sheet": {
         "rating": "medium",
-        "summary": "Medium risk. The 2025 audit has one finding, marked as a material weakness (the most serious kind of control failure): the City missed or was late with required quarterly reports on its federal COVID recovery funds. It is not a repeat, has no questioned costs, and is on money that came directly from the U.S. Treasury, not through a recognised Virginia state agency; the 2024 and 2025 audits were also filed late.",
+        "summary": "The auditor found that the City of Martinsville did not file required spending reports on its federal Coronavirus State and Local Fiscal Recovery Funds on time. It skipped one quarterly report and filed another more than two months late. The auditor rated this a material weakness, meaning a serious gap in controls. It affects one program, it is new this year, and no costs were questioned. The City's last two audits were also filed late.",
         "reasons": [
           {
-            "reason": "The latest audit has a serious finding (a material weakness) on reporting for the Coronavirus State and Local Fiscal Recovery Funds, which makes the rating medium; no Virginia state agency was recognised as passing this money down.",
-            "quote": "During the fiscal year, the City had Project & Expenditure Reports which were either not submitted or were submitted more than 30 days after the end of the fiscal quarter.",
+            "reason": "The auditor rated this a serious control gap: the City had no reliable way to make sure the quarterly reports on its Recovery Funds money were filed on time. The data shows no Virginia state agency passing this money down, so it appears to come directly from the U.S. Treasury rather than through a state agency.",
+            "quote": "The City did not have adequate controls in place to ensure that Project & Expenditure Reports were being filed in a timely manner.",
             "audit_year": 2025,
             "reference_number": "2025-002"
           },
           {
-            "reason": "One required quarterly report was never submitted at all, which shows the failure was more than a short delay; this concerns direct federal money, not a Virginia state agency's.",
+            "reason": "This was not a small slip. One required quarterly report was never filed at all, and the next one was filed more than two months after its deadline.",
             "quote": "The Project & Expenditure Report for the first quarter of the fiscal year was required to be submitted by October 31, 2024, however no report was submitted.",
             "audit_year": 2025,
             "reference_number": "2025-002"
           },
           {
-            "reason": "The auditor ties the cause to weak controls over this one program's reports, not to the whole finance function, so the rating is not moved up to high; again, no Virginia state agency's money is involved.",
-            "quote": "The City did not have adequate controls in place to ensure that Project & Expenditure Reports were being filed in a timely manner.",
+            "reason": "The problem is limited to reporting on this one program. The finding is not marked as a repeat, no costs were questioned, and the 2023 and 2024 audits had no findings on federal awards. The auditor does not describe a breakdown across the wider finance office.",
+            "quote": "The City should evaluate the controls in place over the CSLFRF program to ensure that Project & Expenditure Reports are being filed in a timely manner.",
             "audit_year": 2025,
             "reference_number": "2025-002"
           }
         ],
         "next_checks": [
-          "Ask the City for proof that the missing first-quarter Project & Expenditure Report was filed and that every later quarterly report went in within 30 days.",
-          "Verify the corrective action plan: it says a consulting firm reviewed controls and gives a completion date of December 31, 2026 under an interim finance director. Ask for the firm's report and the new written procedures. The City's response blames staff turnover, so also ask whether reporting on your agency's grants is affected.",
-          "Ask why the 2024 and 2025 audits were filed late (accepted 14 and 13 months after year end, against a nine-month limit) and whether the next audit is on schedule."
+          "Check the late filings. The 2025 audit reached the clearinghouse 13 months after its fiscal year ended, and the 2024 audit 14 months after. Both are past the nine-month deadline. Ask the City why.",
+          "The City says that staff turnover caused the problem and that a consulting firm and new staff have helped fix it, with work due to finish by December 31, 2026. That is the City's own claim, not the auditor's. Before treating the problem as fixed, ask for proof that recent quarterly Recovery Funds reports were filed on time.",
+          "Check whether any state agency's own money is involved. This finding names no Virginia pass-through agency. If the monitor's agency funds other City programs, see whether the same reporting controls cover those grants."
         ]
       },
       "quote_problems": [],
       "usage": {
         "model": "claude-opus-5-5",
         "via": "Claude Code",
-        "input_tokens": 4793,
-        "output_tokens": 1505,
-        "cost_usd": 0.04927
+        "input_tokens": 5035,
+        "output_tokens": 1338,
+        "cost_usd": 0.0469
       }
     },
     "546001569": {
@@ -192,64 +186,52 @@
       "ai_rating": "high",
       "sheet": {
         "rating": "high",
-        "summary": "Draft rating: high. The 2025 audit has seven federal award findings, five of them material weaknesses (the most serious kind of control failure), and two of those repeat earlier findings. Two are on coronavirus recovery money (21.027) recorded as passed through the Department of Criminal Justice Services; the rest are on workforce and HUD programs with no Virginia state agency recognised. The 2025 and 2024 audits were also filed late, at 15 and 13 months after year end.",
+        "summary": "For the third year in a row, the auditor found that the City of Roanoke did not properly check on the organisations it passes workforce (WIOA) money to. In 2025 the problem got worse and spread: the auditor rated six findings across four federal programs as serious, including two on Coronavirus State and Local Fiscal Recovery Funds passed through the Department of Criminal Justice Services. The auditor traces most of the problems to staff turnover and having no grant accountant. The 2025 audit was filed 15 months after year-end and the 2024 audit 13 months after, both later than the 9-month deadline.",
         "reasons": [
           {
-            "reason": "No Virginia state agency recognised (workforce programs): this 2025 finding is a material weakness and the auditor marks it as a repeat of the prior year, which makes the rating high under the rubric.",
+            "reason": "The WIOA subrecipient-monitoring problem was serious in 2025 and also appeared in 2024 and 2023, so it has still not been fixed. No Virginia state agency is recorded as passing this money down.",
             "quote": "Repeat Finding 2024-002",
             "audit_year": 2025,
             "reference_number": "2025-003"
           },
           {
-            "reason": "No Virginia state agency recognised (workforce programs): the same failure to monitor subrecipients was already reported in 2024, when it was itself a repeat of 2023, so it has now run three years.",
-            "quote": "There was a lack of evidence of testing and suggestions to the subrecipient during the fiscal year 2024.",
-            "audit_year": 2024,
-            "reference_number": "2024-002"
-          },
-          {
-            "reason": "No Virginia state agency recognised (HUD lead hazard grant): a second 2025 material weakness that repeats finding 2024-003, because nobody reviews reports before they are sent.",
-            "quote": "we noted that the City lacked a review process",
-            "audit_year": 2025,
-            "reference_number": "2025-004"
-          },
-          {
-            "reason": "Department of Criminal Justice Services (coronavirus recovery funds): a new 2025 material weakness, because the City did not monitor the organisations it passed this money to.",
-            "quote": "Subrecipient monitoring was not done according the City\u2019s formal, written policy",
+            "reason": "On Recovery Funds passed through the Department of Criminal Justice Services, the City did not check on the organisations it passed the money to, and the auditor rated this as serious. The auditor blames lost staff.",
+            "quote": "Staff turnover, including the lack of a grant accountant.",
             "audit_year": 2025,
             "reference_number": "2025-006"
           },
           {
-            "reason": "Department of Criminal Justice Services (coronavirus recovery funds): a new 2025 material weakness, because the spending reported to the federal government did not match the City's own records and the backup could not be produced.",
+            "reason": "On the same Department of Criminal Justice Services Recovery Funds, the City's quarterly spending reports had no supporting records and did not match its own accounts. The auditor rated this as serious.",
             "quote": "cumulative totals of expenditures did not agree to the total amounts reported on the",
             "audit_year": 2025,
             "reference_number": "2025-007"
           },
           {
-            "reason": "No Virginia state agency recognised (HUD lead hazard grant): required financial reports were not filed at all, which led the auditor to modify the opinion on compliance for this program.",
-            "quote": "quarterly reports were not submitted.",
+            "reason": "In the federal lead hazard grant, nobody separate checked reports before they were sent. This serious problem repeats a 2024 finding. No Virginia state agency is recorded as passing this money down.",
+            "quote": "Due to the small nature of the department, there is overlap in position responsibilities.",
             "audit_year": 2025,
-            "reference_number": "2025-005"
+            "reference_number": "2025-004"
           },
           {
-            "reason": "No rating change, since high is already the top level, but the auditor traces findings in several programs to the same finance staffing gap, which points to a systemic problem (Department of Criminal Justice Services money included).",
-            "quote": "Staff turnover, including the lack of a grant accountant.",
+            "reason": "The problems are wider than one program. In 2025 the auditor found failures in workforce, lead hazard, community development block grant and Recovery Fund money, and repeatedly traces them to the same empty grant accountant post.",
+            "quote": "Subrecipient monitoring was not done according the City\u2019s formal, written policy and",
             "audit_year": 2025,
             "reference_number": "2025-006"
           }
         ],
         "next_checks": [
-          "Confirm which of the 23 coronavirus recovery fund (21.027) awards in findings 2025-006 and 2025-007 are actually Department of Criminal Justice Services money, and whether the subrecipient monitoring and reporting failures touch those awards.",
-          "Ask the City for proof of its claimed fixes rather than relying on its plan: evidence that a grant accountant is in post, completed subrecipient desk-monitoring files, and the reconciliation it says was done for the quarter ending June 30, 2026.",
-          "Ask why the 2025 audit was accepted 15 months after year end and the 2024 audit 13 months after (the limit is nine), and get details of the material weakness and material noncompliance the 2025 audit disclosed at the financial-statement level, which have no finding text here."
+          "Department of Criminal Justice Services: get the City's records showing its 2025 checks on Recovery Fund subrecipients. Also get the reconciliation the City says it completed for the quarter ending June 30, 2026, and confirm the quarterly report now agrees to its general ledger. That is the City's own claim, and the auditor has not tested it.",
+          "Confirm whether the City now has a grant accountant in post. The auditor names this vacancy as the cause in several 2025 findings. Then decide whether to add extra checks or reporting conditions to current awards.",
+          "Ask why the 2024 and 2025 audits were filed 13 and 15 months after year-end. Also check whether the earlier Recovery Fund problems were fixed: unapproved credit card purchases (2023-002) and a lost-revenue figure understated by about $4.8 million (2023-003)."
         ]
       },
       "quote_problems": [],
       "usage": {
         "model": "claude-opus-5-5",
         "via": "Claude Code",
-        "input_tokens": 22951,
-        "output_tokens": 2559,
-        "cost_usd": 0.14298
+        "input_tokens": 23193,
+        "output_tokens": 3426,
+        "cost_usd": 0.16129
       }
     },
     "546001631": {
@@ -258,46 +240,52 @@
       "ai_rating": "medium",
       "sheet": {
         "rating": "medium",
-        "summary": "Staunton's latest audit (2025) has three findings on federal awards, which makes the rating medium under the rubric. None is a material weakness (the most serious kind of control failure), none is a repeat and none has questioned costs. All three are about missing paperwork or undocumented reviews; no adjustment up or down was made from the text.",
+        "summary": "The 2025 audit found three separate compliance problems in three federal programs. In two of them, the city could not show that a supervisor had reviewed the work. In the third, it left key federal details out of the paperwork it gave a subrecipient (an organization the city passes federal money to). None of the problems was rated by the auditor as a material weakness or a significant deficiency. None was a repeat, no costs were questioned, and all three audits in the window received clean opinions.",
         "reasons": [
           {
-            "reason": "Department of Social Services money: this is one of three findings in the latest audit, which sets the rating at medium, though the auditor found the missing supervisor sign-off in only one Adoption Assistance file.",
+            "reason": "Department of Social Services money: in an Adoption Assistance case file, the city did not document that a supervisor approved the eligibility forms. The auditor found this in one file and links it to state forms that have no line for supervisor approval.",
             "quote": "In one instance, there was no evidence of supervisory approval on any forms.",
             "audit_year": 2025,
             "reference_number": "2025-002"
           },
           {
-            "reason": "Department of Education and Department of Health money: the second 2025 finding shows the city passed Coronavirus recovery funds to another body without giving it the required federal award details.",
+            "reason": "Department of Education and Department of Health money: the city's paperwork for a subaward of Coronavirus State and Local Fiscal Recovery Funds left out the federal award number (FAIN), the program number (ALN) and the federal agency that made the award. Without these, the subrecipient cannot correctly identify and report the money.",
             "quote": "All necessary information was not communicated to the subrecipient.",
             "audit_year": 2025,
             "reference_number": "2025-003"
           },
           {
-            "reason": "No Virginia state agency's money (Community Development Block Grant): the third 2025 finding shows grant reports went out without a documented review, which brings the count to three.",
+            "reason": "Community Development Block Grant money (no Virginia state agency is named as passing it through): two of the five reports the auditor tested showed no evidence of review before they went to the grantor. The auditor says the reviews were skipped while staff were rushing to meet deadlines.",
             "quote": "There was no evidence of review of two of the five reports tested.",
             "audit_year": 2025,
             "reference_number": "2025-004"
           },
           {
-            "reason": "No Virginia state agency's money (Coronavirus recovery funds): an earlier audit also found a review weakness, but it was not a serious finding and does not raise the rating.",
-            "quote": "review of the revenue loss calculation did not detect this error.",
+            "reason": "The 2025 audit has three findings, which is more than a few isolated problems. However, each has its own cause, and the auditor does not link them to staffing gaps or missing controls across the finance office.",
+            "quote": "While prioritizing deadlines, proper reviews were not documented.",
+            "audit_year": 2025,
+            "reference_number": "2025-004"
+          },
+          {
+            "reason": "The only 2024 finding was an error of about $1 million in an input to the revenue-loss calculation for Recovery Funds (no Virginia state agency is named as passing the money through). The auditor says the error did not change the amount the city claimed.",
+            "quote": "There was no impact to the amount of funds claimed under revenue loss.",
             "audit_year": 2024,
             "reference_number": "2024-001"
           }
         ],
         "next_checks": [
-          "Department of Social Services: ask for a sample of fiscal year 2026 Adoption Assistance eligibility files and confirm each shows both the case worker's and the supervisor's signature or initials, as the city promised.",
-          "Department of Education and Department of Health: ask for the city's current subaward documents for Coronavirus recovery funds and confirm they now state the federal award number (FAIN), the program number (ALN) and the federal awarding agency.",
-          "Confirm the city can show documented review of grant reports before submission from the quarter ended 9/30/2025 onward; the city says it has done this, but that is its own statement, not the auditor's."
+          "Department of Social Services: ask for a sample of Adoption Assistance eligibility files from fiscal year 2026. Check that each shows the preparer's initials and a supervisor's approval. The city has promised this but has not yet shown it.",
+          "Department of Education and Department of Health: get the city's current Recovery Funds subaward documents. Confirm they now include the FAIN, ALN, name of the federal awarding agency and the other required subaward details.",
+          "Community Development Block Grant: find out which agency, if any, passes this money to the city. Then check whether reports from the quarter ended 9/30/2025 onward show documented review before they were submitted, which the city says it has started doing."
         ]
       },
       "quote_problems": [],
       "usage": {
         "model": "claude-opus-5-5",
         "via": "Claude Code",
-        "input_tokens": 7169,
-        "output_tokens": 1532,
-        "cost_usd": 0.05932
+        "input_tokens": 7416,
+        "output_tokens": 2071,
+        "cost_usd": 0.07108
       }
     },
     "546001141": {
@@ -306,34 +294,34 @@
       "ai_rating": "low",
       "sheet": {
         "rating": "low",
-        "summary": "Low risk. The only finding in the 2023 to 2025 window is from the 2023 audit: the County filed its 2022 audit reporting form late. The 2024 and 2025 audits have no findings on federal awards, and no audit in the window disclosed a material weakness, material noncompliance or going-concern doubt.",
+        "summary": "The only finding in the three years reviewed is from the 2023 audit. Bedford County filed its federal audit report for 2022 late. The auditor marked it as a repeat finding. It did not involve money misspent, a weak control over spending or a breach of program rules. The 2024 and 2025 audits have no findings on federal awards, and the county's 2023, 2024 and 2025 audit reports were all accepted within nine months of year-end.",
         "reasons": [
           {
-            "reason": "The only finding in the window is in an earlier audit (2023), not the latest (2025), which the rubric rates low; it is a late filing, not misspent money, and it touches programs passed down by the Departments of Agriculture and Consumer Services, Criminal Justice Services, Education and Social Services.",
+            "reason": "The problem was paperwork timing, not spending. The 2022 audit report was filed late with the Federal Audit Clearinghouse, the federal site where single audits are filed. The finding lists programs funded through the Departments of Agriculture and Consumer Services, Criminal Justice Services, Education and Social Services.",
             "quote": "The County did not file the data collection form for the year ended June 30, 2022 timely.",
             "audit_year": 2023,
             "reference_number": "2023-001"
           },
           {
-            "reason": "The auditor put the cause on management missing a deadline and marked the finding as a repeat, but not as a material weakness or significant deficiency and with no questioned costs, so no adjustment to the low rating is made; this applies to all four pass-through agencies named above.",
+            "reason": "The auditor puts the cause on management missing the filing deadline. The auditor did not trace it to wider control gaps in the finance office, and the finding was not rated a significant deficiency or a material weakness.",
             "quote": "Management did not complete and certify auditee portion of the form before the deadline.",
             "audit_year": 2023,
             "reference_number": "2023-001"
           }
         ],
         "next_checks": [
-          "Confirm the County is still filing on time: the 2025 audit was accepted on 2026-03-25, about nine months after year end and only days inside the deadline.",
-          "Ask the County for evidence that the staffing fixes promised in its 2023 corrective action plan (vacancies filled, one position added, finance department restructured) are in place and holding. The plan is a promise, not proof.",
-          "The 2023 finding was marked as a repeat. Look at the 2022 audit, which is outside this window, to see how long late filing had been a problem."
+          "The 2025 audit was accepted on 2026-03-25, close to the nine-month mark. Confirm that it was on time and keep watching filing dates. Late filing is the problem the auditor flagged.",
+          "The county says it filled empty posts, added a position and reorganized the finance department. Ask for proof of these changes, because that statement is the county's own and not the auditor's finding.",
+          "Find out why the 2023 finding was marked as a repeat. The finding text does not describe the earlier occurrence."
         ]
       },
       "quote_problems": [],
       "usage": {
         "model": "claude-opus-5-5",
         "via": "Claude Code",
-        "input_tokens": 5996,
-        "output_tokens": 1380,
-        "cost_usd": 0.05158
+        "input_tokens": 6233,
+        "output_tokens": 1295,
+        "cost_usd": 0.05083
       }
     },
     "546001188": {
@@ -342,40 +330,40 @@
       "ai_rating": "medium",
       "sheet": {
         "rating": "medium",
-        "summary": "Medium. The latest audit on file (2024) has one finding, and it repeats the 2023 finding: the County has no complete written procurement policy that meets federal rules. The auditor did not mark it as a material weakness (the most severe kind of control problem) and questioned no costs, but it went unfixed for a year.",
+        "summary": "For two years in a row, the auditor found that Caroline County has no written purchasing rules that meet federal standards for its Coronavirus State and Local Fiscal Recovery Funds. The 2024 audit marks this as a repeat of the 2023 finding, so the problem has not been fixed. The auditor did not call it a material weakness (a serious control failure), did not question any costs, and limits it to this one program's purchasing.",
         "reasons": [
           {
-            "reason": "Department of Education money: the latest audit found the County still lacks written purchasing rules that meet federal standards, and the auditor flagged this as a repeat finding, which makes the rating medium.",
+            "reason": "In the 2024 audit, the county still had no written purchasing policy that meets federal rules. The auditor marked this as a repeat finding. The audit data lists the Department of Education as the state agency that passed this money down.",
             "quote": "The County does not have its own written procurement policies that conform to applicable Federal laws and regulations and standards.",
             "audit_year": 2024,
             "reference_number": "2024-003"
           },
           {
-            "reason": "Department of Education money: the auditor says the gap could lead to improper purchases with federal funds, though no costs were questioned.",
-            "quote": "could result in potential improper procurement using Federal funds.",
-            "audit_year": 2024,
-            "reference_number": "2024-003"
-          },
-          {
-            "reason": "No Virginia state agency was recognised for this finding: the same problem was first reported the year before, which shows it stayed open for a full audit cycle.",
+            "reason": "The auditor found the same gap in 2023. The county has known about it for at least a year without closing it. The data names no Virginia state agency for the 2023 finding.",
             "quote": "The County does not have its own written procurement policies that conform to applicable Federal laws",
             "audit_year": 2023,
             "reference_number": "2023-002"
+          },
+          {
+            "reason": "The auditor describes a risk of improper purchases, not purchases that actually went wrong. No costs were questioned, and the finding covers only the purchasing rules for one program (two awards in 2024). The problem is real but narrow.",
+            "quote": "could result in potential improper procurement using Federal funds.",
+            "audit_year": 2024,
+            "reference_number": "2024-003"
           }
         ],
         "next_checks": [
-          "Ask the County for its adopted written procurement policy and confirm it covers the federal standards in 2 CFR 200.317 to 200.326. Its corrective action plans in both 2023 and 2024 said only that updating had begun.",
-          "No 2025 audit is in the evidence, although the review window runs to 2025. Check whether it has been filed, whether it was filed on time, and whether the procurement finding repeats a third time.",
-          "Confirm which Coronavirus State and Local Fiscal Recovery Funds awards the 2024 finding covers. It lists two awards and names the Department of Education, while the 2023 finding names no state agency."
+          "Ask the county for its current written purchasing policy for federal funds and check that it now meets the federal procurement standards. The county said in both 2023 and 2024 that it had 'begun updating' its procedures. That is a promise, not proof. Also note that the county's 2024 corrective action plan says 'Not applicable' for repeat finding, but the auditor marked the finding as a repeat.",
+          "No fiscal year 2025 audit is on file. FY2025 ended June 30, 2025, so an audit filed on time would have been due by the end of March 2026. Confirm whether it was filed late or has not been filed. (The 2023 and 2024 audits were each accepted 7 months after year end, which is on time.)",
+          "Confirm which state agency passed down this money. For 2024 the data lists the Department of Education, which is unusual for Coronavirus State and Local Fiscal Recovery Funds. For 2023 no Virginia agency is named. This matters for which monitor owns the follow-up."
         ]
       },
       "quote_problems": [],
       "usage": {
         "model": "claude-opus-5-5",
         "via": "Claude Code",
-        "input_tokens": 6811,
-        "output_tokens": 1464,
-        "cost_usd": 0.05652
+        "input_tokens": 7058,
+        "output_tokens": 1756,
+        "cost_usd": 0.06335
       }
     },
     "546001279": {
@@ -384,40 +372,46 @@
       "ai_rating": "medium",
       "sheet": {
         "rating": "medium",
-        "summary": "Floyd County's 2025 audit has three findings on federal awards, two of them serious, all touching Coronavirus State and Local Fiscal Recovery Funds passed through the Department of Criminal Justice Services and the Department of Housing and Community Development. None is a repeat or flagged with questioned costs, and 2023 and 2024 show no federal award findings, so the rating is medium. I did not move it up, but the reviewer should weigh two things: the missing procurement manual spans several programs, and the 2025 and 2024 audits were filed late (14 and 13 months after year end).",
+        "summary": "The auditor found that Floyd County's spending report for its Coronavirus State and Local Fiscal Recovery Funds had key lines with no supporting records, and that the County's schedule of federal spending left out $175,000. Both problems were in the 2025 audit and affect money passed through the Department of Criminal Justice Services and the Department of Housing and Community Development. The County also has no purchasing manual that meets federal rules, which also affects school meal funds from the Department of Education. The 2024 and 2025 audits were each filed more than a year after the fiscal year ended, which is late.",
         "reasons": [
           {
-            "reason": "For the Department of Criminal Justice Services and the Department of Housing and Community Development: the auditor gave a modified opinion on compliance for the recovery funds because reported spending could not be backed up, which makes this a serious finding.",
-            "quote": "No supporting documentation for key line items on P&E expenditure report.",
+            "reason": "The auditor found material noncompliance (a breach serious enough to change the auditor's opinion on the program) because the County's Recovery Fund spending report did not match its records; this concerns the Department of Criminal Justice Services and the Department of Housing and Community Development.",
+            "quote": "Key line items on the P&E report are not supported by documentation",
             "audit_year": 2025,
             "reference_number": "2025-017"
           },
           {
-            "reason": "For the Department of Criminal Justice Services and the Department of Housing and Community Development: the auditor marked as a material weakness (the most severe kind of control failure) that the County left grant spending off its schedule of federal spending (the SEFA).",
+            "reason": "The auditor rated this a material weakness, a serious gap in controls: the schedule of federal spending only counted reimbursed items, so it understated the grant. This concerns the Department of Criminal Justice Services and the Department of Housing and Community Development.",
             "quote": "The SEFA was understated by $175,000 for the E&T LE Grant.",
             "audit_year": 2025,
             "reference_number": "2025-018"
           },
           {
-            "reason": "For the Department of Education, the Department of Criminal Justice Services and the Department of Housing and Community Development: this is the third finding in the latest audit, and it covers both the school nutrition programs and the recovery funds.",
+            "reason": "The County has no purchasing manual that follows federal rules, so the problem goes beyond one grant. It touches Recovery Funds and school meal programs passed through the Department of Education, the Department of Criminal Justice Services and the Department of Housing and Community Development.",
             "quote": "The County does not have a Uniform Guidance Procurement Manual.",
+            "audit_year": 2025,
+            "reference_number": "2025-016"
+          },
+          {
+            "reason": "The auditor warns that federally funded purchases may not have followed federal rules, so past purchases may need review.",
+            "quote": "Purchases made using federal funding may not be compliant with Uniform Guidance",
             "audit_year": 2025,
             "reference_number": "2025-016"
           }
         ],
         "next_checks": [
-          "Confirm whether finding 2025-017 carries questioned costs. The data flag says no, but the auditor's text has a line reading \"Questioned Cost Amount P&E report was understated by $186,000.\" If it does count, a serious finding with questioned costs makes the rating high.",
-          "Ask for proof that the County's promised fixes are done: an adopted procurement manual covering all departments, a corrected and documented P&E report, and a SEFA built from an expenditure listing and reconciled to the Cardinal Report. The County's plan is a promise, not evidence.",
-          "Ask why the 2025 and 2024 audits were filed late (14 and 13 months after year end), and what the financial-statement material weakness disclosed in each of 2023, 2024 and 2025 was. The data here has no finding text for those."
+          "Ask for the corrected Recovery Fund spending report and a revised schedule of federal spending. Confirm the $186,000 understatement in finding 2025-017 and the $175,000 understatement in 2025-018 have been fixed. The County's plan says it has verified its spreadsheet, but that is the County's own claim and has not been checked by an auditor.",
+          "Confirm whether the County has adopted a purchasing manual that meets federal rules, as it promised for finding 2025-016. Sample recent federally funded purchases, including school meal purchases, to see whether they followed federal purchasing rules.",
+          "Ask why the 2024 and 2025 audits were filed 13 and 14 months after year end. Also get the financial-statement material weaknesses that the 2023 and 2024 audits disclosed, because this data has no finding text for them."
         ]
       },
       "quote_problems": [],
       "usage": {
         "model": "claude-opus-5-5",
         "via": "Claude Code",
-        "input_tokens": 5663,
-        "output_tokens": 2286,
-        "cost_usd": 0.06837
+        "input_tokens": 5902,
+        "output_tokens": 1951,
+        "cost_usd": 0.06263
       }
     },
     "546001508": {
@@ -426,34 +420,34 @@
       "ai_rating": "low",
       "sheet": {
         "rating": "low",
-        "summary": "Low risk under the rubric. The latest audit (2025) has one finding, on Department of Social Services money: late Medicaid eligibility reviews, not marked as a material weakness (the most serious kind of control failure), not repeated and with no questioned costs. A 2023 finding on workforce grants led to a modified opinion (the auditor could not give that program a clean compliance opinion), and the 2025 audit also flags material noncompliance without finding text, so both need a look.",
+        "summary": "In the 2025 audit, the county's social services office had not renewed Medicaid eligibility on time in 4 of the 25 cases the auditor tested. This means some clients may have kept getting benefits without a yearly check that they still qualified. This money comes through the Virginia Department of Social Services. The only other finding in the review window was a 2023 problem with oversight of workforce program funds, and it did not come back in 2024 or 2025.",
         "reasons": [
           {
-            "reason": "Department of Social Services (Medicaid): the only finding in the latest audit is late eligibility reviews, with no serious, repeat or questioned-cost flags, which puts the rating at low.",
-            "quote": "In 4 of the 25 cases tested, eligibility redetermination had not been completed",
+            "reason": "The only finding in the latest audit is on Medicaid money passed through the Virginia Department of Social Services. Eligibility renewals were late in 4 of 25 cases tested, but the auditor did not rate it as a material weakness or a significant deficiency, did not question any costs, and had not found it the year before.",
+            "quote": "In 4 of the 25 cases tested, eligibility redetermination had not been completed in the",
             "audit_year": 2025,
             "reference_number": "2025-001"
           },
           {
-            "reason": "No Virginia state agency recognised in the data (the auditor names the Virginia Community College System as the pass-through for workforce grants): this earlier finding led to a modified compliance opinion, but it is not in the latest audit, so it does not raise the rating.",
+            "reason": "In 2023 the auditor qualified its opinion on the workforce programs (WIOA Cluster). This was a serious problem: the county could not show it was overseeing the local workforce board it passed money to, because the board had no current audit. The audit data did not match this money to a Virginia state agency, though the finding text names the Virginia Community College System. The problem was not reported again in 2024 or 2025.",
             "quote": "The Workforce Development Board has not had a current audit in accordance with Uniform Guidance.",
             "audit_year": 2023,
             "reference_number": "2023-001"
           }
         ],
         "next_checks": [
-          "Department of Social Services: ask for evidence that the overdue Medicaid eligibility reviews are caught up and that supervisors are doing the monthly report reviews promised in the county's plan. The plan also depends on filling a vacant manager position, so confirm whether it is filled. The plan is a promise, not proof.",
-          "The 2025 audit is flagged as disclosing material noncompliance, but the data has no finding text that explains it. Get the full 2025 audit report and find out what it refers to.",
-          "Workforce grants (2023 finding): confirm the West Piedmont Workforce Development Board has since had a current audit and that the county is monitoring it. The finding did not recur in 2024 or 2025, but the data does not say it was fixed."
+          "The 2025 audit summary says the audit disclosed material noncompliance, meaning a serious failure to follow program rules. But finding 2025-001 is not marked as causing a modified (qualified) opinion. Check the 2025 auditor's report to see whether the Medicaid compliance opinion was qualified. If it was, this sheet understates the risk.",
+          "Department of Social Services: ask the county for evidence that its overdue Medicaid renewals are caught up. Its own response says this depends on filling a vacant manager post and adding monthly supervisor reviews, so confirm those changes were actually made rather than taking the plan at its word.",
+          "Workforce funds (Virginia Community College System): confirm that West Piedmont Workforce Development Board now has a current single audit, which is the problem behind the 2023 finding."
         ]
       },
       "quote_problems": [],
       "usage": {
         "model": "claude-opus-5-5",
         "via": "Claude Code",
-        "input_tokens": 5378,
-        "output_tokens": 1418,
-        "cost_usd": 0.04987
+        "input_tokens": 5621,
+        "output_tokens": 1684,
+        "cost_usd": 0.05616
       }
     },
     "546002979": {
@@ -462,28 +456,28 @@
       "ai_rating": "low",
       "sheet": {
         "rating": "low",
-        "summary": "Low under the rubric: the only federal award finding in the 2023 to 2025 window is one from 2023, and the latest audit (2025) has none. This is not a clean bill of health. All three audits disclosed a material weakness (a serious control gap) in the financial statements with no finding text here, and all three were filed late.",
+        "summary": "The only federal-award finding in three years is from 2023. It concerns a required spending report for Coronavirus State and Local Fiscal Recovery Funds, and the auditor marked it as a repeat from an earlier year. The 2024 and 2025 audits list no federal-award findings. However, all three audits reported a material weakness (a serious gap in controls) in the financial statements, and all three were filed 10 to 12 months after year end, which is late.",
         "reasons": [
           {
-            "reason": "The only federal award finding in the window is from an earlier audit: a repeat reporting finding, not marked serious and with no questioned costs, on Coronavirus State and Local Fiscal Recovery Funds, with no Virginia state agency recognised as passing the money down.",
+            "reason": "The only finding in the three years is in the 2023 audit and is about reporting for the Coronavirus State and Local Fiscal Recovery Funds. No Virginia state agency was identified as passing this money down, so it may be federal money the county received directly. The auditor also marked it as a repeat of an earlier year's finding.",
             "quote": "Per program requirements, a Project and Expenditure Report (P&E) was due by April 30, 2023 and annually thereafter.",
             "audit_year": 2023,
             "reference_number": "2023-004"
           }
         ],
         "next_checks": [
-          "Get the financial-statement findings from the 2023, 2024 and 2025 audit reports. Each audit disclosed a material weakness, but no finding text is in this data, so we cannot tell what it was or whether it touches grant accounting.",
-          "Confirm the Project and Expenditure Reports due April 30, 2024 and later were filed on time. The county says the 2024 report was, but that is its own statement, not the auditor's. The 2023 finding text also does not say what went wrong, so read the full finding.",
-          "Ask why all three audits were filed late (accepted 12, 11 and 10 months after year end, against a nine-month limit) and whether the 2026 audit is on schedule."
+          "Get the 2023, 2024 and 2025 audit reports and read the financial-statement material weakness reported in each year. The Clearinghouse has no finding text for these, and they may affect controls over federal money.",
+          "Find out why all three audits reached the Clearinghouse late (10, 11 and 12 months after year end). Ask the county when it will file the next audit on time.",
+          "Confirm with the U.S. Treasury reporting records that the county filed its Project and Expenditure Reports for 2024 and later on time. The county says the April 30, 2024 report was filed on time, but the auditor has not confirmed this."
         ]
       },
       "quote_problems": [],
       "usage": {
         "model": "claude-opus-5-5",
         "via": "Claude Code",
-        "input_tokens": 4105,
-        "output_tokens": 1035,
-        "cost_usd": 0.03712
+        "input_tokens": 4350,
+        "output_tokens": 915,
+        "cost_usd": 0.0357
       }
     },
     "546001597": {
@@ -492,40 +486,40 @@
       "ai_rating": "low",
       "sheet": {
         "rating": "low",
-        "summary": "Low under the rubric: the only federal award finding in the window is from 2024, and the latest audit (2025) has none. That 2024 finding was over-claimed school meal reimbursements with questioned costs, on money passed through the Department of Education and the Department of Agriculture and Consumer Services. This is not a clean bill of health: the 2024 and 2025 audits both disclosed a material weakness and material noncompliance with no finding text in the data, and the 2023 and 2024 audits were filed late.",
+        "summary": "In its 2024 audit, the auditor found that Scott County's School Board claimed reimbursement for more school meals than it served. The overclaim is $24,886 known, and up to $124,430 likely. This is the only finding on federal money in 2023\u20132025 and it was not a repeat. However, the 2025 audit reports a material weakness and material noncompliance with no finding text in the data, so the most recent year still needs a check.",
         "reasons": [
           {
-            "reason": "The only finding in the window is in an earlier audit (2024), and it carries questioned costs on school nutrition money passed through the Department of Education and the Department of Agriculture and Consumer Services; the 2025 audit has no federal award findings, so the rubric gives low.",
+            "reason": "School meal money passed down by the Virginia Department of Education (also listed with the Department of Agriculture and Consumer Services) was overclaimed, so some federal money may have to be paid back.",
             "quote": "There are likely questioned costs of $124,430 (consisting of $24,886 in known questioned costs) related to over claiming school nutrition reimbursements.",
             "audit_year": 2024,
             "reference_number": "2024-005"
           },
           {
-            "reason": "The auditor found a small number of errors in a sample of meal claims (Department of Education and Department of Agriculture and Consumer Services money), which does not show a problem across the finance function, so the rating is not moved up.",
-            "quote": "We reviewed 26 school submissions out of the 130 annual submissions and noted 2 errors.",
+            "reason": "The auditor traces the errors to manual data entry, not to a failure across the finance office. The auditor found 2 errors in the 26 school claims checked, so the problem looks limited to one weak step.",
+            "quote": "Reimbursements require manual data entry and amounts were requested in error.",
             "audit_year": 2024,
             "reference_number": "2024-005"
           },
           {
-            "reason": "The auditor traces the cause to manual entry mistakes, not missing staff or absent controls, but the text does not say the errors were corrected before the audit was issued, so the rating is not moved down either.",
-            "quote": "Reimbursements require manual data entry and amounts were requested in error.",
+            "reason": "The finding is from 2024, not the latest year. The data shows no finding on federal money in the 2025 audit and no repeat of this problem.",
+            "quote": "The School Board requested reimbursement for more meals than actually served.",
             "audit_year": 2024,
             "reference_number": "2024-005"
           }
         ],
         "next_checks": [
-          "Get the full 2025 and 2024 audit reports and read what the disclosed material weakness and material noncompliance were. The data flags both in each year but gives no finding text, and the County was not a low-risk auditee in 2025.",
-          "Confirm with the School Board and the Department of Education that the meal-count review process is actually in place, and whether the over-claimed February 2024 reimbursement ($24,886 known, $124,430 likely) was repaid or resolved. The plan on file only repeats the auditor's recommendation and is not proof of a fix.",
-          "Ask why the 2024 audit was accepted 10 months and the 2023 audit 15 months after year end, both past the nine-month deadline. The 2025 audit was on time at 8 months."
+          "The 2025 audit (accepted 2026-02-25) reports a material weakness and material noncompliance, but the data has no finding text for it. Get the full 2025 audit report to see which programs and agencies are affected. Also check whether findings are missing from the Clearinghouse record. The 2024 audit has the same gap: it reports material noncompliance, but its only finding is not marked as a modified opinion.",
+          "Department of Education: confirm whether the overclaimed meal money ($24,886 known, up to $124,430 likely) was resolved or paid back. Also confirm the School Board now has a review step that checks keyed-in meal counts against supporting records. Its plan says this will be done, but a plan is not proof.",
+          "Two audits were filed late: 2024 was accepted 10 months after year end and 2023 after 15 months. The 2025 audit was on time at 8 months. Note the late filings on the risk form."
         ]
       },
       "quote_problems": [],
       "usage": {
         "model": "claude-opus-5-5",
         "via": "Claude Code",
-        "input_tokens": 4691,
-        "output_tokens": 1447,
-        "cost_usd": 0.0477
+        "input_tokens": 4929,
+        "output_tokens": 1333,
+        "cost_usd": 0.04638
       }
     },
     "546001622": {
@@ -534,46 +528,46 @@
       "ai_rating": "low",
       "sheet": {
         "rating": "low",
-        "summary": "Draft rating: low. The latest audit (2025) has one finding on the school meal programs. It is a significant deficiency (a control gap less severe than a material weakness), not a repeat, with no questioned costs. The only earlier finding (2023) is also a significant deficiency. No adjustment from the text was made: both findings are missing paperwork in the school system, which is worth watching but is not shown to be systemic.",
+        "summary": "In the 2025 audit, the school system could not show that a second person checked its monthly school meal reimbursement requests before sending them to the state. The auditor found the requests themselves were properly supported, called it a control weakness rather than a serious one, and noted it was new that year. The only other finding in the three years is from 2023: a missing vendor eligibility check record on pandemic recovery funds. That finding was not repeated in 2024 or 2025.",
         "reasons": [
           {
-            "reason": "Department of Education and Department of Agriculture and Consumer Services (school breakfast and lunch): the latest audit found no proof that a second person checked three monthly reimbursement requests, which is a control gap but not a serious finding under the rubric.",
-            "quote": "was no evidence of adequate segregation of duties between the preparation of the reimbursement",
+            "reason": "This finding concerns school breakfast and lunch money passed through the Department of Education and the Department of Agriculture and Consumer Services: no one could show that a second person reviewed the reimbursement requests.",
+            "quote": "For three of the monthly reimbursement requests selected for testing, the school system was unable to provide documentation demonstrating that an individual independent of the preparer reviewed and approved the reimbursement reports prior to submission.",
             "audit_year": 2025,
             "reference_number": "2025-001"
           },
           {
-            "reason": "Department of Education and Department of Agriculture and Consumer Services: the auditor found no questioned costs on this finding, so nothing pushes the rating above low.",
-            "quote": "There are no questioned costs related to this finding",
+            "reason": "The auditor found no money spent wrongly. The gap is in record-keeping and review, not in the claims themselves, which keeps the concern limited.",
+            "quote": "There are no questioned costs related to this finding as the reimbursement request was properly supported by underlying documentation of the associated expenditures.",
             "audit_year": 2025,
             "reference_number": "2025-001"
           },
           {
-            "reason": "Department of Social Services per the data, though the finding text names the Department of Education (COVID recovery funds): the earlier audit found a missing record of a vendor exclusion check, which was a lesser finding and does not raise the rating.",
-            "quote": "The suspension and debarment status for one out of two vendors was not retained",
-            "audit_year": 2023,
-            "reference_number": "2023-001"
+            "reason": "The auditor traces the problem to the school system's procedures for keeping evidence of review. It is limited to these reimbursement reports and is not described as a wider staffing or finance-office breakdown.",
+            "quote": "The school system did not have sufficient policies and procedures over internal controls to maintain evidence of review and approval of the reimbursement reports.",
+            "audit_year": 2025,
+            "reference_number": "2025-001"
           },
           {
-            "reason": "Same agency question as above: the auditor confirmed the vendors were not excluded and no costs were questioned, so the 2023 problem was missing paperwork rather than a wrongful payment.",
-            "quote": "There are no questioned costs related to this finding as the vendors were not federally suspended or debarred.",
+            "reason": "The 2023 finding is older and was not repeated later. It covers pandemic recovery funds, labeled as passed through the Department of Social Services, but the auditor's text names the Virginia Department of Education. One vendor's eligibility check record was not kept.",
+            "quote": "The suspension and debarment status for one out of two vendors was not retained related to the Coronavirus and Local Fiscal Recovery Funds Program.",
             "audit_year": 2023,
             "reference_number": "2023-001"
           }
         ],
         "next_checks": [
-          "Ask the school system for recent monthly meal reimbursement requests showing sign-off by someone other than the preparer. The corrective action plan says this now happens, but that is a promise, not proof.",
-          "The 2023 audit is on file twice: once accepted 9 months after year end and again 17 months after. Find out why it was resubmitted and whether anything changed. Finding 2023-001 appears twice in the data, probably for this reason.",
-          "Confirm which agency owns finding 2023-001: the data lists the Department of Social Services, but the finding text names the Virginia Department of Education. Also ask for proof that vendor exclusion checks are now kept on file."
+          "Department of Education and Department of Agriculture and Consumer Services: ask for a sample of recent monthly school meal reimbursement requests that show a separate reviewer's sign-off. The school system's plan says this now happens, but the plan is a promise, not proof.",
+          "The 2023 audit is on file twice. One copy was accepted on 2024-03-31 (on time). The other was accepted on 2024-11-07, 17 months after year end, which is late. Confirm whether the second copy is a revised audit and what changed. Also confirm which state agency passed through the pandemic recovery funds in finding 2023-001: the label says Social Services, but the text says Education.",
+          "The 2024 audit was accepted on 2025-03-31, right at the nine-month deadline, and the 2025 audit on 2026-03-26, just inside it. Watch that the next audit is not filed late."
         ]
       },
       "quote_problems": [],
       "usage": {
         "model": "claude-opus-5-5",
         "via": "Claude Code",
-        "input_tokens": 9411,
-        "output_tokens": 1976,
-        "cost_usd": 0.07716
+        "input_tokens": 9654,
+        "output_tokens": 1862,
+        "cost_usd": 0.07586
       }
     },
     "546001649": {
@@ -582,28 +576,28 @@
       "ai_rating": "low",
       "sheet": {
         "rating": "low",
-        "summary": "Low under the rubric, because the only federal-award finding in the window is from 2023 and the 2024 and 2025 audits have none. That 2023 finding was serious: a repeat finding with questioned costs on Department of Education money, and the data supplied holds almost none of the auditor's text for it. Reported beside the rating: all three audits disclosed a financial-statement material weakness (a serious gap in financial controls), and the 2025 audit was filed late, 10 months after year end.",
+        "summary": "In 2023, the auditor found a serious problem with what the county charged to the Education Stabilization Fund (money passed through by the Virginia Department of Education). The problem had been found the year before, and some costs were challenged by the auditor as possibly not allowed. The 2024 and 2025 audits report no findings on federal awards. However, all three audits disclosed a serious weakness in the county's financial statements, and the 2025 audit was filed late.",
         "reasons": [
           {
-            "reason": "This concerns the Department of Education: the only finding in the window is this 2023 one on Education Stabilization Fund money, flagged as a material weakness, a modified compliance opinion, a repeat finding and questioned costs, but it sits in an earlier audit and the latest audit (2025) has no findings, which the rubric rates low.",
+            "reason": "For the Department of Education, the 2023 audit found a serious weakness in following the rules on allowed costs across four Education Stabilization Fund awards. It repeated a problem from the year before and included challenged costs, but it does not appear in the 2024 or 2025 audits.",
             "quote": "Program Titles: Education Stabilization Fund",
             "audit_year": 2023,
             "reference_number": "2023-003"
           }
         ],
         "next_checks": [
-          "Pull the full 2023 audit report for finding 2023-003 (Department of Education, Education Stabilization Fund). The data here has no auditor narrative, so confirm what went wrong, the amount of questioned costs, and whether they were resolved or repaid.",
-          "Verify that the county did what its plan promised: reviewing how it requests reimbursements and reconciles them to the ledger. The plan is a promise, not proof; ask for evidence and confirm the 2024 and 2025 audits tested this program area.",
-          "Ask why the 2025 audit was accepted 10 months after year end (late), and read the financial-statement material weakness disclosed in each of 2023, 2024 and 2025, since the data carries no finding text for it."
+          "Department of Education: confirm how the costs challenged in finding 2023-003 were settled, for example by repayment or an agency decision. Also check that the county now reconciles its reimbursement requests to its accounting records (its ledger), as its own plan promised. The plan is a promise, not proof.",
+          "Ask for the 2023, 2024 and 2025 audit reports. Each one disclosed a serious weakness in the county's financial statements but gives no finding text here. Check whether it is the same weakness each year and whether it affects how federal money is accounted for.",
+          "The 2025 audit was accepted on 2026-04-20, 10 months after the fiscal year ended on 2025-06-30. The deadline is nine months, so it was late. Ask the county why."
         ]
       },
       "quote_problems": [],
       "usage": {
         "model": "claude-opus-5-5",
         "via": "Claude Code",
-        "input_tokens": 4118,
-        "output_tokens": 1186,
-        "cost_usd": 0.04019
+        "input_tokens": 4366,
+        "output_tokens": 1165,
+        "cost_usd": 0.04076
       }
     },
     "451598772": {
@@ -612,46 +606,46 @@
       "ai_rating": "high",
       "sheet": {
         "rating": "high",
-        "summary": "High risk. The latest audit (2024) found that late payment of contractors and vendors on federal transit grants was a material weakness (the most serious kind of control failure) and a repeat of the 2023 finding. None of the findings is on money passed down by a recognised Virginia state agency, and both audits were filed on time (7 and 9 months after year end). No 2025 audit is in the evidence.",
+        "summary": "For a second year running, the auditor found that Greater Roanoke Transit Company did not pay contractors and vendors on time with federal transit money. In 2024 that meant 14 payments more than 30 days late and four vendors waiting more than 90 days, which led to a qualified compliance opinion on the Federal Transit Formula Grants. The same audit also found expired grants still open, with $673,179 left on them, and contracts missing required federal clauses. None of these findings is tied to a Virginia state agency; the money appears to come straight from the Federal Transit Administration.",
         "reasons": [
           {
-            "reason": "The latest audit has a serious finding (a material weakness that also led to a modified compliance opinion) flagged as a repeat, which makes the rating high under step 2; it is on Federal Transit Formula Grants (20.507), with no Virginia state agency recognised as the pass-through.",
+            "reason": "The auditor rated the 2024 late-payment problem on Federal Transit Formula Grants (20.507) a material weakness, meaning a serious gap in controls, and said the company broke the grant rules. No Virginia state agency is named as passing this money down.",
             "quote": "We noted 14 instances where contractors and vendors were not paid for over 30 days. We also noted four vendors were not paid for over 90 days.",
             "audit_year": 2024,
             "reference_number": "2024-005"
           },
           {
-            "reason": "The earlier audit in the window also had a serious finding on the same late-payment problem, which is a second, separate ground for high; it is on federal transit grants (20.500 and 20.507), with no Virginia state agency recognised.",
-            "quote": "Contractors were not paid for over 30 days after receipt of invoice.",
+            "reason": "The same late-payment problem was a serious finding in 2023 on two transit programs (20.500 and 20.507) and was already marked as a repeat then, so it has gone unfixed for at least three audit years. No Virginia state agency is named.",
+            "quote": "Repeated delays in payments could result in work stoppage and project delays.",
             "audit_year": 2023,
             "reference_number": "2023-007"
           },
           {
-            "reason": "A lesser finding (a significant deficiency) shows expired grants were left open with money still on them, which adds to the picture of weak grant management; it is on 20.507, with no Virginia state agency recognised.",
+            "reason": "In 2024 the auditor also found grants past their end dates still open with money left on them, and traced this to the same weak cash and grant management behind the late payments. That suggests the problem reaches beyond paying bills. No Virginia state agency is named.",
             "quote": "All 6 were still marked as active in the grant award management system as of June 30, 2024, with total remaining funds on these awards totaling $673,179.",
             "audit_year": 2024,
             "reference_number": "2024-006"
           },
           {
-            "reason": "A third finding in the latest audit shows required federal contract clauses were missing, a minor compliance gap that does not change the rating; it is on 20.507, with no Virginia state agency recognised.",
-            "quote": "did not contain these clauses in one contract tested",
+            "reason": "A smaller 2024 finding: federal transit contracts were missing clauses that federal rules require. This is a third separate compliance gap on the same program. No Virginia state agency is named.",
+            "quote": "did not contain these clauses in one contract tested.",
             "audit_year": 2024,
             "reference_number": "2024-007"
           }
         ],
         "next_checks": [
-          "Ask for proof that vendors are now paid on time and grant draws are made promptly: the locality's plan promises a monthly close checklist, grant tracking spreadsheets and filling vacant finance posts, but the same finding repeated from 2023 to 2024 despite a similar promise.",
-          "Confirm whether the six expired federal grants (with $673,179 remaining) have been closed out, and whether the missing contract clauses have been added to the procurement manual and contract templates.",
-          "Check whether the 2025 audit has been filed, since none is in the evidence. Also note both the 2023 and 2024 audits disclosed a material weakness and material noncompliance at the financial-statement level, and confirm whether any of your agency's money goes to this locality, as no Virginia pass-through agency was recognised on these findings."
+          "Confirm which agency, if any, passes money to this company. Every finding is on Federal Transit Administration programs with no Virginia agency recognised, so check whether your agency funds it before acting on these findings.",
+          "No audit for fiscal year 2025 is on file, although the year ended June 30, 2025 and the audit would normally be due by March 31, 2026. Check whether it was filed late or not filed at all. Both audits on file also disclosed material weaknesses in the financial statements, meaning serious gaps in the company's accounting controls.",
+          "Ask for proof that vendors are now paid on time and that expired grants have been closed. Useful proof would be recent payment-timing records, the monthly close checklist in use, and closeout records for the grants listed. The company has promised these fixes, but the auditor has not confirmed them."
         ]
       },
       "quote_problems": [],
       "usage": {
         "model": "claude-opus-5-5",
         "via": "Claude Code",
-        "input_tokens": 22639,
-        "output_tokens": 1791,
-        "cost_usd": 0.12638
+        "input_tokens": 22886,
+        "output_tokens": 2108,
+        "cost_usd": 0.1337
       }
     },
     "546001387": {
@@ -660,34 +654,34 @@
       "ai_rating": "low",
       "sheet": {
         "rating": "low",
-        "summary": "Low under the rubric, because the only federal-award finding in the window is from 2023 and the latest audit (2025) has none. That 2023 finding was serious: it was a repeat, carried questioned costs, and led the auditor to modify the compliance opinion on three workforce (WIOA) programs. Treat the low rating with caution: all three audits were filed late, and each disclosed a material weakness and material noncompliance that the data gives no finding text for.",
+        "summary": "In 2023 the auditor found that Lee County let the body it passed workforce (WIOA) money to draw funds without the County checking any documentation first. The problem was serious, repeated from an earlier year, and had questioned costs (spending the auditor could not accept as allowable). There is no finding text for 2024 or 2025, but both of those audits report a material weakness and material noncompliance, and all three audits were filed 15 to 17 months after year end. So this rating may understate the risk.",
         "reasons": [
           {
-            "reason": "The only finding in the window is in the 2023 audit, not the latest one, so the rubric gives low; it concerns WIOA money that the auditor says came through the Virginia Community College System (the data matched no Virginia state agency), and the County let its subrecipient draw funds unreviewed.",
+            "reason": "The County passed WIOA money on without checking how it was used. The finding hit all three WIOA programs, was a repeat, and came with questioned costs. The data does not link it to a recognised Virginia state agency, but the auditor names Virginia Community College Systems as the pass-through.",
             "quote": "Funds are requested for drawdown by the subrecipient without the County reviewing",
             "audit_year": 2023,
             "reference_number": "2023-007"
           },
           {
-            "reason": "I did not move the rating up: the finding covers three programs, but the auditor ties it to one misunderstood requirement for one subrecipient on Virginia Community College System money, not to a breakdown across the finance function.",
+            "reason": "The auditor traces the problem to the County not understanding its duty to monitor, not to a one-off slip. It is likely to continue unless that duty is now understood and carried out.",
             "quote": "The County misunderstood the compliance requirements for subrecipient monitoring.",
             "audit_year": 2023,
             "reference_number": "2023-007"
           }
         ],
         "next_checks": [
-          "Get the 2024 and 2025 audit reports. Both disclosed a material weakness and material noncompliance, but the data has no findings for those years. Confirm what those were and whether finding 2023-007 came back or was closed.",
-          "Ask why all three audits were late: accepted 16, 17 and 15 months after year end, against a nine-month limit.",
-          "Verify the County's plan was carried out: that it now reviews the workforce board's financial records and gets its annual audit, and that it reviews and approves drawdown requests, which the plan does not mention. Also find the amount of the 2023 questioned costs, which the finding text does not state, and whether they were resolved."
+          "Get the 2024 and 2025 findings. Both audits disclose a material weakness and material noncompliance, but no finding text is on file. Check whether the subrecipient monitoring problem from 2023 continued.",
+          "Ask the County for evidence that it now reviews and approves the workforce board's reimbursement requests before drawing funds, and that it has the board's annual audit. The County's corrective action plan only promises this.",
+          "Ask why all three audits (2023 to 2025) were filed 15 to 17 months after year end, well past the nine-month deadline."
         ]
       },
       "quote_problems": [],
       "usage": {
         "model": "claude-opus-5-5",
         "via": "Claude Code",
-        "input_tokens": 4547,
-        "output_tokens": 1529,
-        "cost_usd": 0.04877
+        "input_tokens": 4789,
+        "output_tokens": 1443,
+        "cost_usd": 0.04802
       }
     },
     "540937411": {
@@ -696,52 +690,46 @@
       "ai_rating": "high",
       "sheet": {
         "rating": "high",
-        "summary": "Draft rating: high. The 2024 audit, the only one in the 2023 to 2025 window, has three findings the auditor marked as material weaknesses (the most serious kind of control failure), which is medium by the rubric's flags. I moved it up one level because the auditor traces all three to finance staff turnover and missing backup controls, across two programs passed through the Department of Health and the Department of Transportation. The audit was also filed 17 months after year end and disclosed material noncompliance.",
+        "summary": "The Commission's finance office lost staff and had no backup, so bank accounts were not reconciled on time and the yearly list of federal spending by grant was wrong until the auditor corrected it. The auditor rated all three 2024 problems as material weaknesses, the most serious kind of control gap. All three trace to the same cause and affect both federal programs passed down by the Department of Health and the Department of Transportation. The 2024 audit was filed 17 months after year end, and no 2023 or 2025 audit is on file.",
         "reasons": [
           {
-            "reason": "Concerns Department of Health and Department of Transportation money: bank accounts were not reconciled on time, and the auditor marked this as a material weakness, which makes the base rating medium.",
-            "quote": "The Commission is not timely reconciling the bank accounts.",
-            "audit_year": 2024,
-            "reference_number": "2024-001"
-          },
-          {
-            "reason": "Concerns Department of Health and Department of Transportation money: the Commission's list of federal spending by award was not reliable, a second material weakness in the latest audit.",
-            "quote": "The Commission did not have sufficient controls to ensure the SEFA accurately reflected each award",
-            "audit_year": 2024,
-            "reference_number": "2024-002"
-          },
-          {
-            "reason": "Concerns Department of Health and Department of Transportation money: the audit was filed late, a third material weakness, so the latest audit has three findings in all.",
-            "quote": "The Commission did not submit the single audit reporting package to the Federal Audit Clearinghouse within nine months after the end of the audit period as required.",
-            "audit_year": 2024,
-            "reference_number": "2024-003"
-          },
-          {
-            "reason": "Adjustment up one level, medium to high, for both agencies: the auditor traces the problem to lost finance staff and missing backup controls across all accounting work, and repeats this cause in all three findings covering both programs.",
+            "reason": "The auditor traces all three problems to one cause: the finance post was left without trained cover and controls were missing across the accounting function. This is a office-wide weakness, not one slip, which is why the concern is raised above what the labels alone would suggest. It affects money from both the Department of Health and the Department of Transportation.",
             "quote": "The Commission had staff turnover in the finance position and did not have sufficient controls and redundancies to allow all accounting functions to be performed on a timely basis.",
             "audit_year": 2024,
             "reference_number": "2024-001"
           },
           {
-            "reason": "Supports the upward adjustment for both agencies: the late reconciliations led to many corrections to the books during the audit, so the weakness had real effects on the accounting records.",
-            "quote": "resulted in numerous audit adjustments to correct posting errors",
+            "reason": "The bank accounts were not reconciled on time. The auditor called this a material weakness and found it caused many posting errors, which puts cash for both programs at risk (Department of Health and Department of Transportation).",
+            "quote": "The Commission is not timely reconciling the bank accounts.",
             "audit_year": 2024,
             "reference_number": "2024-001"
+          },
+          {
+            "reason": "The schedule of federal spending by grant, which the agencies rely on, was not accurate until the auditor made corrections. This is a material weakness affecting awards from the Department of Health and the Department of Transportation.",
+            "quote": "The Commission did not have sufficient controls to ensure the SEFA accurately reflected each award\u2019s federal expenditures.",
+            "audit_year": 2024,
+            "reference_number": "2024-002"
+          },
+          {
+            "reason": "The Commission missed the federal deadline for filing its single audit. The 2024 audit was accepted 17 months after year end. This is a material weakness for both agencies' programs.",
+            "quote": "The Commission did not submit the single audit reporting package to the Federal Audit Clearinghouse within nine months after the end of the audit period as required.",
+            "audit_year": 2024,
+            "reference_number": "2024-003"
           }
         ],
         "next_checks": [
-          "Ask for proof that the promised fixes exist and are in use: the signed bank reconciliation, revenue recording and audit timeline policies (the plan's target date was November 30, 2025), plus recent monthly bank reconciliations signed by the CFO and the Executive Director. The plan is a promise, not proof.",
-          "Confirm the status of the fiscal year 2025 audit (year ended June 30, 2025). None is in the evidence, and the 2024 audit was accepted 17 months after year end. Also confirm why no 2023 audit is in the window.",
-          "Compare the Commission's reported spending on your agency's award (20.933 National Infrastructure Investments or 21.027 Coronavirus State and Local Fiscal Recovery Funds) with your own payment records, since the auditor had to correct the federal spending schedule. Ask the auditor what the material noncompliance disclosed in the 2024 audit refers to."
+          "The Commission says it put fixes in place by October 2025 and expected to finish by November 30, 2025. Ask for proof: the signed bank-reconciliation and revenue policies, a backup plan for finance staff, and recent monthly bank reconciliations.",
+          "No audit for 2023 or 2025 is on file. Check whether the FY2025 single audit is overdue (its deadline was March 31, 2026) and whether a 2023 audit exists. Also confirm which programs each agency funds: both findings list both programs and both agencies.",
+          "The 2024 audit reports material noncompliance, but no finding is marked as a modified compliance opinion. Read the auditor's compliance report to find out which program the noncompliance applies to."
         ]
       },
       "quote_problems": [],
       "usage": {
         "model": "claude-opus-5-5",
         "via": "Claude Code",
-        "input_tokens": 6172,
-        "output_tokens": 2053,
-        "cost_usd": 0.06575
+        "input_tokens": 6417,
+        "output_tokens": 1845,
+        "cost_usd": 0.06257
       }
     },
     "540903278": {
@@ -750,40 +738,46 @@
       "ai_rating": "medium",
       "sheet": {
         "rating": "medium",
-        "summary": "Draft rating: medium. The latest audit (2024) has two minor findings on Department of Behavioral Health and Developmental Services (DBHDS) money, both about late filing, which is low on the flags alone. I moved it up one level because the auditor traces both to vacant finance posts, the same audit disclosed a material weakness (a serious control gap) in the financial statements, and it was accepted 15 months after year end.",
+        "summary": "The auditor found that New River Valley Community Services' finance office was short-staffed in fiscal 2024, with two empty posts, one of them the Senior Finance Director for eight months. As a result, it filed its year-end report to the Department of Behavioral Health and Developmental Services (DBHDS) six weeks after the extended deadline, and its 2024 single audit was 15 months late. Both findings concern money passed down by DBHDS, including Mental Health Block Grant and Coronavirus State and Local Fiscal Recovery Funds. The 2024 audit also reports a material weakness (a serious gap in financial controls) in the financial statements, and there were no findings in 2023.",
         "reasons": [
           {
-            "reason": "DBHDS money: the year-end performance contract report for the Mental Health Block Grant was filed about six weeks after the extended deadline DBHDS had granted.",
+            "reason": "The auditor traces both 2024 findings to empty posts in the finance office, not a one-off slip, so the problem is wider than the two minor findings suggest; this concerns DBHDS money.",
+            "quote": "The Agency had two vacant positions in the Finance Department",
+            "audit_year": 2024,
+            "reference_number": "2024-002"
+          },
+          {
+            "reason": "The year-end Mental Health Block Grant performance report to DBHDS was filed late, after the extension DBHDS had already granted.",
             "quote": "The Agency filed its end of year performance contract report with the DBHDS on October 30, 2024.",
             "audit_year": 2024,
             "reference_number": "2024-002"
           },
           {
-            "reason": "DBHDS money: the single audit covering the Fiscal Recovery Funds and the Mental Health Block Grant missed the nine-month federal filing deadline.",
-            "quote": "The Agency\u2019s audit was not yet completed at the 9 month filing deadline",
+            "reason": "The 2024 single audit missed the federal nine-month filing deadline (it reached the Clearinghouse 15 months after year end). The finding covers two DBHDS pass-through programs, the Mental Health Block Grant and Coronavirus State and Local Fiscal Recovery Funds.",
+            "quote": "The Agency\u2019s audit was not yet completed at March 31, 2025.",
             "audit_year": 2024,
             "reference_number": "2024-003"
           },
           {
-            "reason": "Adjustment up one level, from low to medium (DBHDS money): the auditor traces the problem to missing finance staff, and it touches two federal programs, so it is systemic and not a one-off.",
-            "quote": "The Agency had two vacant positions in the Finance Department, one being the Senior Finance Director position for eight",
+            "reason": "The auditor also cites trouble getting data out of a new software system, which points to a weakness across the whole finance function, not one program.",
+            "quote": "difficulties in extracting data in some areas",
             "audit_year": 2024,
             "reference_number": "2024-003"
           }
         ],
         "next_checks": [
-          "Ask DBHDS whether the fiscal year 2025 performance contract report arrived by its September 2, 2025 due date. The locality's plan says it would, but that is a promise, not proof.",
-          "Find out where the fiscal year 2025 single audit stands. None is in the evidence for this window, and the 2024 audit was accepted 15 months after year end, against a nine-month limit.",
-          "Confirm the finance vacancies, including the Senior Finance Director, are filled and that bank accounts are now reconciled monthly. The 2024 audit disclosed a material weakness in the financial statements, and the locality's plan ties it to bank reconciliations not done on time."
+          "Confirm with DBHDS that the fiscal 2025 performance contract report was filed by its September 2025 due date, as the locality's corrective plan promises, and whether the finance posts, including the Senior Finance Director, are now filled.",
+          "Find out whether a fiscal 2025 single audit has been filed with the Federal Audit Clearinghouse. None is on file, and the 2024 audit was 15 months late.",
+          "Get the auditor's own text for the 2024 financial-statement material weakness. The data has no finding text for it, and only the locality's plan says it concerns bank reconciliations. Check whether monthly bank reconciliations are now done on time."
         ]
       },
       "quote_problems": [],
       "usage": {
         "model": "claude-opus-5-5",
         "via": "Claude Code",
-        "input_tokens": 8429,
-        "output_tokens": 2010,
-        "cost_usd": 0.07392
+        "input_tokens": 8678,
+        "output_tokens": 2127,
+        "cost_usd": 0.07725
       }
     },
     "546001452": {
@@ -792,64 +786,58 @@
       "ai_rating": "high",
       "sheet": {
         "rating": "high",
-        "summary": "High risk. The 2025 audit found serious, repeated failures in the housing voucher programs (late rent checks and missed unit inspections), and the 2024 audit found serious problems in the same areas. All findings are on money that came straight from HUD; none is tied to a Virginia state agency.",
+        "summary": "The authority still does not inspect voucher-funded homes or check rents on time. In 2025 the auditor again found serious, repeated failures in the Housing Choice Voucher program, the same problems reported in 2024, so they have not been fixed. All of these findings are on U.S. Department of Housing and Urban Development (HUD) money, and none is linked to a Virginia state agency.",
         "reasons": [
           {
-            "reason": "The latest audit has a serious finding on the voucher programs (the auditor called it a material weakness, meaning a major gap in controls, and modified the compliance opinion), which is direct HUD money and not any Virginia state agency's.",
+            "reason": "In 2025 the auditor rated the home-inspection failures in the voucher programs (14.871, 14.879) as a serious weakness, repeated from two 2024 findings. Money was paid that should not have been. No Virginia state agency passed this money down.",
             "quote": "27 units did not have inspections performed on a biennial basis",
             "audit_year": 2025,
             "reference_number": "2025-002"
           },
           {
-            "reason": "That serious inspection finding is a repeat from the year before, which on its own makes the rating high; it concerns direct HUD money, not a Virginia state agency's.",
-            "quote": "Repeat Finding: Yes, prior year findings were 2024-002 and 2024-004",
+            "reason": "The auditor counted payments to a landlord that should have been stopped after a failed inspection, so this serious finding comes with money questioned (HUD voucher funds, no Virginia state agency).",
+            "quote": "$487 for the HQS enforcement test only.",
             "audit_year": 2025,
             "reference_number": "2025-002"
           },
           {
-            "reason": "The same serious finding also carries questioned costs (payments the auditor could not accept), a second route to a high rating, though the amount is small; it concerns direct HUD money, not a Virginia state agency's.",
-            "quote": "Questioned costs: $487 for the HQS enforcement test only.",
-            "audit_year": 2025,
-            "reference_number": "2025-002"
-          },
-          {
-            "reason": "A second serious finding in the latest audit, also a repeat (of 2024-005), shows one in five tested rent checks was done late; it concerns direct HUD voucher money, not a Virginia state agency's.",
-            "quote": "24 out of 120 files tested did not have a rent reasonableness determination form completed before the rent effective date.",
+            "reason": "The late rent checks, a serious weakness in the voucher programs, are a repeat of a 2024 finding. That shows the problem continued for a second year (HUD funds, no Virginia state agency).",
+            "quote": "Repeat Finding: Yes, prior year finding was 2024-005",
             "audit_year": 2025,
             "reference_number": "2025-001"
           },
           {
-            "reason": "The earlier audit in the window also had serious findings on the same voucher programs, a third route to a high rating; it concerns direct HUD money, not a Virginia state agency's.",
-            "quote": "36 of 60 units tested did not have inspections performed on a biennial basis.",
-            "audit_year": 2024,
-            "reference_number": "2024-004"
-          },
-          {
-            "reason": "The latest audit also has a new, less severe finding with $8,343 in questioned costs on a different program, Public Housing, so the problems are not confined to vouchers; this too is direct HUD money, not a Virginia state agency's.",
-            "quote": "2 out of 40 files could not be located for testing.",
-            "audit_year": 2025,
-            "reference_number": "2025-003"
-          },
-          {
-            "reason": "The auditor traces the rent problem to staff turnover, which supports the high rating but is not used to adjust it, as high is already the top level; it concerns direct HUD money, not a Virginia state agency's.",
+            "reason": "The auditor traces the late rent checks to staff turnover. That points to a staffing problem, not a one-off error. It is fewer files than in 2024 (24 of 120, against 53 of 120), but still a serious weakness.",
             "quote": "The Authority has had turnover in the staff who perform the rent reasonableness determinations",
             "audit_year": 2025,
             "reference_number": "2025-001"
+          },
+          {
+            "reason": "The 2024 audit also had serious failures in checking which tenants qualify for vouchers, with large questioned costs. Serious problems therefore appear in two straight years (HUD funds, no Virginia state agency).",
+            "quote": "Questioned costs: $45,998.",
+            "audit_year": 2024,
+            "reference_number": "2024-003"
+          },
+          {
+            "reason": "In 2025 the problems spread to a second program, the Public Housing Operating Fund (14.850). The auditor found missing tenant files and questioned costs there (HUD funds, no Virginia state agency).",
+            "quote": "2 out of 40 files could not be located for testing.",
+            "audit_year": 2025,
+            "reference_number": "2025-003"
           }
         ],
         "next_checks": [
-          "Confirm whether your agency passes any money to the Authority. Every finding here is on direct HUD programs (vouchers and public housing), and no Virginia state agency is named on any of them.",
-          "Ask for proof that the fixes are working, not just the plan. The 2024 plans promised completion by December 31, 2025, yet the rent and inspection findings repeated in 2025, and the new plans run to December 31, 2026. Request the monthly inspection tracking reports and a sample of rent checks dated before the rent took effect.",
-          "Confirm what audit is on file for 2023. None is in this evidence, although the 2024 findings cite 2023 findings and an 18-month award period (July 2023 to December 2024). Both audits here were accepted in the ninth month after year end (the 2024 one on September 30, 2025), so neither is late, but both were close to the deadline."
+          "Confirm whether any Virginia state agency passes money to this authority. The audit links every finding to HUD funds only. If no state money is involved, these findings may not fall to this monitor.",
+          "The authority's plans set completion for December 31, 2026, and the 2024 plans set December 31, 2025, which were missed. Ask for evidence that inspections and rent checks are now done on time, for example monthly inspection reports and a sample of recent rent determinations.",
+          "In finding 2025-003, the cause given for the public housing eligibility problems describes inspection staff and the Yardi software, which looks copied from the inspection finding. Ask the auditor or the authority for the real cause. Also note that both audits were accepted at about the nine-month filing deadline (2024 on the last day), so watch the timing of the next audit."
         ]
       },
       "quote_problems": [],
       "usage": {
         "model": "claude-opus-5-5",
         "via": "Claude Code",
-        "input_tokens": 16081,
-        "output_tokens": 2582,
-        "cost_usd": 0.11596
+        "input_tokens": 16319,
+        "output_tokens": 2094,
+        "cost_usd": 0.10716
       }
     },
     "591296315": {
@@ -858,58 +846,58 @@
       "ai_rating": "high",
       "sheet": {
         "rating": "high",
-        "summary": "High risk. The 2024 audit, the only one in the 2023 to 2025 window, has a serious housing voucher eligibility finding that is a repeat and has questioned costs (costs the auditor could not accept), and six of its seven findings are repeats. None of the findings is tied to a Virginia state agency: all seven are on HUD programs with no recognised Virginia pass-through.",
+        "summary": "In the 2024 audit, more than half of the housing voucher tenant files the auditor tested (32 of 60) had eligibility or rent errors. The auditor called this a material weakness, the most serious level of control problem, and gave a qualified opinion on the program's compliance. It has been found every year since 2017. All seven 2024 findings are on HUD housing money, and six are repeats. None of the findings name a Virginia state agency as the source of the money, so the reviewer should first confirm that any Virginia agency funds this authority.",
         "reasons": [
           {
-            "reason": "The auditor found errors in more than half of the voucher files tested, in a finding marked as a material weakness (the most serious kind of control failure) with a modified compliance opinion; no Virginia state agency is recognised as passing this money down.",
+            "reason": "The most serious finding covers the main voucher programs: errors turned up in more than half of the files tested. The money came straight from HUD, and no Virginia agency passed it through.",
             "quote": "Out of 60 housing voucher cluster tenant files tested, 32 tenant files contained errors as noted",
             "audit_year": 2024,
             "reference_number": "2024-001"
           },
           {
-            "reason": "This serious finding is a repeat that the auditor has reported every year since 2017, which on its own makes the rating high; no Virginia state agency is recognised for it.",
+            "reason": "The auditor rated this a material weakness and gave a qualified opinion on how the program followed federal rules, which is the most serious kind of compliance finding.",
+            "quote": "Material Weakness in Internal Control Over Compliance, Material Noncompliance (Modified Opinion)",
+            "audit_year": 2024,
+            "reference_number": "2024-001"
+          },
+          {
+            "reason": "The same eligibility problem has been reported in every audit from 2017 to 2024, so years of promised fixes have not worked.",
             "quote": "This is a repeat finding from previous years. The finding numbers are 2017-001, 2018-001, 2019-001, 2020-001, 2021-001, 2022-001, and 2023-001.",
             "audit_year": 2024,
             "reference_number": "2024-001"
           },
           {
-            "reason": "The same serious finding carries questioned costs, a second and separate ground for a high rating; no Virginia state agency is recognised for it.",
+            "reason": "The auditor found federal payments that were not properly supported (questioned costs) in the voucher programs. Public housing had more, in finding 2024-006 ($12,630).",
             "quote": "Questioned Costs: $12,428",
             "audit_year": 2024,
             "reference_number": "2024-001"
           },
           {
-            "reason": "The auditor traces the voucher problem to weak oversight rather than a one-off mistake, which supports keeping the rating at high (no adjustment was made, as high is the top level); no Virginia state agency is recognised for it.",
-            "quote": "The Authority failed to provide adequate monitoring and oversight to ensure compliance with HUD rules and regulations, as well as its administrative plan.",
+            "reason": "The problem is wider than one program. The auditor gives the same cause, weak monitoring and oversight, for vouchers, public housing (2024-006) and the AIDS housing program (2024-007). The authority also could not produce every file the auditor asked for.",
+            "quote": "Of the files the Authority was able to provide.",
             "audit_year": 2024,
             "reference_number": "2024-001"
           },
           {
-            "reason": "A second program, Public Housing, also has a repeat eligibility finding with questioned costs, so the problem is not confined to vouchers; no Virginia state agency is recognised for it.",
-            "quote": "Questioned Costs: $12,630",
+            "reason": "The auditor also found weak internal controls over required reports to HUD. This is one of six repeat findings in 2024 that cover inspections, rent checks, waiting lists and reporting.",
+            "quote": "we noted the Authority did not have adequate internal controls",
             "audit_year": 2024,
-            "reference_number": "2024-006"
-          },
-          {
-            "reason": "A third program, Housing Opportunities for Persons with AIDS, has a new eligibility finding this year, showing the file errors reach across programs; no Virginia state agency is recognised for it.",
-            "quote": "Out of 29 HOPWA tenant files tested, 2 tenant files contained errors as noted above.",
-            "audit_year": 2024,
-            "reference_number": "2024-007"
+            "reference_number": "2024-005"
           }
         ],
         "next_checks": [
-          "Confirm whether your agency passes any federal money to this housing authority. No finding names a Virginia state agency and every program listed is a HUD program, so there may be no finding on your agency's money.",
-          "Check for the missing audits. Only the 2024 audit is in the evidence; it was accepted within nine months, so it was not late. The 2024 findings cite 2023 finding numbers but no 2023 audit is supplied, and no 2025 audit (year ended 30 September 2025) is supplied either.",
-          "Ask for proof that the promised fixes happened, since the plan is a promise and not evidence: the staff training the authority says was completed by 21 March 2025, the internal tenant-file audits and monitoring due by 31 December 2025, and the status of the $12,428 and $12,630 in questioned costs."
+          "Confirm whether any Virginia state agency passes federal money to this authority. Every 2024 finding shows the money coming directly from HUD, with no Virginia agency recognised.",
+          "The evidence includes only the 2024 audit, which was accepted about nine months after year end and so was just on time. Check whether the 2023 and 2025 audits are on file, and whether the 2025 audit repeats the eligibility finding (2024-001).",
+          "Do not treat the authority's own plan (staff training finished March 2025, new Yardi software workflows) as proof of a fix. Test a sample of current tenant files for eligibility and rent errors, and ask why finding 2024-006 says both 60 and 10 public housing files were tested."
         ]
       },
       "quote_problems": [],
       "usage": {
         "model": "claude-opus-5-5",
         "via": "Claude Code",
-        "input_tokens": 15030,
-        "output_tokens": 2114,
-        "cost_usd": 0.1024
+        "input_tokens": 15272,
+        "output_tokens": 2480,
+        "cost_usd": 0.11069
       }
     },
     "541689909": {
@@ -918,58 +906,58 @@
       "ai_rating": "medium",
       "sheet": {
         "rating": "medium",
-        "summary": "Medium. The latest audit (2025) has one finding, on Virginia Department of Education (VDOE) Title I money, and the auditor marked it as a repeat; it is not a material weakness and has no questioned costs. The text shows one missing student record out of seven tested, which is neither systemic nor shown as fixed, so the rating is not moved. All six findings in the window are on VDOE pass-through money, and all three audits were filed late.",
+        "summary": "For the second time in three years, the School Board could not produce paperwork to show why a student was dropped from the Title I graduation-rate count. That makes the reported graduation rate harder to trust. Earlier audits also found missing ARPA reports, no equipment inventory and about $6,400 in Title I payroll the auditor questioned (could not confirm was allowable). All of these findings are on Virginia Department of Education money, and all three audits reached the Clearinghouse late, between 12 and 29 months after year end.",
         "reasons": [
           {
-            "reason": "VDOE (Title I): this is the only finding in the latest audit and the auditor flagged it as a repeat, which makes the rating medium under the rubric.",
-            "quote": "management was unable to provide timely supporting documentation for one student demonstrating that the student had transferred to another qualifying school or educational program",
+            "reason": "In the latest audit, the School Board could not show why a student was removed from the Title I graduation-rate count (Virginia Department of Education money).",
+            "quote": "management was unable to provide timely supporting documentation for one student demonstrating that the student had transferred to another qualifying school or educational program.",
             "audit_year": 2025,
             "reference_number": "2025-003"
           },
           {
-            "reason": "VDOE (Title I): the same graduation-rate record problem appeared two years earlier, which supports treating the 2025 finding as a repeat.",
-            "quote": "grant management could not provide timely documentation for one (1) sample supporting the removal of a student from the regulatory adjusted cohort",
+            "reason": "The 2023 audit found the same graduation-rate problem, so it has not been fixed. The 2025 finding is marked as a repeat.",
+            "quote": "grant management could not provide timely documentation for one (1) sample supporting the removal of a student from the regulatory adjusted cohort.",
             "audit_year": 2023,
             "reference_number": "2023-002"
           },
           {
-            "reason": "VDOE (Title I): the auditor names a record-keeping lapse in one area and does not say it was fixed, so the text does not justify moving the rating up or down.",
+            "reason": "The auditor puts the cause down to staff and supervisors not keeping records. It is not linked to wider failures in the finance office, and it involved one student out of seven tested, so the problem looks narrow.",
             "quote": "Management and supervisory personnel did not maintain required supporting documentation in a timely and consistent manner.",
             "audit_year": 2025,
             "reference_number": "2025-003"
           },
           {
-            "reason": "VDOE (Coronavirus State and Local Fiscal Recovery Funds): background from an earlier audit, where a reporting finding repeated from 2023 and the School Board disputes it; it does not change the rating.",
-            "quote": "The grant administrator was unable to provide quarterly and annual reporting requirements for fiscal year 2024.",
+            "reason": "For two years in a row, the School Board could not produce the required reports on its ARPA recovery funds passed through by the Virginia Department of Education. The auditor says this means no one can show how the money was used.",
+            "quote": "Accountability for use of the funds can not be demonstrated.",
             "audit_year": 2024,
             "reference_number": "2024-003"
           },
           {
-            "reason": "VDOE (Education Stabilization Fund): background from an earlier audit, where the required equipment count was not done; it does not change the rating.",
+            "reason": "Equipment bought with Education Stabilization Fund money (Virginia Department of Education) was not counted, so loss or theft would go unnoticed.",
             "quote": "A physical inventory was not performed during 2024.",
             "audit_year": 2024,
             "reference_number": "2024-004"
           },
           {
-            "reason": "VDOE (Title I): background from an earlier audit, where missing time records led to about $6,400 in questioned costs; it does not change the rating.",
-            "quote": "grant management could not provide certifications of time incurred and charged to the grant for two (2) employees",
+            "reason": "Title I payroll was charged without time records to support it, and the auditor questioned the cost (Virginia Department of Education money).",
+            "quote": "Two (2) grant charged employees approximating $6,400, from a sample population approximating $132,000.",
             "audit_year": 2023,
             "reference_number": "2023-001"
           }
         ],
         "next_checks": [
-          "Title I (VDOE): ask for the written transfer documentation for students removed from the graduation cohort and test a sample, since the promised new procedures and supervisory review are not yet proven. Also confirm which prior finding 2025-003 repeats: the text names none, the same issue appears as 2023-002, and no such finding appears in 2024.",
-          "Late filing and the 2024 material weakness: all three audits were accepted more than nine months after year end (2025 at 12 months, 2024 at 17, 2023 at 29). The 2024 audit also disclosed a financial-statement material weakness with no finding text in this data. Get the 2024 report to see what it was, and ask why the audits were late.",
-          "Open items from earlier audits (VDOE): (a) settle whether the School Board had to send quarterly and annual recovery-fund reports to VDOE, which it disputes in 2023-003 and 2024-003; note the 2023-003 title says \"Compliance Qualification\" while the data flag shows no modified opinion. (b) Confirm the equipment count promised by October 31, 2026 was done (2024-004). (c) Confirm the roughly $6,400 in questioned Title I payroll was resolved (2023-001)."
+          "Ask the Virginia Department of Education's Title I office for proof that the new supervisory review of graduation-rate records is working. The School Board's correction plan is only a promise, so get evidence. Also confirm that the ARPA reporting dispute in 2024-003 has been settled with the Department.",
+          "Look at the 2023 audit report itself. Finding 2023-003 is titled a 'Compliance Qualification', which means the auditor qualified (limited) the compliance opinion. The data does not flag it as a modified opinion, so confirm which is right. If it was a qualified opinion, this would be a more serious and repeated problem.",
+          "Follow up on the late filings (12, 17 and 29 months after year end). Also check whether the 2024 equipment inventory was completed, since the School Board's own target date is October 31, 2026. Note that the 2024 financial statements disclosed a material weakness (a serious gap in financial controls)."
         ]
       },
       "quote_problems": [],
       "usage": {
         "model": "claude-opus-5-5",
         "via": "Claude Code",
-        "input_tokens": 12815,
-        "output_tokens": 2375,
-        "cost_usd": 0.09876
+        "input_tokens": 13058,
+        "output_tokens": 2133,
+        "cost_usd": 0.09489
       }
     },
     "514056061": {
@@ -978,52 +966,52 @@
       "ai_rating": "high",
       "sheet": {
         "rating": "high",
-        "summary": "High risk. For three years running the auditor found the Authority using money from one HUD housing program to cover another, and the amount has grown each year to $117,869 in questioned costs in 2025. The findings are on money that comes directly from HUD (Public Housing and Section 8 vouchers); no Virginia state agency's pass-through money is named in them.",
+        "summary": "For three years in a row, the authority has used money from one HUD housing program to pay the costs of another. The amount one program owes the other has grown every year: more than $42,000 in 2023, $106,589 in 2024 and $117,869 in 2025. The auditor rated the problem as a serious control weakness in 2024 and 2025 and questioned these costs. None of these findings involve money passed through a Virginia state agency, and the 2024 and 2025 audits were filed late.",
         "reasons": [
           {
-            "reason": "The latest audit's finding is a material weakness (the most serious kind of control failure) and is a repeat of the prior year's finding, which makes the rating high; it concerns direct HUD money, not any Virginia state agency's.",
+            "reason": "The 2025 audit repeats the 2024 finding, so the problem has not been fixed. This is HUD money paid directly to the authority, not through a Virginia state agency.",
             "quote": "Finding 2024-1 is listed above as 2025-001.",
             "audit_year": 2025,
             "reference_number": "2025-001"
           },
           {
-            "reason": "The same serious finding carries questioned costs of $117,869 because more than $100,000 is owed between the two HUD programs, a second ground for a high rating; no Virginia state agency's money is involved.",
-            "quote": "The Authority has inter-program payable and receivable in excess of $100,000 at year end between the two affected activities",
-            "audit_year": 2025,
-            "reference_number": "2025-001"
-          },
-          {
-            "reason": "The problem is still growing rather than fixed, so there is no case for lowering the rating; this concerns direct HUD money, not any Virginia state agency's.",
+            "reason": "The amount one program owes the other grew again in 2025. The auditor says controls only slowed the growth and did not stop it, so the problem is not corrected.",
             "quote": "Amounts in the current year are more than those at the prior year end.",
             "audit_year": 2025,
             "reference_number": "2025-001"
           },
           {
-            "reason": "The prior year's audit also had a material weakness with questioned costs on the same direct HUD programs, a third ground for a high rating; no Virginia state agency's money is involved.",
-            "quote": "Questioned Costs: $106,589",
+            "reason": "The auditor found that the authority spent voucher administrative funds on housing assistance payments (HAP), the rent subsidies paid to landlords. HUD questioned these costs as possibly unallowed under both the Public Housing Operating Fund (14.850) and Housing Choice Vouchers (14.871).",
+            "quote": "To make up for this shortfall, the Authority utilized administrative funds for HAP.",
+            "audit_year": 2025,
+            "reference_number": "2025-001"
+          },
+          {
+            "reason": "The 2024 audit also rated this a serious weakness, and the balance more than doubled that year. This shows a serious problem across more than one audit.",
+            "quote": "Amounts in the current year are more than double those at the prior",
             "audit_year": 2024,
             "reference_number": "2024-001"
           },
           {
-            "reason": "The same control gap was first reported in 2023, so it has gone unfixed across the whole review window; it concerns direct HUD money, not any Virginia state agency's.",
+            "reason": "The problem goes back to 2023, when the auditor found the authority had no control in place to catch it.",
             "quote": "Internal control to detect the non-compliance issue has not been established.",
             "audit_year": 2023,
             "reference_number": "2023-001"
           }
         ],
         "next_checks": [
-          "Ask for proof that the money owed between the Public Housing and Section 8 voucher programs has been repaid, and for HUD's decision on releasing reserves and on the $117,869 in questioned costs. The Authority's plan is the same promise it made in 2024 and is not evidence of a fix.",
-          "Confirm whether the Authority receives any money passed through your agency. The findings name only direct HUD programs, so check whether the same cost-sharing between programs could affect your funds.",
-          "Ask why the 2024 and 2025 audits were each accepted 10 months after year end (late, as the limit is nine months), and what the financial-statement material weakness disclosed in the 2023 audit was."
+          "Confirm that no state agency's money is affected. All three findings are on HUD programs that no Virginia state agency passes through. Check whether the authority receives any state-administered awards that share the same finance staff.",
+          "Ask for proof of progress, not just the plan. The authority says HUD is helping it release reserves and recover underfunded HAP. Request HUD correspondence or ledger entries showing the 2025 inter-program balance of $117,869 has been repaid.",
+          "Follow up on late filing. The 2024 and 2025 audits were accepted 10 months after year end, more than the nine months allowed. Ask why, and set a deadline for the 2026 audit."
         ]
       },
       "quote_problems": [],
       "usage": {
         "model": "claude-opus-5-5",
         "via": "Claude Code",
-        "input_tokens": 6142,
-        "output_tokens": 1834,
-        "cost_usd": 0.06125
+        "input_tokens": 6385,
+        "output_tokens": 1668,
+        "cost_usd": 0.0589
       }
     },
     "541008875": {
@@ -1032,46 +1020,40 @@
       "ai_rating": "medium",
       "sheet": {
         "rating": "medium",
-        "summary": "Medium risk. The latest audit (2024) has one finding on Department for Aging and Rehabilitative Services (DARS) money, and it repeats the 2023 finding: the year-end report to DARS did not match the agency's own books. It is not a material weakness, has no questioned costs, and I made no adjustment from the text. No 2025 audit is in the evidence.",
+        "summary": "For the second audit in a row, the agency's year-end report to the Department for Aging and Rehabilitative Services (DARS) had revenue and spending figures that did not match its own books. The cause both years was that staff did not check the report against the accounting records before sending it. The problem is limited to this one report for three aging programs, and no costs were questioned. The 2024 audit also reported a material weakness, meaning a serious control gap, in the financial statements, but the data gives no detail on it.",
         "reasons": [
           {
-            "reason": "DARS money: the latest audit's only finding is flagged as a repeat, and a repeat finding in the latest audit makes the rating medium under the rubric.",
+            "reason": "The 2024 audit found that the year-end report to DARS for the Title III B, Title III C and Nutrition Services Incentive programs did not match the agency's own accounting records.",
             "quote": "The 13th Aging Monthly Report was not reconciled to underlying financial records, resulting in unexplained differences between the report and trial balance provided as part of the audit.",
             "audit_year": 2024,
             "reference_number": "2024-002"
           },
           {
-            "reason": "DARS money: the 2023 audit reported the same problem on the same three aging programs, so the promised fix did not hold for the accuracy of the report.",
-            "quote": "The submission of the 13th AMR was not performed timely and included data that did not agree to underlying",
+            "reason": "The auditor found the same problem with the same DARS report the year before, so it has not been fixed.",
+            "quote": "The 13th Aging Monthly Report was not reconciled to underlying financial records, resulting in unexplained",
             "audit_year": 2023,
             "reference_number": "2023-001"
           },
           {
-            "reason": "DARS money: the auditor rated this a significant deficiency (a control gap less severe than a material weakness), so it is not a serious finding and the rating does not reach high.",
-            "quote": "This should have been caught during the course of a review process before submission. Therefore, it is considered a significant deficiency of internal controls over compliance.",
-            "audit_year": 2024,
-            "reference_number": "2024-002"
-          },
-          {
-            "reason": "DARS money: I did not move the rating up or down, because the auditor describes one unreconciled report with limited effect, not a finance-wide breakdown, and does not say it was corrected.",
+            "reason": "The auditor says the problem is limited to reporting: the wrong figures did not change whether the agency met its DARS spending requirements, and the auditor rated it below a material weakness.",
             "quote": "Inaccurate reporting of such revenues and expenditures did not impact the outcome of requirements of the Agency to meet level of effort metrics as required under the grant awards.",
             "audit_year": 2024,
             "reference_number": "2024-002"
           }
         ],
         "next_checks": [
-          "Ask DARS or the agency for proof that the fiscal year 2025 13th Aging Monthly Report was reconciled to the general ledger and reviewed before it was sent. The corrective action plan only promises a process, and the same promise was made after 2023.",
-          "The 2024 audit disclosed a material weakness in the financial statements, and the agency was no longer a low-risk auditee, but the evidence has no finding text for it. Get the full 2024 audit report and read that finding.",
-          "No 2025 audit is in the evidence. The fiscal year ended 2025-09-30, so the nine-month filing window has passed. Confirm whether the audit has been filed and, if not, why."
+          "DARS: Check the most recent year-end Aging Monthly Report against the agency's accounting records, and ask for written proof of the review that management promised. So far that promise is only a plan, and the same plan was made after the 2023 audit.",
+          "Get the 2024 audit report and find out what the material weakness in the financial statements was. The finding data does not describe it.",
+          "Confirm whether the audit for the year ended 2025-09-30 has been filed. It would be due by 2026-06-30, and no 2025 audit is on file in this data. Also, the 2024 plan cites the earlier finding as \"2013-01\" while the audit says \"2023-01\". Find out whether this problem goes back further than 2023, since the 2023 finding was also marked as a repeat."
         ]
       },
       "quote_problems": [],
       "usage": {
         "model": "claude-opus-5-5",
         "via": "Claude Code",
-        "input_tokens": 6959,
-        "output_tokens": 1944,
-        "cost_usd": 0.06672
+        "input_tokens": 7200,
+        "output_tokens": 1692,
+        "cost_usd": 0.06264
       }
     },
     "540922236": {
@@ -1080,52 +1062,46 @@
       "ai_rating": "low",
       "sheet": {
         "rating": "low",
-        "summary": "The latest audit (2025) has no findings on federal awards, so the rubric gives a low rating: the only findings are in the 2023 and 2024 audits. Those earlier findings were serious, including a cash drawdown problem on HUD capital funds that repeated in 2024. None of the findings is on money passed down by a Virginia state agency, and the 2024 and 2025 audits were each filed late, at 10 months after year end.",
+        "summary": "In 2023 and 2024 the auditor found a material weakness (a serious gap in internal controls) in how the Housing Corporation drew and spent HUD Capital Fund money. The 2024 auditor said the problem happened because the executive director and finance director had both recently left. The 2025 audit lists no findings, and none of these findings shows any Virginia state agency passing the money down. Both the 2024 and 2025 audits were filed late, 10 months after year end.",
         "reasons": [
           {
-            "reason": "The 2024 audit found a material weakness (the most serious kind of control failure) in how HUD capital fund cash was drawn down; it is in an earlier audit, not the latest, and no Virginia state agency's money is involved.",
-            "quote": "not all drawdowns could be traced to particular payments",
+            "reason": "The same cash-management problem on the HUD Capital Fund showed up in two audits in a row, so it was not fixed in 2024. The money came straight from HUD; no Virginia state agency is named as passing it down.",
+            "quote": "The Authority paid contractor and other associated invoices before submitting requests for payment in.",
             "audit_year": 2024,
             "reference_number": "2024-001"
           },
           {
-            "reason": "The same drawdown problem was first reported in 2023, so it lasted two years before the 2025 audit came back with no findings; this is HUD money with no Virginia state agency involved.",
-            "quote": "Other program funds were used for payment pending drawdown from LOCCS for approximately two months in one instance.",
-            "audit_year": 2023,
-            "reference_number": "2023-002"
-          },
-          {
-            "reason": "The auditor tied the 2024 problem to turnover in the two top posts; I considered moving the rating up for this but did not, because the latest audit has no findings, and no Virginia state agency's money is involved.",
+            "reason": "The auditor links the 2024 problem to turnover in the two top management jobs. That points to a weakness across the finance office, not a one-off mistake. Because the 2025 audit has no findings, the sheet does not raise the rating for this, but a reviewer should confirm the posts are now filled.",
             "quote": "The Authority recently experienced turnover in both the executive director and finance director positions.",
             "audit_year": 2024,
             "reference_number": "2024-001"
           },
           {
-            "reason": "A second material weakness in 2023 concerned unsupported payroll charges to the Section 8 voucher programme, which is direct HUD money with no Virginia state agency involved.",
-            "quote": "The Housing Authority could not provide adequate support for payroll expense allocation.",
+            "reason": "While waiting for Capital Fund draws, money from other programs was used to pay the bills, in one case for about two months (HUD money, no Virginia agency named).",
+            "quote": "Other program funds were used for payment pending drawdown from LOCCS for approximately two months in one instance.",
             "audit_year": 2023,
-            "reference_number": "2023-003"
+            "reference_number": "2023-002"
           },
           {
-            "reason": "The 2024 audit text reports that the other two 2023 findings were fixed, which supports treating the earlier problems as closed rather than ongoing; neither was on a Virginia state agency's money.",
-            "quote": "Findings 2023-1 and 2023-3 have been resolved.",
-            "audit_year": 2024,
-            "reference_number": "2024-001"
+            "reason": "In 2023 the Section 8 Housing Choice Voucher program was charged staff costs with no control to check them. This was a second serious gap, in a different program (HUD money, no Virginia agency named). The 2024 auditor reports it was resolved.",
+            "quote": "The Housing did not have controls in place to verify that costs allocated through the cost allocation plan were updated for changes in hours worked for individual programs.",
+            "audit_year": 2023,
+            "reference_number": "2023-003"
           }
         ],
         "next_checks": [
-          "Confirm the drawdown fix is real: the locality promised to match HUD drawdown requests to vendor invoices and spend the funds within three days. The 2025 audit has no findings, but ask for a sample of recent drawdowns with matching invoices and payment dates.",
-          "Ask why the 2024 and 2025 audits were each accepted 10 months after year end, past the nine-month deadline, and whether the 2026 audit is on schedule.",
-          "Check whether your agency passes any federal money to this entity at all, since every finding is on direct HUD funding, and whether the executive director and finance director posts are now stably filled."
+          "Confirm whether any of the agency's own funds go to this housing corporation. Every finding is on HUD money with no Virginia state agency named, so the agency may have no money at stake.",
+          "Check that the 2025 audit with no findings really covers the Capital Fund cash-management issue. Also confirm the executive director and finance director posts are filled. The locality's plan to train its finance director is only a promise.",
+          "Ask why the 2024 and 2025 audits were both filed 10 months after year end. That is later than the nine-month deadline."
         ]
       },
       "quote_problems": [],
       "usage": {
         "model": "claude-opus-5-5",
         "via": "Claude Code",
-        "input_tokens": 5969,
-        "output_tokens": 1967,
-        "cost_usd": 0.06322
+        "input_tokens": 6215,
+        "output_tokens": 2222,
+        "cost_usd": 0.0693
       }
     },
     "546001257": {
@@ -1134,40 +1110,40 @@
       "ai_rating": "high",
       "sheet": {
         "rating": "high",
-        "summary": "Rated high. The latest audit (2024) found the Town has no written purchasing rules that meet federal standards; the auditor marked this a material weakness (the most serious kind of control gap) and a repeat of 2023. It concerns a USDA water and waste program with no Virginia state agency recognised as passing the money down. Both audits were filed late.",
+        "summary": "For two years in a row, the Town of Edinburg had no written procurement rules that meet federal standards for its USDA water and waste disposal grant. In 2024 the auditor rated this a material weakness, meaning a serious gap in the town's controls. Both audits were filed late (14 and 15 months after year end), and no 2025 audit is in the data.",
         "reasons": [
           {
-            "reason": "The latest audit's finding is flagged as both a material weakness and a repeat finding, which is high under the rubric; it is on USDA water and waste money (10.760) with no Virginia state agency recognised as the pass-through.",
-            "quote": "There are no written procurement policies specific to federal awards cost principle requirements under Uniform Guidance.",
+            "reason": "In the latest audit, the auditor found that the town had no federal procurement rules and rated this a material weakness (a serious control gap) on the water and waste disposal grant (10.760); no Virginia state agency is named as passing this money through.",
+            "quote": "There are no written procurement policies specific to federal awards cost principle requirements under Uniform Guidance. Existing procurement policies are minimal and do not meet federal requirements.",
             "audit_year": 2024,
             "reference_number": "2024-003"
           },
           {
-            "reason": "The earlier audit reported the same gap on the same program (again, no Virginia state agency recognised), so the problem went uncorrected for at least a year.",
-            "quote": "There are no written procurement policies specific to the federal awards cost principle requirements",
+            "reason": "The auditor reported the same missing-policy problem the year before on the same grant, so it was still not fixed a year later; no Virginia state agency is named on this money.",
+            "quote": "Certain required policies under 2 CFR 200, Subparts D and E are not present.",
             "audit_year": 2023,
             "reference_number": "2023-003"
           },
           {
-            "reason": "The auditor says the gap could lead to federal rules being broken on this program (no Virginia state agency recognised), though no questioned costs were reported.",
+            "reason": "The auditor warns that without these rules, federal purchasing requirements may not be followed, although no questioned costs (spending the auditor challenged) were reported.",
             "quote": "Lack of required policies may create noncompliance with regulations as stated requirements may not be followed.",
             "audit_year": 2024,
             "reference_number": "2024-003"
           }
         ],
         "next_checks": [
-          "The Town says it adopted a Federal Procurement Policy in October 2024. This is the Town's own statement, not the auditor's. Obtain the adopted policy and proof of Council approval, and check whether the next audit clears the finding.",
-          "Both audits were filed late: 2024 was accepted 14 months after year end and 2023 was accepted 15 months after. No 2025 audit is in the data. Ask the Town for the status of the 2025 audit and why filings run late.",
-          "Confirm whether any of your agency's money reaches this Town, since no Virginia state agency is recognised on these findings. Also ask about the financial-statement material weakness disclosed in both years; the Town's 2023 plan refers to audit adjustments and limited separation of duties, but no auditor text on these is in the data."
+          "Get a copy of the Federal Procurement Policy the town says it adopted in October 2024. That date is the town's own claim, not the auditor's. Check that the policy covers 2 CFR 200 Subparts D and E, and confirm in the next audit that the finding is closed.",
+          "Find out whether the fiscal 2025 audit has been filed. None is in the data, and both earlier audits were filed late (14 and 15 months after year end). Also find out why the Clearinghouse reported a financial-statement material weakness in both years.",
+          "Confirm which agency funds the 10.760 grant. No Virginia state agency is named on it, so check whether any state-agency money is affected. Also note that the 2024 finding is listed under 'Reporting' rather than procurement, and the 2023 finding is not flagged as a material weakness. Check that these labels are correct."
         ]
       },
       "quote_problems": [],
       "usage": {
         "model": "claude-opus-5-5",
         "via": "Claude Code",
-        "input_tokens": 5962,
-        "output_tokens": 1785,
-        "cost_usd": 0.05955
+        "input_tokens": 6202,
+        "output_tokens": 1671,
+        "cost_usd": 0.05823
       }
     },
     "546001261": {
@@ -1176,58 +1152,52 @@
       "ai_rating": "medium",
       "sheet": {
         "rating": "medium",
-        "summary": "Medium. The latest audit (2025) has one federal-award finding, and it is a repeat: the Town still lacks a compliant written procurement policy for federal money, a problem the auditor has raised in all three years. It is not a material weakness (the most severe grade of control failure) and has no questioned costs, so it does not reach high. Separately, each audit from 2023 to 2025 disclosed a material weakness in the Town's financial statements, and the 2023 audit was filed late.",
+        "summary": "Elkton still lacks written procurement rules that meet federal standards for grant spending. The auditor raised this in 2023 and 2024 and again in 2025, when it found the policy the town wrote in 2024 does not comply. In 2024 the auditor also found that the town's Coronavirus State and Local Fiscal Recovery Fund reports, passed through the Department of Criminal Justice Services, did not match its books. Each of the three audits also disclosed a material weakness in the town's financial statements, which is a serious gap in its accounting controls.",
         "reasons": [
           {
-            "reason": "The latest audit's only federal finding is flagged as a repeat, which sets the rating at medium; it sits on the rural water and waste program (10.760), for which no Virginia state agency was recognised as the pass-through.",
+            "reason": "The only federal finding in the latest audit is one the auditor had made before. The town has had three audits to fix its federal procurement rules and has not done so. This finding is on Water and Waste Disposal Systems money (10.760), and the data names no Virginia state agency as passing it through.",
+            "quote": "Uniform Grant Guidance is not compliant.",
+            "audit_year": 2025,
+            "reference_number": "2025-004"
+          },
+          {
+            "reason": "The auditor says parts of the required federal rules are still missing, so any agency's federal money the town spends on purchases is at risk.",
             "quote": "Certain required policies under 2 CFR 200, Subparts D and E are not present.",
             "audit_year": 2025,
             "reference_number": "2025-004"
           },
           {
-            "reason": "The same procurement policy gap was reported the year before on Coronavirus Fiscal Recovery Funds (21.027) passed through the Department of Criminal Justice Services, so it is not confined to one program.",
+            "reason": "The same procurement gap was found on Department of Criminal Justice Services money (Coronavirus State and Local Fiscal Recovery Funds, 21.027) in 2024. This shows the problem affects more than one program.",
             "quote": "Existing procurement policies are minimal and do not meet federal requirements.",
             "audit_year": 2024,
             "reference_number": "2024-006"
           },
           {
-            "reason": "The gap goes back to the earliest audit in the window, again on the 10.760 water and waste program (no Virginia state agency recognised), so it has gone uncorrected for three years.",
-            "quote": "Certain required policies under 2 CFR 200, Subparts D and E are not present.",
-            "audit_year": 2023,
-            "reference_number": "2023-010"
-          },
-          {
-            "reason": "In 2024 the Town's spending reports on Department of Criminal Justice Services money were inaccurate because nobody checked them against the books; this is an earlier-year finding and does not change the rating.",
-            "quote": "Lack of review and reconciliation to the general ledger prior to submission.",
+            "reason": "The town's spending reports on Department of Criminal Justice Services recovery-fund money were wrong for two years, because nobody checked them against the books before sending them.",
+            "quote": "The annual reporting was inaccurate for FY23 and FY24 expenditures.",
             "audit_year": 2024,
             "reference_number": "2024-005"
           },
           {
-            "reason": "Late filing of the audit form was a repeat finding in 2024 on Department of Criminal Justice Services money, which shows a pattern of missed audit deadlines, though it is not repeated in the 2025 findings.",
-            "quote": "Management did not complete and certify auditee portion of the form before the deadline.",
+            "reason": "The town has a history of filing its federal audit late. The 2023 audit reached the clearinghouse ten months after year end, and the auditor cited late filing in both 2023 and 2024.",
+            "quote": "The Town filed the data collection form one day late due to issues with the Federal Audit Clearinghouse website.",
             "audit_year": 2024,
             "reference_number": "2024-004"
-          },
-          {
-            "reason": "The 2023 audit found that audit forms for two earlier years were never completed on the 10.760 water and waste program (no Virginia state agency recognised), the start of the late-filing pattern.",
-            "quote": "was not completed for either years ended June 30, 2022 and June 30, 2020.",
-            "audit_year": 2023,
-            "reference_number": "2023-009"
           }
         ],
         "next_checks": [
-          "Ask for the Town's current federal procurement policy and proof that Council adopted it, and check that it meets 2 CFR 200 Subparts D and E. The Town's plan only promises that the Treasurer will propose edits, and similar promises were made in 2023 and 2024.",
-          "Decide whether to raise the rating to high. I did not, because the 2025 finding text does not itself describe a finance-wide failure. But all three audits disclosed a financial-statement material weakness, and the procurement gap has touched two programs across the window. Read the 2025 audit report's financial-statement findings directly, and ask for evidence that the monthly close process the Town describes is working.",
-          "Confirm filing dates. The 2023 audit was accepted 10 months after year end, which is late. The 2024 and 2025 audits were both accepted on the March 31 deadline itself. For Department of Criminal Justice Services money, also check that the reporting review promised after finding 2024-005 is actually happening."
+          "Ask for a copy of the federal procurement policy as the Town Council adopted it, with the approval date. The town has only promised to revise it, and that promise is not proof of a fix.",
+          "Department of Criminal Justice Services: check that the town's recovery-fund (21.027) reports since 2024 match its general ledger and were reviewed by someone other than the person who prepared them.",
+          "Get the full audit reports to read the financial-statement material weaknesses disclosed in all three years. The clearinghouse data flags them but has no text for them. Also confirm that the 2024 and 2025 audits, both accepted exactly nine months after year end, were filed by the deadline."
         ]
       },
       "quote_problems": [],
       "usage": {
         "model": "claude-opus-5-5",
         "via": "Claude Code",
-        "input_tokens": 21927,
-        "output_tokens": 2807,
-        "cost_usd": 0.14385
+        "input_tokens": 22164,
+        "output_tokens": 2101,
+        "cost_usd": 0.13068
       }
     },
     "546001538": {
@@ -1236,28 +1206,28 @@
       "ai_rating": "low",
       "sheet": {
         "rating": "low",
-        "summary": "Low: the latest audit (2025) has no findings on federal awards, and the only finding in the window is one 2024 reporting finding that the auditor did not flag as serious, repeated or involving questioned costs. That finding is on a program with no Virginia state agency recognised as the pass-through. Low is not a clean bill of health: the audits themselves disclosed material noncompliance in 2025 and 2024, a material weakness in 2024 and 2023, and a going-concern doubt in 2023, none of which comes with finding text.",
+        "summary": "In 2024 the auditor found material noncompliance with the reporting rules for a federal public works and economic development grant. No Virginia state agency was identified as passing that money down. That is the only written finding in 2023\u20132025. However, the summary data for the other years points to problems with no finding text behind them: 2025 reports material noncompliance, 2024 and 2023 report material weaknesses in the financial statements, and 2023 reports doubt about whether the town could keep operating (a going-concern doubt). All three audits were filed on time.",
         "reasons": [
           {
-            "reason": "The only finding in the window is in an earlier audit (2024), on reporting for the federal public works and economic development program (11.300), with no Virginia state agency recognised as the pass-through; it is not flagged as serious, repeated or involving questioned costs, and the auditor's text gives no detail beyond this label, so there are no grounds to move the rating up or down.",
+            "reason": "The one written finding is in 2024, not the latest audit (2025). It covers reporting on a federal public works grant, is not marked as a repeat, and has no questioned costs. No Virginia state agency was identified as passing the money down, so it may not concern any one state monitor's funds.",
             "quote": "Material Noncompliance",
             "audit_year": 2024,
             "reference_number": "2024-003"
           }
         ],
         "next_checks": [
-          "Get the full 2025 audit report and find out what the material noncompliance disclosed that year was, since the data shows the flag but no finding text, and whether it touches your agency's money.",
-          "Read the full text of 2024 finding 2024-003: the data holds only the words \"Material Noncompliance\" while the flags say it was not a serious finding. Confirm which is right, who passed the 11.300 money down, and whether the town actually changed how it reviews and reconciles reports before submission (its plan is a promise, not proof).",
-          "Read the 2023 and 2024 audit reports for the going-concern doubt (2023) and the material weaknesses (2023 and 2024), and confirm the 2025 audit shows them resolved; the 2025 flags show neither, but the data does not explain why."
+          "The 2025 audit reports material noncompliance but the data has no finding text for it. Get the 2025 audit report to see which federal program and which state agency's money it involves, and whether the 2024 reporting problem came back.",
+          "Finding 2024-003 says 'Material Noncompliance', but its flags show no material weakness and no modified compliance opinion. Check the 2024 audit report to see whether the auditor qualified the compliance opinion on the public works grant. If so, the finding is more serious than its flags suggest.",
+          "The 2023 audit reported a going-concern doubt and a financial-statement material weakness, and 2024 again reported a material weakness, all without finding text. Ask the town how it has resolved these, and verify the corrective action plan for 2024-003 (reviewing and reconciling reports before submission) against the 2025 audit."
         ]
       },
       "quote_problems": [],
       "usage": {
         "model": "claude-opus-5-5",
         "via": "Claude Code",
-        "input_tokens": 4075,
-        "output_tokens": 1084,
-        "cost_usd": 0.03798
+        "input_tokens": 4319,
+        "output_tokens": 1099,
+        "cost_usd": 0.03926
       }
     },
     "540921892": {
@@ -1266,70 +1236,58 @@
       "ai_rating": "high",
       "sheet": {
         "rating": "high",
-        "summary": "High risk. The 2025 audit has three serious findings on the federal housing voucher programs; all three are repeats, and two carry questioned costs ($3,839 and $15,129). The 2023 audit also had serious findings. All findings are on money that comes from HUD with no Virginia state agency recognised as passing it down, and no 2024 audit is in the evidence.",
+        "summary": "The 2025 audit found that Virginia Housing kept paying rent subsidies for voucher units that failed safety inspections. It also found missing income records in tenant files and gaps in waiting-list files. Three of these problems were serious enough that the auditor qualified its opinion on the Housing Voucher program, and all three were also found in earlier audits. The auditor traces them to uneven practices across the 26 local housing agencies that run the program, and none of the findings name a Virginia state agency as the source of the money.",
         "reasons": [
           {
-            "reason": "The auditor marked this 2025 tenant eligibility finding as a material weakness with a modified opinion (a serious finding), with $3,839 in questioned costs; it is on HUD voucher money with no Virginia state agency recognised as passing it down.",
-            "quote": "5 of 60 files tested had incorrectly calculated HAP due to missing or incorrect supporting documentation.",
-            "audit_year": 2025,
-            "reference_number": "2025-001"
-          },
-          {
-            "reason": "The same serious eligibility finding is a repeat, which on its own makes the rating high under the rubric; no Virginia state agency is recognised for this money.",
+            "reason": "The most serious tenant-file problem, missing proof of income and assets, was found again in 2025 after being found in earlier years, and it led to questioned (possibly unallowable) costs; the money is HUD Housing Voucher funds, and no Virginia state agency is named as passing it through.",
             "quote": "This finding is a repeat finding in the immediate prior year over eligibility requirements. Prior year finding numbers were 2024-001 and 2023-001.",
             "audit_year": 2025,
             "reference_number": "2025-001"
           },
           {
-            "reason": "This 2025 housing inspection finding is serious, a repeat, and has $15,129 in questioned costs, because payments continued on units that failed inspection twice; no Virginia state agency is recognised for this money.",
+            "reason": "The authority did not stop subsidy payments on units that failed inspection twice, which means federal money may have paid for unsafe housing; this finding also led to questioned costs ($15,129) and concerns HUD voucher money with no Virginia state agency named.",
             "quote": "8 of 60 files tested where the Authority failed to process abatement of units after the second failed inspection.",
             "audit_year": 2025,
             "reference_number": "2025-003"
           },
           {
-            "reason": "This 2025 waiting list finding is also serious and a repeat, showing files could not prove applicants were admitted by the rules; no Virginia state agency is recognised for this money.",
-            "quote": "5 out of 74 files did not include documentation confirming that the applicants were admitted to the program in accordance with the applicant selection policies found within the Administrative Plan.",
-            "audit_year": 2025,
-            "reference_number": "2025-004"
-          },
-          {
-            "reason": "A fourth repeat finding in 2025, less severe (a significant deficiency), shows tenant records missing from HUD's reporting system (PIC); no Virginia state agency is recognised for this money.",
-            "quote": "8 out of 60 files could not be located within PIC.",
-            "audit_year": 2025,
-            "reference_number": "2025-002"
-          },
-          {
-            "reason": "An earlier audit in the window also had a serious finding (material weakness and modified opinion, $22,602 in questioned costs), which is another rubric ground for high; no Virginia state agency is recognised for this money.",
-            "quote": "11 of 65 files tested had an approved reasonable rent that did not agree to the contract rent listed on the HUD-50058 or the contract rent per the HAP Contract/HAP Contract Amendment.",
-            "audit_year": 2023,
-            "reference_number": "2023-002"
-          },
-          {
-            "reason": "The 2023 audit had a second serious finding on the same failed-inspection problem that recurs in 2025, with $13,701 in questioned costs; no Virginia state agency is recognised for this money.",
+            "reason": "The inspection problem is not new: the 2023 audit also called it serious, so it has not been fixed in at least two audits.",
             "quote": "6 out of 25 files tested where the Authority failed to process abatements for units that failed on the second inspection.",
             "audit_year": 2023,
             "reference_number": "2023-004"
           },
           {
-            "reason": "No adjustment from the text: the finding points to a control gap across the local agencies running the program, not an isolated problem already fixed, and the rating is already at the top level.",
-            "quote": "Certain documentation and calculation controls were not sufficiently standardized or centrally validated prior to final processing.",
+            "reason": "A third serious finding, also seen the year before, shows that nearly one in four waiting-list files tested had gaps, so the authority could not show that families were admitted in the right order.",
+            "quote": "During our testing of 74 tenant files for waiting list requirements, we noted the following in 18 files:",
+            "audit_year": 2025,
+            "reference_number": "2025-004"
+          },
+          {
+            "reason": "The problems go beyond single files: the audit's text traces them to differing staff and review capacity across all 26 local agencies that run the program, and a weakness like that runs through the whole program.",
+            "quote": "As a balance-of-state PHA, Virginia Housing administers the HCV program through 26 Local Housing Agencies (LHAs), each with varying staffing levels, internal review capacity, and documentation practices.",
             "audit_year": 2025,
             "reference_number": "2025-001"
+          },
+          {
+            "reason": "The fixes had not taken hold before the audit, so there is no evidence yet that these problems are corrected.",
+            "quote": "because the new model was implemented near the end of the audit period, enhancements were not fully reflected in the files selected for testing.",
+            "audit_year": 2025,
+            "reference_number": "2025-003"
           }
         ],
         "next_checks": [
-          "Find the 2024 audit. It is not in the evidence, yet the 2025 findings cite prior findings 2024-001, 2024-003, 2024-005 and 2024-006. Confirm it was filed and read its findings. Both audits on file were accepted about nine months after year end, right at the deadline.",
-          "Confirm whether any of your agency's money goes to this Authority. Every finding is on HUD housing voucher programs (14.871, 14.879) with no Virginia state agency recognised as the pass-through.",
-          "Ask for proof that the promised fixes work; the plans are promises only. Check inspection and payment-stop results since the third-party inspection vendor started on April 1, 2025, whether the reporting fix due September 30, 2026 was finished, progress on the file-review changes due December 31, 2026, and how the $3,839 and $15,129 in questioned costs were settled with HUD."
+          "Check whether any Virginia state agency passes money to Virginia Housing. Every finding is on HUD Housing Voucher funds, and none names a state agency as the source.",
+          "Get the 2024 single audit. It is not in this data, but the 2025 findings refer to its findings 2024-001, 2024-003, 2024-005 and 2024-006.",
+          "Ask for evidence, not just plans, that the new statewide inspection vendor (started April 1, 2025) and the planned quality-control changes (due Dec 31, 2026) are working. Note that the 2023 plans promised fixes by June 30, 2024, but the same problems were found again in 2025."
         ]
       },
       "quote_problems": [],
       "usage": {
         "model": "claude-opus-5-5",
         "via": "Claude Code",
-        "input_tokens": 21591,
-        "output_tokens": 2986,
-        "cost_usd": 0.14608
+        "input_tokens": 21831,
+        "output_tokens": 2399,
+        "cost_usd": 0.1353
       }
     },
     "520847040": {
@@ -1338,46 +1296,46 @@
       "ai_rating": "high",
       "sheet": {
         "rating": "high",
-        "summary": "Draft rating: high. The 2025 audit has a material weakness (the most serious kind of control failure) in how the Authority reports its federal spending, the auditor marked it as a repeat, and the 2024 audit had the same serious finding. All four findings are on a U.S. Department of Homeland Security transit security grant with no Virginia state agency recognised as the pass-through, and none has questioned costs.",
+        "summary": "For two years in a row, the Authority misreported spending on its federal transit security grant in its schedule of federal spending. The auditor rated this the most serious kind of control problem, and in 2024 the error meant the grant was left out of the auditor's testing when it should have been tested. Both findings are on U.S. Department of Homeland Security transit security money, and the data names no Virginia state agency as passing that money through.",
         "reasons": [
           {
-            "reason": "The latest audit has a serious finding that the auditor marked as a repeat: $2.4 million of transit security grant spending was reported in the wrong year, which is enough for a high rating under the rubric (no Virginia state agency's money is involved).",
-            "quote": "for ALN 97.075, Rail and Transit Security Grant Program, were overstated by $2,385,715.",
+            "reason": "The latest audit has the most serious kind of control problem: the 2025 schedule of federal spending counted $2,385,715 of 2024 spending, so the transit security grant was overstated. No Virginia agency is named as passing this money through.",
+            "quote": "were incurred in the year ended June 30, 2024, overstating the total expenditures reported for the",
             "audit_year": 2025,
             "reference_number": "2025-003"
           },
           {
-            "reason": "The earlier 2024 audit also had a serious finding on the same grant, where the reporting error meant a program that should have been audited in depth was skipped; this is a second, independent ground for high (no Virginia state agency's money is involved).",
-            "quote": "calculated and resulted in a missed major program.",
+            "reason": "The same spending-schedule problem was also rated the most serious kind in 2024, when it left a program out of the testing it needed, so it is not a one-off.",
+            "quote": "This understatement caused the major program determination to be improperly",
             "audit_year": 2024,
             "reference_number": "2024-001"
           },
           {
-            "reason": "The latest audit has a second repeat finding, a lesser one: the Authority had no documented check that partners paid under police department agreements were not barred from federal work (no Virginia state agency's money is involved).",
-            "quote": "Context: Of the three items tested, two lacked documented procedures, and sufficient oversight",
+            "reason": "For the same transit security grant, the auditor found no procedure to confirm that partners under police agreements were not barred from federal contracts, and this gap existed in both years.",
+            "quote": "This deficiency existed in both reporting periods",
             "audit_year": 2025,
             "reference_number": "2025-002"
           },
           {
-            "reason": "Context for the reviewer: the repeat label reflects that the 2024 and 2025 problems were found at the same time in 2026, not that the Authority was warned and failed to act; the rubric still counts it as a repeat, and no adjustment to the rating has been made.",
-            "quote": "Findings for both fiscal years were evaluated and communicated to management in",
+            "reason": "The problem is narrower than its labels suggest but is still open: both findings are on one program, and the contract-check gap is limited to a few agreements made outside the procurement office. The auditor reported nothing as already corrected.",
+            "quote": "Context: Of the three items tested, two lacked documented procedures, and sufficient oversight",
             "audit_year": 2025,
-            "reference_number": "2025-003"
+            "reference_number": "2025-002"
           }
         ],
         "next_checks": [
-          "Confirm whether any of your agency's money goes to the Authority. All four findings are on Homeland Security program 97.075 with no Virginia state agency recognised as the pass-through, so check whether the same weak year-end reporting process touches your awards.",
-          "Ask for proof that the promised fixes are in place: the checklist and cutoff date for moving costs between funding sources, and the revised Policy Instruction 9.6 requiring SAM.gov checks on special agreements. The plans are promises, and the Authority said fixes start from the FY26 reporting year.",
-          "Look at the 2024 audit history: it was first accepted 5 months after year end, then a restated version was accepted 21 months after year end. Also ask what the material weakness disclosed in the 2025 audit covers and why the Authority lost its low-risk auditee status that year."
+          "Confirm whether any Virginia state agency passes money to the Authority. The audit data names none for these findings, so they may not be on the monitor's own funds.",
+          "Ask why the 2024 audit was filed a second time, about 21 months after the year ended. Also check how the 2025 audit's financial-statement material weakness, which has no finding text here, relates to these findings.",
+          "Ask for proof that the Authority has revised its policy on special agreements (PI 9.6) and adopted the spending-schedule checklist and cutoff dates it promised. These are the Authority's own promises; the auditor has not confirmed them."
         ]
       },
       "quote_problems": [],
       "usage": {
         "model": "claude-opus-5-5",
         "via": "Claude Code",
-        "input_tokens": 11096,
-        "output_tokens": 2155,
-        "cost_usd": 0.08748
+        "input_tokens": 25233,
+        "output_tokens": 3352,
+        "cost_usd": 0.16797
       }
     },
     "540895697": {
@@ -1386,40 +1344,40 @@
       "ai_rating": "medium",
       "sheet": {
         "rating": "medium",
-        "summary": "The 2025 audit has one finding, which the auditor marked as a material weakness (the most serious kind of control failure): about 44% of tested housing voucher files lacked required signatures. It is not a repeat, has no questioned costs, and the 2023 and 2024 audits have no findings, so the rubric gives medium. The finding is on HUD voucher money with no Virginia state agency recognised as passing it down, and the 2025 and 2023 audits were filed late.",
+        "summary": "The 2025 auditor found that about 44% of the tested Housing Choice Voucher and Mainstream Voucher files were missing required signatures from tenants or landlords. The auditor called this a material weakness, meaning a serious gap in controls, and linked it to turnover among executives and program staff. This is the only finding in 2023\u20132025, it is not a repeat, and no costs were questioned. The money comes straight from HUD, with no Virginia state agency in between. The 2025 and 2023 audits were both filed late.",
         "reasons": [
           {
-            "reason": "The auditor marked this as a material weakness in the latest audit, which makes the rating medium under the rubric; it concerns HUD voucher money with no Virginia state agency recognised as the pass-through.",
-            "quote": "The Authority lacked proper controls to ensure that the necessary signatures were being obtained",
-            "audit_year": 2025,
-            "reference_number": "2025-001"
-          },
-          {
-            "reason": "Nearly half the tested files failed, so this is a widespread problem in the voucher programs and not a one-off slip; no Virginia state agency's money is identified in the finding.",
+            "reason": "The newest audit has a serious control problem in deciding who is eligible for housing vouchers, and it affects a large share of files. The money is direct HUD funding, not passed through a Virginia state agency.",
             "quote": "Approximately 44% of files selected for testing lacked the proper signatures for the time period covered by the audit.",
             "audit_year": 2025,
             "reference_number": "2025-001"
           },
           {
-            "reason": "The auditor ties the cause to staff turnover and affects two related voucher programs, which could arguably support moving the rating up to high; I have not adjusted it because the cause is in program staff, not the finance function, and leave that call to the reviewer (no Virginia state agency's money is identified).",
+            "reason": "The auditor traces the problem to staff turnover and lack of training, not to one-off mistakes. That suggests it could continue until the new staff are trained, but the auditor confines it to the two voucher programs and does not describe a breakdown across the whole finance office.",
             "quote": "The Authority has experienced turnover at the executive and program levels.",
+            "audit_year": 2025,
+            "reference_number": "2025-001"
+          },
+          {
+            "reason": "Files without signatures do not show that participants were told about their benefits or agreed to the release of their information. This bears directly on whether voucher payments were properly supported.",
+            "quote": "Many of the participant files were out of compliance.",
             "audit_year": 2025,
             "reference_number": "2025-001"
           }
         ],
         "next_checks": [
-          "Decide whether this locality belongs in your agency's review: the finding is on HUD Housing Choice Vouchers (14.871) and Mainstream Vouchers (14.879), and no Virginia state agency was recognised as passing the money down. Also decide whether the 44% failure rate and staff turnover justify raising the rating to high.",
-          "Ask for proof that the locality's promised fixes happened: training records for the new Executive Director and Housing Director, the monthly file reviews, and a sample of recent voucher files with all tenant and landlord signatures. The plan is a promise, not evidence.",
-          "Ask why audits were filed late: the 2025 audit was accepted 12 months after year end and the 2023 audit 21 months after, against a nine-month limit. The 2024 audit was on time at 9 months."
+          "Check the corrective action plan for finding 2025-001. Ask for a sample of recent new admissions and recertifications with signed tenant and landlord documents, plus proof of the monthly document reviews and staff retraining the Authority promised. The plan is a promise, not proof that the problem is fixed.",
+          "Find out whether any state agency's money reaches this Authority. The finding involves direct HUD voucher funds only, so it may not fall on the monitor's own awards.",
+          "Record the late filings in the audit review. The 2025 audit was accepted 12 months after the fiscal year ended and the 2023 audit 21 months after. Ask why they were late, especially given the 2025 leadership turnover."
         ]
       },
       "quote_problems": [],
       "usage": {
         "model": "claude-opus-5-5",
         "via": "Claude Code",
-        "input_tokens": 5118,
-        "output_tokens": 1875,
-        "cost_usd": 0.05797
+        "input_tokens": 5360,
+        "output_tokens": 1500,
+        "cost_usd": 0.05144
       }
     }
   },
@@ -1429,13 +1387,13 @@
       "flagged": true,
       "ai_rating": "no_basis",
       "reasons": 0,
-      "summary": "No basis to rate: audits are on file for 2023, 2024 and 2025, but none has a finding on federal awards. This is not a clean bill of health. The 2023 and 2024 audits each disclosed a material weakness (a serious gap in financial controls) in the financial statements, with no finding text in the data; the 2025 audit disclosed none, and no audit showed material noncompliance or a going-concern doubt.",
+      "summary": "The auditors of the 2024 and 2023 audits reported a material weakness in the financial statements. A material weakness is a serious gap in the controls over the books. Neither of those audits nor the 2025 audit has any findings on federal awards on file, so there is no written finding to base a rating on. That does not mean the locality has no problems: the 2025 audit shows no material weakness, but the earlier weaknesses need a closer look.",
       "usage": {
         "model": "claude-opus-5-5",
         "via": "Claude Code",
-        "input_tokens": 3874,
-        "output_tokens": 432,
-        "cost_usd": 0.02414
+        "input_tokens": 4113,
+        "output_tokens": 553,
+        "cost_usd": 0.02751
       }
     },
     "546001365": {
@@ -1443,13 +1401,13 @@
       "flagged": true,
       "ai_rating": "no_basis",
       "reasons": 0,
-      "summary": "There is no basis to rate James City County: audits are on file for 2023, 2024 and 2025, but none has a finding on federal awards. This is not a clean bill of health. The 2023 audit disclosed a material weakness (a serious gap in financial controls) in the financial statements, with no finding text on file; no audit disclosed material noncompliance or a going-concern doubt, and all three were filed on time.",
+      "summary": "The 2023 audit of James City County reported a material weakness in its financial statements, meaning a serious gap in its accounting controls. The Clearinghouse holds no description of that problem. No findings on federal awards were reported for 2023, 2024 or 2025, so there is nothing to rate. That does not show the county is low risk. All three audits were filed on time, each got a clean opinion on the financial statements, and none raised doubt about the county's ability to keep operating (a going-concern doubt) or reported material noncompliance with federal program rules.",
       "usage": {
         "model": "claude-opus-5-5",
         "via": "Claude Code",
-        "input_tokens": 3871,
-        "output_tokens": 407,
-        "cost_usd": 0.02362
+        "input_tokens": 4113,
+        "output_tokens": 638,
+        "cost_usd": 0.02921
       }
     },
     "546002871": {
@@ -1457,13 +1415,13 @@
       "flagged": true,
       "ai_rating": "no_basis",
       "reasons": 0,
-      "summary": "No basis to rate: Wythe County has audits on file for 2023, 2024 and 2025, but none reports a finding on federal awards. This is not a clean bill of health. The 2024 and 2025 audits each disclosed a material weakness (a serious gap in financial controls) in the financial statements, which the Clearinghouse records without any finding text; no audit disclosed material noncompliance or a going-concern doubt.",
+      "summary": "The auditors reported a material weakness in the County of Wythe's financial statements for both 2024 and 2025. A material weakness is a serious gap in the controls over the county's own accounting. No findings on federal awards are on file for 2023 to 2025, so there is no audit evidence about the federal grants to rate. This is not a clean bill of health. The 2025 audit also no longer lists the county as a low-risk auditee, and the Clearinghouse holds two 2025 audit submissions.",
       "usage": {
         "model": "claude-opus-5-5",
         "via": "Claude Code",
-        "input_tokens": 4005,
-        "output_tokens": 432,
-        "cost_usd": 0.02466
+        "input_tokens": 4248,
+        "output_tokens": 576,
+        "cost_usd": 0.02851
       }
     },
     "546003750": {
@@ -1471,13 +1429,13 @@
       "flagged": true,
       "ai_rating": "no_basis",
       "reasons": 0,
-      "summary": "County of Craig has audits on file for 2023, 2024 and 2025, but none of them reports a finding on federal awards, so there is no basis to rate. This is not a clean bill of health: all three audits disclosed a material weakness (a serious gap in financial controls) in the financial statements, and the Clearinghouse holds no finding text explaining it. No material noncompliance or going-concern doubt was disclosed, and all three audits were filed on time.",
+      "summary": "The auditor reported a material weakness in Craig County's financial statements in each of the last three audits (2023, 2024 and 2025). A material weakness is a serious gap in the county's controls over its own books. No findings on federal awards are on file for these years, so there is nothing to rate the federal programs on. That is not the same as a clean bill of health.",
       "usage": {
         "model": "claude-opus-5-5",
         "via": "Claude Code",
-        "input_tokens": 3871,
-        "output_tokens": 452,
-        "cost_usd": 0.02452
+        "input_tokens": 4111,
+        "output_tokens": 531,
+        "cost_usd": 0.02706
       }
     },
     "541215131": {
@@ -1485,13 +1443,13 @@
       "flagged": true,
       "ai_rating": "no_basis",
       "reasons": 0,
-      "summary": "No rating can be given: the only audit on file in the 2023 to 2025 window is 2025, and it has no findings on federal awards. This is not a clean bill of health. The 2025 audit disclosed a material weakness (a serious gap in financial controls) in the financial statements, with no material noncompliance and no going-concern doubt; the FAC holds no finding text for it.",
+      "summary": "The 2025 audit reports a material weakness in the Authority's financial statements. A material weakness is a serious gap in its accounting controls. The audit has no findings on federal awards, so it gives no specific problem to rate, and that is not a clean bill of health. Only the 2025 audit appears for 2023 to 2025. It was filed on time, 8 months after year end, and reports no going-concern doubt and no material noncompliance.",
       "usage": {
         "model": "claude-opus-5-5",
         "via": "Claude Code",
-        "input_tokens": 3606,
-        "output_tokens": 449,
-        "cost_usd": 0.0234
+        "input_tokens": 3846,
+        "output_tokens": 515,
+        "cost_usd": 0.02568
       }
     },
     "626002128": {
@@ -1499,13 +1457,13 @@
       "flagged": false,
       "ai_rating": "no_basis",
       "reasons": 0,
-      "summary": "No rating can be given. The only audit on file in the 2023 to 2025 window is for 2023, and it has no findings on federal awards. This is not a clean bill of health: the 2023 audit disclosed no financial-statement material weakness, no material noncompliance and no going-concern doubt, but no audits for 2024 or 2025 are on file.",
+      "summary": "The only audit on file in the review window is for 2023. It reports no findings on federal awards, so there is nothing to rate. That is not a clean bill of health. The 2023 audit showed no serious weakness in financial controls, no serious breach of federal rules and no doubt that the authority can keep operating. It was filed on time, 7 months after the year ended. No audits for 2024 or 2025 are on file.",
       "usage": {
         "model": "claude-opus-5-5",
         "via": "Claude Code",
-        "input_tokens": 3603,
-        "output_tokens": 416,
-        "cost_usd": 0.02273
+        "input_tokens": 3846,
+        "output_tokens": 662,
+        "cost_usd": 0.02862
       }
     },
     "540964627": {
@@ -1513,13 +1471,13 @@
       "flagged": false,
       "ai_rating": "no_basis",
       "reasons": 0,
-      "summary": "There are no findings on federal awards for Greater Lynchburg Transit Company in the 2023 to 2025 window, so there is no basis to rate; this is not a clean bill of health. The 2023 and 2024 audits were each accepted five months after year end, and neither disclosed a financial-statement material weakness, material noncompliance or a going-concern doubt. No 2025 audit appears in the evidence.",
+      "summary": "No 2025 audit for Greater Lynchburg Transit Company is on file, so its most recent year can't be judged. The 2023 and 2024 audits reported no findings on federal awards, and neither disclosed a material weakness in the financial statements, material noncompliance or a going-concern doubt (a doubt that the organization can keep operating). Both were filed on time, about five months after year end. Because there are no findings to assess, this is not a clean bill of health.",
       "usage": {
         "model": "claude-opus-5-5",
         "via": "Claude Code",
-        "input_tokens": 3749,
-        "output_tokens": 681,
-        "cost_usd": 0.02862
+        "input_tokens": 3997,
+        "output_tokens": 645,
+        "cost_usd": 0.02889
       }
     },
     "872155971": {
@@ -1527,13 +1485,13 @@
       "flagged": false,
       "ai_rating": "no_basis",
       "reasons": 0,
-      "summary": "There is no basis to rate: no findings on federal awards are on file for audit years 2023 to 2025. This is not a clean bill of health. The only audit in the window, for 2025, disclosed no financial-statement material weakness (a serious gap in financial controls), no material noncompliance and no going-concern doubt.",
+      "summary": "Mountain State Learning Solutions has no findings on federal awards on file for 2023 to 2025, so there is nothing to rate it on. That is not the same as a clean bill of health. The only audit on file is for 2025. It reported no financial-statement material weakness, no material noncompliance and no going-concern doubt, and gave an unmodified (clean) opinion on the financial statements. No audit is on file for 2023 or 2024.",
       "usage": {
         "model": "claude-opus-5-5",
         "via": "Claude Code",
-        "input_tokens": 3607,
-        "output_tokens": 569,
-        "cost_usd": 0.02581
+        "input_tokens": 3849,
+        "output_tokens": 763,
+        "cost_usd": 0.03066
       }
     },
     "546001351": {
@@ -1541,13 +1499,13 @@
       "flagged": false,
       "ai_rating": "no_basis",
       "reasons": 0,
-      "summary": "Highland County has audits on file for 2023, 2024 and 2025, and none reports a finding on federal awards, so there is no basis to rate. This is not a clean bill of health. None of the three audits disclosed a material weakness in the financial statements, material noncompliance or a going-concern doubt, and all three had an unmodified (clean) opinion on the financial statements.",
+      "summary": "The County of Highland has no findings on federal awards for audit years 2023 to 2025, so there is nothing to base a rating on. That does not mean the county is risk-free. None of the three audits reported a material weakness in the financial statements, material noncompliance, or doubt that the county can keep operating, and each had a clean (unmodified) opinion on its financial statements.",
       "usage": {
         "model": "claude-opus-5-5",
         "via": "Claude Code",
-        "input_tokens": 3873,
-        "output_tokens": 604,
-        "cost_usd": 0.02757
+        "input_tokens": 4115,
+        "output_tokens": 714,
+        "cost_usd": 0.03074
       }
     },
     "546001384": {
@@ -1555,13 +1513,13 @@
       "flagged": false,
       "ai_rating": "no_basis",
       "reasons": 0,
-      "summary": "There is no basis to rate the Town of Lawrenceville: no findings on federal awards are on file for audit years 2023 to 2025. This is not a clean bill of health. The only audit on file is 2023, which was filed late (13 months after year end) and disclosed no financial-statement material weakness, no material noncompliance and no going-concern doubt; no audits for 2024 or 2025 are on file.",
+      "summary": "The Town of Lawrenceville has only one audit on file for 2023 to 2025: fiscal year 2023. It was filed 13 months after the year ended, which is late, and no audits are on file for 2024 or 2025. The 2023 audit reports no findings on federal awards, no serious control weakness in the financial statements (a \"material weakness\"), no major rule-breaking, and no doubt the town can keep operating. That is not a clean bill of health, because one late audit says little about the town's current state.",
       "usage": {
         "model": "claude-opus-5-5",
         "via": "Claude Code",
-        "input_tokens": 3606,
-        "output_tokens": 438,
-        "cost_usd": 0.02318
+        "input_tokens": 3855,
+        "output_tokens": 597,
+        "cost_usd": 0.02736
       }
     }
   }

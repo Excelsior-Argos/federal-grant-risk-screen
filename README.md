@@ -33,20 +33,21 @@ this work, with sources, and which steps the tool does and does not cover.
 
 ## Results so far
 
-From [eval/REPORT.md](eval/REPORT.md), run on 2026-10-11 with `claude-opus-5-5`:
+From [eval/REPORT.md](eval/REPORT.md), last run on 2026-10-14 with `claude-opus-5-5`:
 
 | Check | Result |
 |---|---|
 | AI rating matches the rubric applied by code to the yes/no flags | 28 of 30 (93%) |
-| Quotes found word for word in the finding they cite | 117 of 117 |
+| Quotes found word for word in the finding they cite | 110 of 110 |
 | Localities with no findings left unrated, nothing invented | 10 of 10 |
 | AI rating matches my rating | 29 of 30 (97%) |
 | AI rating matches a second, separate AI pass | 27 of 30 (90%) |
-| Same AI rating in the run of 2026-10-10 and the rerun of 2026-10-11 | 30 of 30 |
-| Estimated cost per drafted sheet, at API list prices | $0.074 |
+| Same AI rating in all three runs (2026-10-10, 10-11 and 10-14) | 30 of 30 |
+| Estimated cost per drafted sheet, at API list prices | $0.077 |
 
 The rerun gave the AI more evidence (each finding's program, pass-through agency and
-corrective action plan), and no rating changed.
+corrective action plan), and no rating changed. The third run used new writing
+instructions (third person, no mention of the rubric), and again no rating changed.
 
 These show the AI applies the rubric consistently. The AI is given the same rubric and
 flags as the code it is compared with. For my own ratings in

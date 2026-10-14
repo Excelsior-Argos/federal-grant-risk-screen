@@ -151,3 +151,15 @@
   Audit checks, Findings, and Audit history. Plain words throughout: "audit problems on
   your grants", "your written decision is due".
 - Light theme in `.streamlit/config.toml`.
+
+**Late: plainer risk sheets**
+- The drafts said "I rated..." and "under step 2 of the rubric". A monitor has never seen
+  the rubric. New writing instructions: third person, no rubric talk, start with the
+  biggest problem, do not repeat the rating the page already shows.
+- Redrafted all 68 sheets and recorded them as approved under the same bulk decision.
+  The old versions are marked superseded. Now 16 high, 15 medium, 37 low: County of
+  Floyd moved from high to medium, which is what I ruled for Floyd in the evaluation.
+- Reran the evaluation with the new instructions: same 30 ratings as both earlier runs,
+  110 of 110 quotes found, 10 of 10 no-findings cases left unrated, about $0.077 a sheet.
+- Claude Code sometimes returns an empty reply; the AI call now retries up to three times.
+- Removed the "Risk rating: drafted by AI" line from the page's "How to read this".

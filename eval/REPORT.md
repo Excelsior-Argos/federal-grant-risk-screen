@@ -40,7 +40,7 @@ Agreement: **28 of 30** (93%).
 
 ## Quotes
 
-117 quotes drafted. **117 of 117** were found word for word in the finding they cite.
+110 quotes drafted. **110 of 110** were found word for word in the finding they cite.
 
 ## Localities with no findings
 
@@ -48,6 +48,6 @@ Agreement: **28 of 30** (93%).
 
 ## Cost
 
-30 AI calls for the sampled localities: $2.22 in total, **$0.074 per locality** on average (9,291 tokens in, 1,848 out).
+30 AI calls for the sampled localities: $2.32 in total, **$0.077 per locality** on average (9,996 tokens in, 1,862 out).
 
 These calls went through Claude Code on a Claude subscription, so nothing was billed per call. The dollar figure is what the same tokens would cost at Claude API list prices, and the token counts include Claude Code's own overhead, so treat it as an upper estimate.

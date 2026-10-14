@@ -64,8 +64,8 @@ low, medium and high.
 | AI rating matches my rating | 29 of 30 |
 | AI rating matches the rubric applied mechanically | 28 of 30 |
 | AI rating matches a second, separate AI pass | 27 of 30 |
-| Same rating when the whole test was run a second time | 30 of 30 |
-| Quotes found word for word in the cited finding | 117 of 117 |
+| Same rating each time the whole test was run (three runs) | 30 of 30 |
+| Quotes found word for word in the cited finding | 110 of 110 |
 | Localities with no findings left unrated, nothing invented | 10 of 10 |
 
 How I rated: a second AI pass drafted a rating for each locality, I reviewed all 30 and
@@ -79,7 +79,7 @@ not in the rating.
 
 ## Cost
 
-About **$0.07 per drafted write-up** (range $0.04 to $0.15) at the model's published
+About **$0.08 per drafted write-up** (range $0.03 to $0.17) at the model's published
 rates. That is an upper estimate; the test ran on a subscription. Only the 68
 localities with findings need a draft, so a yearly pass for Virginia is about $5. The
 database and page run on free tiers. The real cost is the monitor's review time.

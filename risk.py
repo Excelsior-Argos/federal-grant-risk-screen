@@ -516,21 +516,25 @@ def _ask_api(evidence):
                                           response.usage.output_tokens, "Claude API")
 
 
-def _ask_claude_code(evidence):
+def _ask_claude_code(evidence, attempts=3):
     # Same system prompt, same evidence, same output shape as the API route. Tools, project
     # settings and MCP servers are switched off so the model sees nothing but the evidence.
-    done = subprocess.run(
-        ["claude", "-p", "--output-format", "json", "--model", MODEL, "--system-prompt", SYSTEM,
-         "--tools", "", "--strict-mcp-config", "--setting-sources", "", "--no-session-persistence",
-         "--json-schema", json.dumps(RiskSheet.model_json_schema())],
-        input=evidence_as_text(evidence), capture_output=True, text=True, encoding="utf-8",
-        cwd=tempfile.gettempdir(), timeout=900)
-    try:
-        reply = json.loads(done.stdout)
-    except json.JSONDecodeError:
-        raise RuntimeError(f"Claude Code did not answer for {evidence['name']}: {done.stderr or done.stdout}") from None
-    if reply.get("is_error") or not reply.get("structured_output"):
-        raise RuntimeError(f"No risk sheet for {evidence['name']}: {reply.get('result')}")
+    # Now and then a reply comes back empty, so an empty reply is tried again.
+    for attempt in range(1, attempts + 1):
+        done = subprocess.run(
+            ["claude", "-p", "--output-format", "json", "--model", MODEL, "--system-prompt", SYSTEM,
+             "--tools", "", "--strict-mcp-config", "--setting-sources", "", "--no-session-persistence",
+             "--json-schema", json.dumps(RiskSheet.model_json_schema())],
+            input=evidence_as_text(evidence), capture_output=True, text=True, encoding="utf-8",
+            cwd=tempfile.gettempdir(), timeout=900)
+        try:
+            reply = json.loads(done.stdout)
+        except json.JSONDecodeError:
+            reply = {"is_error": True, "result": done.stderr or done.stdout}
+        if not reply.get("is_error") and reply.get("structured_output"):
+            break
+        if attempt == attempts:
+            raise RuntimeError(f"No risk sheet for {evidence['name']} after {attempts} tries: {reply.get('result')}")
     tokens = reply["usage"]
     input_tokens = (tokens["input_tokens"] + tokens.get("cache_creation_input_tokens", 0)
                     + tokens.get("cache_read_input_tokens", 0))
