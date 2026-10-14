@@ -26,8 +26,8 @@ def yes_no(value):
     return "Yes" if value else "No"
 
 
-st.set_page_config(page_title="Subrecipient Risk Screen", layout="wide")
-st.title("Subrecipient Risk Screen")
+st.set_page_config(page_title="Federal Grant Risk Screen", layout="wide")
+st.title("Federal Grant Risk Screen")
 
 totals = query("""
     select (select count(*) from audits) as audits,
@@ -51,7 +51,13 @@ agencies = [row["agency"] for row in query("""
     where p.agency is not null and a.audit_year >= %s
     group by 1 order by count(distinct a.auditee_ein) desc
 """, (totals["last_year"] - risk.WINDOW_YEARS + 1,))]
-agency = st.selectbox("View as a state agency", agencies, index=None, placeholder="All agencies")
+# Open on DCJS, so a first-time visitor sees a real worklist straight away. "All agencies" shows everyone.
+DEFAULT_AGENCY = "Department of Criminal Justice Services"
+ALL = "All agencies"
+choices = [ALL] + agencies
+choice = st.selectbox("View as a state agency", choices,
+                      index=choices.index(DEFAULT_AGENCY) if DEFAULT_AGENCY in choices else 0)
+agency = None if choice == ALL else choice
 
 # An entity's name changes spelling from year to year, so we identify it by EIN and show its latest name.
 localities = query("""
