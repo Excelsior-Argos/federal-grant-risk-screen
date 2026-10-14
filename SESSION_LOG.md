@@ -141,7 +141,7 @@
 ## 2026-10-14: Session 4 (continued), a page a monitor can use
 
 - Approved all AI drafts at once (my decision, in chat). 68 localities now have an
-  approved risk sheet: 16 high, 15 medium, 37 low. No draft failed the quote check, so
+  approved risk sheet: 17 high, 14 medium, 37 low. No draft failed the quote check, so
   none were held back. The page says they were approved in bulk, not read one by one.
 - Rebuilt the page. It opens on DCJS with four number tiles and a "Needs your attention"
   list of cards, each with its rating, the compliance areas involved, the decision due
