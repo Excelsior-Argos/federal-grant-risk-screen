@@ -91,7 +91,7 @@ FAC on 2026-10-07.
 | `findings` | 1,260 | one finding on one federal award |
 | `finding_texts` | 598 | the auditor's written text for one finding |
 | `corrective_actions` | 598 | what the locality says it will do about one finding |
-| `risk_sheets` | 0 | one drafted risk sheet and the reviewer's decision on it |
+| `risk_sheets` | 1 | one drafted risk sheet and the reviewer's decision on it (City of Emporia, approved 2026-10-14) |
 
 The 2,669 audits cover 449 distinct entities, counted by EIN. The loader dropped 9 exact
 duplicate rows from `findings` and 2 each from `finding_texts` and `corrective_actions`.
