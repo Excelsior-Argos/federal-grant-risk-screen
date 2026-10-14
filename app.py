@@ -357,8 +357,7 @@ def locality_view():
                 for item in body["next_checks"]:
                     st.markdown(f"- {item}")
             drafted = f"Drafted by AI ({sheet['model']})" if sheet["model"] else "Written by fixed rules, with no AI"
-            st.caption(f"{drafted}. Approved by {sheet['reviewer']} on {nice_date(sheet['reviewed_at'])}."
-                       + (f" {sheet['reviewer_note']}" if sheet["reviewer_note"] else ""))
+            st.caption(f"{drafted}.")
         elif not recent:
             st.success(f"No audit findings on {whose} for {first_year} to {totals['last_year']}. "
                        "On the state risk forms, that scores as the lowest audit risk.")
