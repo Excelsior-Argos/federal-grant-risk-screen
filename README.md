@@ -1,5 +1,7 @@
 # Subrecipient Risk Screen
 
+**Live page:** <https://federal-grant-risk-screen-hufggeccbygdeedg.mexicocentral-01.azurewebsites.net> (free Azure plan: the first visit after a quiet spell can take a minute to wake up)
+
 A tool for a state grants monitor. It pulls Virginia local governments' single-audit
 results from the Federal Audit Clearinghouse (FAC), shows a state agency which of its
 subrecipients have findings on its money, fills in the audit rows of real agency risk
@@ -24,7 +26,7 @@ this work, with sources, and which steps the tool does and does not cover.
 
 | Phase | What it delivers | State |
 |---|---|---|
-| 1 | Virginia audits and findings in Postgres, plus a lookup page | Data loaded and page working locally. **Not deployed**: needs a GitHub account. |
+| 1 | Virginia audits and findings in Postgres, plus a lookup page | Done. Live on Azure App Service since 2026-10-14. |
 | 1b | The agency view, added after researching the real process | Working locally: an agency's subrecipients, audit on file and on time, findings on its money, and the audit rows of three real forms. |
 | 2 | AI-drafted risk sheets, measured against 30 hand-rated localities | AI run on 30 localities, twice. The tool matches my ratings on 29 of 30. **My check was a review of AI-drafted ratings, not a blind rating.** |
 | 3 | Human-approval workflow, MCP server, memo to a grants manager | Workflow and MCP server working. [MEMO.md](MEMO.md) is written. |
@@ -223,6 +225,19 @@ Tested on 2026-10-10:
 Not tested: the Claude API route in `risk.ask_model` (no API key on this machine). The
 form rows are my reading of each form's wording applied to FAC data; no agency has
 checked them.
+
+## How it is deployed
+
+| Part | Where |
+|---|---|
+| The page | Azure App Service, Linux, Python 3.14, Free F1 plan, Mexico Central (one of the five regions an Azure for Students subscription allows) |
+| Deployment | GitHub Actions. Every push to `main` builds and deploys; the workflow is in `.github/workflows/`. |
+| The database | Neon Postgres. The site connects with a separate read-only login (`web_readonly`), so the public page can read every table and change nothing. |
+| Start command | `python -m streamlit run app.py --server.port 8000 --server.address 0.0.0.0 --server.headless true` |
+| Secrets | The read-only connection string is an App Service setting named `DATABASE_URL`. The deploy credential is a GitHub Actions secret. Neither is in the code. |
+
+The AI drafting and the approval workflow run on my machine, not on the site. The public
+page only shows data and approved risk sheets.
 
 ## Data source
 

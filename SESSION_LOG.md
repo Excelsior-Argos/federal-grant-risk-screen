@@ -112,8 +112,19 @@
   unrated, about $0.07 a sheet.
 - Rewrote the memo around the agency view and cut it back to two pages.
 
+## 2026-10-14: Session 4, published and deployed
+
+- Rewrote the 17 commits to use my GitHub private email before anything went public.
+- Created the public repo `Excelsior-Argos/federal-grant-risk-screen` and pushed.
+- Created a free Azure App Service web app. Azure for Students only allows five regions;
+  West US 3 was refused, so it runs in Mexico Central.
+- Created a read-only database login for the site and gave Azure that one, not the owner
+  login. Tested: it reads everything and is refused when it tries to write.
+- Connected Azure to GitHub. The managed-identity method failed ("couldn't verify how
+  GitHub Actions issues OIDC tokens"), so it uses a publish profile stored as a GitHub
+  secret. First GitHub Actions run passed and the page is live at https://federal-grant-risk-screen-hufggeccbygdeedg.mexicocentral-01.azurewebsites.net
+
 **Not done**
-- No GitHub repo: nothing is pushed and the page is not deployed.
 - `RUBRIC.md` still carries its draft notice.
 - I have not read the sources in `PROCESS.md` myself. An AI assistant did the research.
 - No agency has checked my reading of their forms.
