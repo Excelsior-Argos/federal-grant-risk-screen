@@ -178,8 +178,7 @@ with st.sidebar:
             "- **Repeat**: the same problem was in last year's audit.\n"
             "- **Filed late**: an audit is due nine months after the fiscal year ends.\n"
             "- **Your written decision**: federal rules give you six months from the audit's filing to answer "
-            "each finding on your grants (2 CFR 200.521).\n"
-            "- **Risk rating**: drafted by AI from the auditor's labels and approved by a person.")
+            "each finding on your grants (2 CFR 200.521).")
 
 sheets = approved_sheets()
 ein = st.query_params.get("locality")

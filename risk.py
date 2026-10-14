@@ -430,7 +430,18 @@ the locality's own promise, not the auditor's judgment: use it to say what to ve
 evidence, and do not treat a plan as proof that a problem is fixed. An audit accepted more than nine \
 months after its fiscal year ended was filed late, which is worth a check of its own.
 
-Write for a busy grants manager: plain words, short sentences, no audit jargon you have not explained."""
+Write for a busy grants manager: plain words, short sentences, no audit jargon you have not explained.
+
+How the sheet should read:
+
+- Write about the locality in the third person. Never write "I" or "we".
+- Never mention the rubric, its steps, levels or rules. The monitor has never seen it. Say the \
+reason in terms of the audit instead: "The same problem was found the year before, so it has not \
+been fixed," not "a serious repeat finding makes the rating high under step 2."
+- Do not state the rating in the summary; the page shows it next to the summary. Start the summary \
+with the most important problem the auditor found.
+- If the auditor's text shows a problem is wider or narrower than its labels suggest, say that in \
+plain terms, for example that the auditor traces it to empty posts in the finance office."""
 
 
 def evidence_as_text(evidence):
