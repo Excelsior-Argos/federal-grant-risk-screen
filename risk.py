@@ -304,7 +304,8 @@ def agency_worklist(agency):
             select l.auditee_ein, a.audit_year, f.reference_number, bool_or(f.report_id = l.report_id) as in_latest,
                    bool_or(f.is_material_weakness) as mw, bool_or(f.is_modified_opinion) as mo,
                    bool_or(f.is_repeat_finding) as rep, bool_or(f.is_questioned_costs) as qc,
-                   string_agg(distinct w.federal_program_name, '; ') as programs
+                   string_agg(distinct w.federal_program_name, '; ') as programs,
+                   string_agg(distinct f.type_requirement, '') as requirements
             from latest l
             join audits a on a.auditee_ein = l.auditee_ein and a.audit_year >= l.audit_year - 1
             join findings f on f.report_id = a.report_id
@@ -316,7 +317,8 @@ def agency_worklist(agency):
             select auditee_ein, json_agg(json_build_object(
                        'audit_year', audit_year, 'reference_number', reference_number, 'in_latest', in_latest,
                        'is_material_weakness', mw, 'is_modified_opinion', mo,
-                       'is_repeat_finding', rep, 'is_questioned_costs', qc, 'programs', programs)) as own_findings
+                       'is_repeat_finding', rep, 'is_questioned_costs', qc, 'programs', programs,
+                       'requirements', requirements)) as own_findings
             from per_finding group by 1
         )
         select l.auditee_ein, l.auditee_name, l.audit_year, l.report_id, l.fy_end_date, l.fac_accepted_date,

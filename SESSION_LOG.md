@@ -137,3 +137,17 @@
 **Next session**
 - Put my name on the memo. Decide whether to tighten "systemic" in the rubric.
   Create the GitHub repo, push, deploy the page.
+
+## 2026-10-14: Session 4 (continued), a page a monitor can use
+
+- Approved all AI drafts at once (my decision, in chat). 68 localities now have an
+  approved risk sheet: 16 high, 15 medium, 37 low. No draft failed the quote check, so
+  none were held back. The page says they were approved in bulk, not read one by one.
+- Rebuilt the page. It opens on DCJS with four number tiles and a "Needs your attention"
+  list of cards, each with its rating, the compliance areas involved, the decision due
+  date and an Open button. Opening a locality now replaces the page, with a Back button,
+  instead of appearing far below the tables (the old "tick a row" seemed to do nothing).
+- A locality has four tabs: Summary (the approved risk sheet with the auditor's quotes),
+  Audit checks, Findings, and Audit history. Plain words throughout: "audit problems on
+  your grants", "your written decision is due".
+- Light theme in `.streamlit/config.toml`.
