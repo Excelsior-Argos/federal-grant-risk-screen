@@ -14,9 +14,12 @@ import common
 import risk
 
 # Each visitor's click reruns this file, so remember results for an hour.
-query = st.cache_data(ttl=3600)(common.query)
-gather_evidence = st.cache_data(ttl=3600)(risk.gather_evidence)
-agency_worklist = st.cache_data(ttl=3600)(risk.agency_worklist)
+# While each one loads, the visitor sees what is happening in plain words, not the function's name.
+query = st.cache_data(ttl=3600, show_spinner="Loading audit records...")(common.query)
+gather_evidence = st.cache_data(ttl=3600, show_spinner="Gathering this locality's audits and findings...")(
+    risk.gather_evidence)
+agency_worklist = st.cache_data(ttl=3600, show_spinner="Checking every subrecipient's audits for your agency...")(
+    risk.agency_worklist)
 
 DEFAULT_AGENCY = "Department of Criminal Justice Services"
 ALL = "All agencies"
