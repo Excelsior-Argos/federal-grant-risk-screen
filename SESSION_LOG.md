@@ -163,3 +163,14 @@
   110 of 110 quotes found, 10 of 10 no-findings cases left unrated, about $0.077 a sheet.
 - Claude Code sometimes returns an empty reply; the AI call now retries up to three times.
 - Removed the "Risk rating: drafted by AI" line from the page's "How to read this".
+
+## 2026-10-17: Session 5, speed
+
+- Loading messages now say what is happening ("Gathering this locality's audits and
+  findings...") instead of Streamlit's "Running function(...)".
+- The page was slow for two reasons in the code: it loaded the Anthropic library it never
+  uses (7.6 of 8.3 seconds of start-up), and it opened a new database connection for
+  every question. Now the library loads only when the AI is called and one connection is
+  reused. Locally: start-up 0.8 s instead of 8.3 s, a locality's data 0.3 s instead of 2.8 s.
+- The rest was Azure's free plan stopping the idle app. Chose the free fix: a GitHub
+  Actions job pings the site every 10 minutes. Not Basic B1 (about $13.65 a month).

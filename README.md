@@ -233,6 +233,7 @@ checked them.
 |---|---|
 | The page | Azure App Service, Linux, Python 3.14, Free F1 plan, Mexico Central (one of the five regions an Azure for Students subscription allows) |
 | Deployment | GitHub Actions. Every push to `main` builds and deploys; the workflow is in `.github/workflows/`. |
+| Staying awake | The free plan stops an idle app after about 20 minutes. A second GitHub Actions job visits the health page every 10 minutes so visitors do not wait for a cold start; GitHub can run it late, so an occasional slow first visit is still possible. GitHub pauses scheduled jobs in a repository with no activity for 60 days. |
 | The database | Neon Postgres. The site connects with a separate read-only login (`web_readonly`), so the public page can read every table and change nothing. |
 | Start command | `python -m streamlit run app.py --server.port 8000 --server.address 0.0.0.0 --server.headless true` |
 | Secrets | The read-only connection string is an App Service setting named `DATABASE_URL`. The deploy credential is a GitHub Actions secret. Neither is in the code. |
