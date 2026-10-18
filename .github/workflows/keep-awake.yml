@@ -5,6 +5,8 @@ name: Keep the site awake
 on:
   schedule:
     - cron: "*/10 * * * *"
+  push:
+    branches: [main]  # also after each push, which wakes the site right after a deploy
   workflow_dispatch:
 
 permissions: {}
