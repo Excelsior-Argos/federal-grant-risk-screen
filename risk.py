@@ -12,7 +12,6 @@ import tempfile
 from pathlib import Path
 from typing import Literal
 
-import anthropic
 from pydantic import BaseModel, Field
 
 from common import query, requirement_names, source_url
@@ -499,6 +498,8 @@ def ask_model(evidence):
 
 
 def _ask_api(evidence):
+    import anthropic  # loaded only here: it is slow to load and the web page never calls the AI
+
     client = anthropic.Anthropic()  # reads ANTHROPIC_API_KEY from the environment (.env)
     response = client.beta.messages.parse(
         model=MODEL,

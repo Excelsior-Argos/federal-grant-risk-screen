@@ -1,5 +1,6 @@
 """Shared by the page, the AI layer and the MCP server: database access and FAC lookups."""
 import os
+import threading
 
 import psycopg
 from dotenv import load_dotenv
@@ -75,11 +76,28 @@ def requirement_names(codes):
     return sorted({REQUIREMENTS.get(code, code) for code in codes or ""})
 
 
+# One connection is kept open and reused: opening a new one to the cloud database takes most of
+# a second, and a single page asks several questions. The lock stops two visitors using it at once.
+_connection = None
+_lock = threading.Lock()
+
+
 def query(sql, params=None):
-    """Run one SQL statement and return its rows as a list of dictionaries."""
-    with psycopg.connect(os.environ["DATABASE_URL"], prepare_threshold=None, row_factory=dict_row) as conn:
-        cursor = conn.execute(sql, params)
-        return cursor.fetchall() if cursor.description else []
+    """Run one SQL statement and return its rows as a list of dictionaries. Each statement is saved at once."""
+    global _connection
+    with _lock:
+        for attempt in (1, 2):
+            try:
+                if _connection is None or _connection.closed:
+                    _connection = psycopg.connect(os.environ["DATABASE_URL"], prepare_threshold=None,
+                                                  row_factory=dict_row, autocommit=True)
+                cursor = _connection.execute(sql, params)
+                return cursor.fetchall() if cursor.description else []
+            except psycopg.OperationalError:
+                # The database closes idle connections when it goes to sleep, so connect again once.
+                _connection = None
+                if attempt == 2:
+                    raise
 
 
 def find_localities(text):
