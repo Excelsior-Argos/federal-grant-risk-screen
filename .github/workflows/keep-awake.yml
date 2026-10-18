@@ -1,0 +1,21 @@
+name: Keep the site awake
+
+# The free Azure plan stops the app after about 20 minutes without a visit, and the next
+# visitor then waits about a minute for it to start. Visiting every 10 minutes keeps it running.
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Visit the site's health page
+        run: >
+          curl --silent --show-error --max-time 120 --retry 3 --retry-delay 10
+          --output /dev/null --write-out "HTTP %{http_code} in %{time_total}s\n"
+          https://federal-grant-risk-screen-hufggeccbygdeedg.mexicocentral-01.azurewebsites.net/_stcore/health
