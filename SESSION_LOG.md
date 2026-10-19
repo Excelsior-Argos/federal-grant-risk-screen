@@ -174,3 +174,8 @@
   reused. Locally: start-up 0.8 s instead of 8.3 s, a locality's data 0.3 s instead of 2.8 s.
 - The rest was Azure's free plan stopping the idle app. Chose the free fix: a GitHub
   Actions job pings the site every 10 minutes. Not Basic B1 (about $13.65 a month).
+
+**Later: paid plan**
+- The ping job did not fix it: GitHub ran the schedule late or not at all, and the first
+  visit was still slow. Moved the site to Basic B1 (about $13.65 a month, paid from the
+  student credit) and turned on Always On, so Azure never stops the app. Deleted the ping job.
