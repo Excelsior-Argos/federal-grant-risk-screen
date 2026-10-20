@@ -188,3 +188,6 @@
   rows, then the same job in the live tool, then a switch to Social Services.
 - Captions only, no voiceover. The video (`demo/demo.mp4`) is not in git; run the script
   to make it again.
+- Second version, 2:08: tighter scenes, page-loading time cut out, motion graphics (stamps,
+  spotlight, counter, pipeline diagram) and a soundtrack. `demo/soundtrack.py` composes the
+  music and sound effects in code, timed to what the recording logs, so nothing needs a licence.
