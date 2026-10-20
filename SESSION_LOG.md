@@ -179,3 +179,12 @@
 - The ping job did not fix it: GitHub ran the schedule late or not at all, and the first
   visit was still slow. Moved the site to Basic B1 (about $13.65 a month, paid from the
   student credit) and turned on Always On, so Azure never stops the app. Deleted the ping job.
+
+## 2026-10-19: Session 6, demo video
+
+- `demo/record_demo.py` records a 4-minute demo with Playwright: a real browser does the
+  manual way on fac.gov for the City of Emporia (search, open the audit, see that the page
+  only counts findings), then slides for working out deadlines and filling in the DCJS form
+  rows, then the same job in the live tool, then a switch to Social Services.
+- Captions only, no voiceover. The video (`demo/demo.mp4`) is not in git; run the script
+  to make it again.

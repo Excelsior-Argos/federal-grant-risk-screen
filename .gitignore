@@ -9,3 +9,8 @@ __pycache__/
 
 # Local tooling
 .claude/
+
+# Demo recording output
+demo/raw/
+demo/*.mp4
+demo/last_frame.png
